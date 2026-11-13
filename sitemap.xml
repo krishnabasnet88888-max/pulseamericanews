@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://pulseamericanews.com/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://pulseamericanews.com/images/og/home-1200x630.jpg</image:loc>
+    </image:image>
+  </url>
+
+  <url><loc>https://pulseamericanews.com/world/</loc><lastmod>2026-11-13</lastmod><changefreq>hourly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://pulseamericanews.com/usa/</loc><lastmod>2026-11-13</lastmod><changefreq>hourly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://pulseamericanews.com/current-affairs/</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pulseamericanews.com/sex-education/</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pulseamericanews.com/technology/</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pulseamericanews.com/sports/</loc><lastmod>2026-11-13</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+
+  <url>
+    <loc>https://pulseamericanews.com/world/water-wars-global-crisis/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pulseamericanews.com/images/world/water-wars-global-crisis-hero-1200.avif</image:loc>
+      <image:caption>Aerial view of a cracked dry lakebed illustrating the global water crisis</image:caption>
+    </image:image>
+  </url>
+
+  <!-- static pages -->
+  <url><loc>https://pulseamericanews.com/about/</loc><lastmod>2026-11-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://pulseamericanews.com/authors/</loc><lastmod>2026-11-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://pulseamericanews.com/authors/daniel-reyes/</loc><lastmod>2026-11-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://pulseamericanews.com/editorial-standards/</loc><lastmod>2026-11-13</lastmod><priority>0.4</priority></url>
+  <url><loc>https://pulseamericanews.com/corrections/</loc><lastmod>2026-11-13</lastmod><priority>0.4</priority></url>
+  <url><loc>https://pulseamericanews.com/contact/</loc><lastmod>2026-11-13</lastmod><priority>0.4</priority></url>
+  <url><loc>https://pulseamericanews.com/privacy/</loc><lastmod>2026-11-13</lastmod><priority>0.3</priority></url>
+  <url><loc>https://pulseamericanews.com/terms/</loc><lastmod>2026-11-13</lastmod><priority>0.3</priority></url>
+
+</urlset>

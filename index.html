@@ -1,3 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulse America News — Breaking US &amp; World News, Analysis &amp; Explainers</title>
+<meta name="description" content="Independent US and world news, daily analysis and clear explainers on climate, policy, technology, health and sport. Reporting that respects your time.">
+<link rel="canonical" href="https://pulseamericanews.com/">
+<link rel="alternate" hreflang="en-us" href="https://pulseamericanews.com/">
+<link rel="alternate" hreflang="x-default" href="https://pulseamericanews.com/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pulse America News">
+<meta property="og:url" content="https://pulseamericanews.com/">
+<meta property="og:title" content="Pulse America News — Breaking US &amp; World News, Analysis &amp; Explainers">
+<meta property="og:description" content="Independent US and world news, daily analysis and clear explainers on climate, policy, technology, health and sport.">
+<meta property="og:image" content="https://pulseamericanews.com/images/og/home-1200x630.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pulse America News">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@pulseamericanews">
+<meta name="twitter:title" content="Pulse America News — Breaking US &amp; World News, Analysis &amp; Explainers">
+<meta name="twitter:description" content="Independent US and world news, daily analysis and clear explainers.">
+<meta name="twitter:image" content="https://pulseamericanews.com/images/og/home-1200x630.jpg">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#C8102E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap">
+<link rel="alternate" type="application/rss+xml" title="Pulse America News RSS" href="https://pulseamericanews.com/feed.xml">
+
+<script>
+/* Theme before paint — kills the light-mode flash */
+(function(){try{var t=localStorage.getItem('pan-theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://pulseamericanews.com/#website",
+      "url": "https://pulseamericanews.com/",
+      "name": "Pulse America News",
+      "alternateName": "PulseAmericaNews",
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://pulseamericanews.com/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": { "@type": "EntryPoint", "urlTemplate": "https://pulseamericanews.com/search/?q={search_term_string}" },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "NewsMediaOrganization",
+      "@id": "https://pulseamericanews.com/#organization",
+      "name": "Pulse America News",
+      "url": "https://pulseamericanews.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://pulseamericanews.com/images/logo-512.png",
+        "width": 512, "height": 512
+      },
+      "foundingDate": "2026-05-01",
+      "ethicsPolicy": "https://pulseamericanews.com/editorial-standards/",
+      "correctionsPolicy": "https://pulseamericanews.com/corrections/",
+      "masthead": "https://pulseamericanews.com/about/",
+      "sameAs": [
+        "https://twitter.com/pulseamericanews",
+        "https://www.facebook.com/pulseamericanews",
+        "https://www.instagram.com/pulseamericanews"
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://pulseamericanews.com/#webpage",
+      "url": "https://pulseamericanews.com/",
+      "name": "Pulse America News",
+      "isPartOf": { "@id": "https://pulseamericanews.com/#website" },
+      "about": { "@type": "Thing", "name": "US and world news" },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -5,572 +100,578 @@
 --bg:#0A0A0F;--bg2:#12121A;--bg3:#1C1C28;
 --border:#2A2A38;--text:#F0EEE8;--muted:#9896A4;
 --card-bg:#12121A;--input-bg:#0A0A0F;
+--serif:'Playfair Display',Georgia,serif;
+--sans:'Source Sans 3',system-ui,-apple-system,'Segoe UI',sans-serif;
 }
 [data-theme="light"]{
 --bg:#F5F4F0;--bg2:#FFFFFF;--bg3:#ECEAE4;
---border:#D8D6CE;--text:#1A1A22;--muted:#6B6978;
+--border:#D8D6CE;--text:#1A1A22;--muted:#5E5C6B;
 --card-bg:#FFFFFF;--input-bg:#F5F4F0;
 }
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:'Source Sans 3',Georgia,sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden;transition:background .3s,color .3s}
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap');
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.6;overflow-x:hidden;transition:background .3s,color .3s}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:3px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--red);color:#fff;padding:10px 18px;z-index:999;font-weight:700;font-size:13px}
+.skip:focus{left:8px;top:8px}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
 
-.ticker-wrap{background:var(--red);padding:7px 0;overflow:hidden;position:relative}
-.ticker-label{display:inline-block;background:var(--bg);color:var(--text);font-size:10px;font-weight:700;letter-spacing:2px;padding:3px 10px;margin-right:14px;vertical-align:middle;text-transform:uppercase;transition:background .3s,color .3s}
-.ticker-track{display:flex;animation:tick 50s linear infinite;white-space:nowrap}
-.ticker-track:hover{animation-play-state:paused}
-.ticker-item{font-size:12px;font-weight:600;padding:0 36px;color:#fff;letter-spacing:.3px}
-.ticker-item::before{content:'●';margin-right:8px;opacity:.6}
+.ticker-wrap{background:var(--red);overflow:hidden;position:relative;display:flex;align-items:center;padding:7px 0}
+.ticker-label{background:var(--bg);color:var(--text);font-size:10px;font-weight:700;letter-spacing:2px;padding:3px 10px;margin:0 14px 0 20px;text-transform:uppercase;flex-shrink:0;transition:background .3s,color .3s}
+.ticker-view{overflow:hidden;flex:1}
+.ticker-track{display:flex;animation:tick 50s linear infinite;white-space:nowrap;width:max-content}
+.ticker-track:hover,.ticker-track.paused{animation-play-state:paused}
+.ticker-item{font-size:12px;font-weight:600;padding:0 36px;color:#fff}
+.ticker-item::before{content:'\25CF';margin-right:8px;opacity:.6}
+.ticker-pause{background:rgba(0,0,0,.22);border:0;color:#fff;width:26px;height:22px;margin-left:12px;margin-right:16px;border-radius:3px;cursor:pointer;font-size:10px;flex-shrink:0}
 @keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-nav{background:var(--bg2);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;transition:background .3s,border-color .3s}
-.nav-inner{max-width:1280px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:62px}
-.logo{display:flex;align-items:center;gap:9px;text-decoration:none}
+nav.site{background:var(--bg2);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;transition:background .3s,border-color .3s}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
+.logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex-shrink:0}
 .logo-box{width:34px;height:34px;background:var(--red);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .logo-box svg{width:18px;height:18px}
-.logo-text{font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:900;color:var(--text);letter-spacing:-.5px;transition:color .3s}
+.logo-text{font-family:var(--serif);font-size:18px;font-weight:900;letter-spacing:-.5px;transition:color .3s}
 .logo-text b{color:var(--red)}
-.nav-cats{display:flex;gap:2px}
-.nav-cats a{color:var(--muted);font-size:12px;font-weight:700;text-decoration:none;padding:6px 10px;border-radius:4px;transition:color .2s,background .2s;text-transform:uppercase;letter-spacing:.7px}
+.nav-cats{display:flex;gap:2px;flex-wrap:wrap}
+.nav-cats a{color:var(--muted);font-size:12px;font-weight:700;text-decoration:none;padding:6px 10px;border-radius:4px;transition:color .2s,background .2s;text-transform:uppercase;letter-spacing:.7px;white-space:nowrap}
 .nav-cats a:hover,.nav-cats a.active{color:var(--red);background:rgba(200,16,46,.08)}
-.nav-right{display:flex;align-items:center;gap:10px}
-
-.theme-toggle{background:var(--bg3);border:1px solid var(--border);border-radius:50px;padding:4px;cursor:pointer;display:flex;align-items:center;gap:3px;transition:background .3s,border-color .3s}
-.theme-btn{width:30px;height:28px;border-radius:46px;border:none;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;background:transparent;transition:background .2s}
-.theme-btn.active{background:var(--red);color:white}
+.nav-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.theme-toggle{background:var(--bg3);border:1px solid var(--border);border-radius:50px;padding:4px;display:flex;gap:3px}
+.theme-btn{width:30px;height:28px;border-radius:46px;border:0;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;background:transparent;transition:background .2s}
+.theme-btn.active{background:var(--red);color:#fff}
 .theme-btn:not(.active){color:var(--muted)}
-
-.btn-sub{background:var(--red);color:white;border:none;padding:7px 16px;border-radius:4px;font-size:12px;font-weight:700;cursor:pointer;letter-spacing:.5px;transition:background .2s;font-family:inherit}
+.btn-sub{background:var(--red);color:#fff;border:0;padding:8px 16px;border-radius:4px;font-size:12px;font-weight:700;cursor:pointer;letter-spacing:.5px;font-family:inherit;text-decoration:none;display:inline-block}
 .btn-sub:hover{background:var(--red-dark)}
-.hamburger{display:none;background:none;border:none;color:var(--text);cursor:pointer;padding:4px}
+.hamburger{display:none;background:none;border:0;color:var(--text);cursor:pointer;padding:4px}
 .hamburger svg{width:22px;height:22px}
-.mobile-menu{display:none;background:var(--bg2);border-bottom:1px solid var(--border);padding:10px 20px;transition:background .3s}
+.mobile-menu{display:none;background:var(--bg2);border-bottom:1px solid var(--border);padding:10px 20px}
 .mobile-menu.open{display:block}
-.mobile-menu a{display:block;color:var(--muted);font-size:13px;font-weight:700;text-decoration:none;padding:10px 0;border-bottom:1px solid var(--border);text-transform:uppercase;letter-spacing:.7px}
+.mobile-menu a{display:block;color:var(--muted);font-size:13px;font-weight:700;text-decoration:none;padding:11px 0;border-bottom:1px solid var(--border);text-transform:uppercase;letter-spacing:.7px}
 
-.datebar{max-width:1280px;margin:0 auto;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;background:var(--bg2);border-bottom:1px solid var(--border);transition:background .3s}
+.datebar{max-width:1280px;margin:0 auto;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;background:var(--bg2);border-bottom:1px solid var(--border);transition:background .3s}
 .datebar span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.8px}
 
+main{display:block}
 .hero{max-width:1280px;margin:28px auto;padding:0 20px;display:grid;grid-template-columns:2fr 1fr;gap:16px}
-.hero-main{position:relative;border-radius:8px;overflow:hidden;cursor:pointer}
-.hero-main img{width:100%;height:460px;object-fit:cover;display:block;filter:brightness(.65);transition:filter .3s}
-.hero-main:hover img{filter:brightness(.8)}
-.hero-overlay{position:absolute;bottom:0;left:0;right:0;padding:26px;background:linear-gradient(transparent,rgba(0,0,0,.93))}
-.cat-badge{display:inline-block;background:var(--red);color:white;font-size:10px;font-weight:700;letter-spacing:1.5px;padding:3px 9px;border-radius:3px;margin-bottom:8px;text-transform:uppercase}
-.hero-main h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(20px,2.8vw,34px);font-weight:900;line-height:1.15;color:white;margin-bottom:7px}
-.hero-meta{font-size:11px;color:rgba(255,255,255,.58);display:flex;gap:10px}
-
+.hero-main{position:relative;border-radius:8px;overflow:hidden;text-decoration:none;display:block}
+.hero-main img{width:100%;height:460px;object-fit:cover;filter:brightness(.62);transition:filter .3s}
+.hero-main:hover img{filter:brightness(.78)}
+.hero-overlay{position:absolute;bottom:0;left:0;right:0;padding:26px;background:linear-gradient(transparent,rgba(0,0,0,.94))}
+.cat-badge{display:inline-block;background:var(--red);color:#fff;font-size:10px;font-weight:700;letter-spacing:1.5px;padding:3px 9px;border-radius:3px;margin-bottom:8px;text-transform:uppercase}
+.hero-main h1{font-family:var(--serif);font-size:clamp(20px,2.8vw,34px);font-weight:900;line-height:1.15;color:#fff;margin-bottom:7px}
+.hero-meta{font-size:11px;color:rgba(255,255,255,.62);display:flex;gap:10px;flex-wrap:wrap}
 .hero-side{display:flex;flex-direction:column;gap:14px}
-.side-card{background:var(--card-bg);border-radius:8px;overflow:hidden;cursor:pointer;border:1px solid var(--border);transition:border-color .2s,background .3s}
+.side-card{background:var(--card-bg);border-radius:8px;overflow:hidden;border:1px solid var(--border);text-decoration:none;display:block;transition:border-color .2s,background .3s}
 .side-card:hover{border-color:rgba(200,16,46,.5)}
 .side-card img{width:100%;height:130px;object-fit:cover;filter:brightness(.8)}
 .side-body{padding:13px}
 .side-cat{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--red);text-transform:uppercase;margin-bottom:5px}
-.side-card h3{font-family:'Playfair Display',Georgia,serif;font-size:14px;font-weight:700;line-height:1.25;color:var(--text)}
+.side-card h3{font-family:var(--serif);font-size:14px;font-weight:700;line-height:1.25}
 .side-time{font-size:11px;color:var(--muted);margin-top:5px}
 
 .section{max-width:1280px;margin:44px auto;padding:0 20px}
-.sec-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
-.sec-title{font-family:'Playfair Display',Georgia,serif;font-size:21px;font-weight:900;color:var(--text);display:flex;align-items:center;gap:9px;transition:color .3s}
+.sec-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;gap:12px}
+.sec-title{font-family:var(--serif);font-size:21px;font-weight:900;display:flex;align-items:center;gap:9px}
 .sec-title::before{content:'';display:block;width:4px;height:22px;background:var(--red);border-radius:2px}
-.see-all{font-size:11px;font-weight:700;color:var(--red);text-decoration:none;letter-spacing:.8px;text-transform:uppercase;border:1px solid rgba(200,16,46,.4);padding:5px 10px;border-radius:3px;transition:background .2s}
+.see-all{font-size:11px;font-weight:700;color:var(--red);text-decoration:none;letter-spacing:.8px;text-transform:uppercase;border:1px solid rgba(200,16,46,.4);padding:5px 10px;border-radius:3px;white-space:nowrap}
 .see-all:hover{background:rgba(200,16,46,.1)}
 
-.news-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.news-card{background:var(--card-bg);border-radius:8px;overflow:hidden;cursor:pointer;border:1px solid var(--border);transition:transform .2s,border-color .2s,background .3s;text-decoration:none;display:block}
+.news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.news-card{background:var(--card-bg);border-radius:8px;overflow:hidden;border:1px solid var(--border);transition:transform .2s,border-color .2s,background .3s;text-decoration:none;display:flex;flex-direction:column}
 .news-card:hover{transform:translateY(-3px);border-color:rgba(200,16,46,.35)}
 .news-card img{width:100%;height:170px;object-fit:cover;filter:brightness(.85)}
-[data-theme="light"] .news-card img{filter:brightness(.92)}
-.news-body{padding:15px}
+[data-theme="light"] .news-card img{filter:brightness(.94)}
+.news-body{padding:15px;display:flex;flex-direction:column;flex:1}
 .news-cat{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;margin-bottom:5px}
-.news-card h3{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.25;color:var(--text);margin-bottom:7px;transition:color .3s}
-.news-card p{font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:9px}
+.news-card h3{font-family:var(--serif);font-size:16px;font-weight:700;line-height:1.25;margin-bottom:7px}
+.news-card p{font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:9px;flex:1}
 .news-ftr{display:flex;align-items:center;justify-content:space-between;font-size:11px;color:var(--muted)}
-.read-more{color:var(--red);font-weight:700;font-size:11px;text-decoration:none;letter-spacing:.5px;text-transform:uppercase}
+.read-more{color:var(--red);font-weight:700;font-size:11px;letter-spacing:.5px;text-transform:uppercase}
 
 .feat-row{display:grid;grid-template-columns:1.6fr 1fr;gap:18px}
-.feat-main{background:var(--card-bg);border-radius:8px;overflow:hidden;border:1px solid var(--border);cursor:pointer;transition:border-color .2s,background .3s}
+.feat-main{background:var(--card-bg);border-radius:8px;overflow:hidden;border:1px solid var(--border);text-decoration:none;display:block}
 .feat-main:hover{border-color:rgba(200,16,46,.35)}
 .feat-main img{width:100%;height:260px;object-fit:cover;filter:brightness(.82)}
-[data-theme="light"] .feat-main img{filter:brightness(.92)}
+[data-theme="light"] .feat-main img{filter:brightness(.94)}
 .feat-main-body{padding:18px}
-.feat-main h2{font-family:'Playfair Display',Georgia,serif;font-size:21px;font-weight:900;line-height:1.2;color:var(--text);margin:8px 0;transition:color .3s}
+.feat-main h2{font-family:var(--serif);font-size:21px;font-weight:900;line-height:1.2;margin:8px 0}
 .feat-main p{font-size:13px;color:var(--muted);line-height:1.6}
-.feat-list-wrap{background:var(--card-bg);border-radius:8px;border:1px solid var(--border);padding:14px;transition:background .3s}
+.feat-meta{margin-top:12px;font-size:12px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap}
+.feat-list-wrap{background:var(--card-bg);border-radius:8px;border:1px solid var(--border);padding:14px}
 .flist-lbl{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;margin-bottom:10px}
-.flist-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);cursor:pointer;transition:opacity .2s}
-.flist-item:hover{opacity:.75}
-.flist-item:last-child{border-bottom:none;padding-bottom:0}
+.flist-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none}
+.flist-item:last-child{border-bottom:0;padding-bottom:0}
 .flist-item img{width:76px;height:60px;object-fit:cover;border-radius:4px;flex-shrink:0}
 .flist-cat{font-size:10px;font-weight:700;letter-spacing:1.2px;color:var(--red);text-transform:uppercase;margin-bottom:3px}
-.flist-item h4{font-family:'Playfair Display',Georgia,serif;font-size:13px;font-weight:700;line-height:1.2;color:var(--text);transition:color .3s}
+.flist-item h4{font-family:var(--serif);font-size:13px;font-weight:700;line-height:1.25}
 .flist-item time{font-size:11px;color:var(--muted)}
 
 .world-strip{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:12px 18px;margin-bottom:18px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;transition:background .3s}
 .ws-lbl{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;margin-right:4px}
-.w-tag{background:rgba(255,255,255,.04);border:1px solid var(--border);padding:4px 11px;border-radius:20px;font-size:12px;color:var(--text);cursor:pointer;transition:border-color .2s,background .2s}
+.w-tag{background:rgba(255,255,255,.04);border:1px solid var(--border);padding:4px 11px;border-radius:20px;font-size:12px;text-decoration:none}
 [data-theme="light"] .w-tag{background:rgba(0,0,0,.04)}
-.w-tag:hover{border-color:var(--red)}
-.w-tag.active{border-color:var(--red);background:rgba(200,16,46,.1);color:var(--red);font-weight:700}
+.w-tag:hover,.w-tag.active{border-color:var(--red);color:var(--red);font-weight:700}
 
-.tech-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
-.tech-card{background:var(--bg3);border-radius:8px;padding:18px;border:1px solid var(--border);cursor:pointer;transition:border-color .2s,transform .2s,background .3s;position:relative;overflow:hidden}
+.tech-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.tech-card{background:var(--bg3);border-radius:8px;padding:18px;border:1px solid var(--border);text-decoration:none;display:block;position:relative;overflow:hidden;transition:border-color .2s,transform .2s}
 .tech-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--gold)}
 .tech-card:hover{border-color:rgba(232,160,32,.45);transform:translateY(-2px)}
 .tech-tag{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;margin-bottom:7px}
-.tech-card h3{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;line-height:1.25;color:var(--text);margin-bottom:7px;transition:color .3s}
+.tech-card h3{font-family:var(--serif);font-size:15px;font-weight:700;line-height:1.25;margin-bottom:7px}
 .tech-card p{font-size:12px;color:var(--muted);line-height:1.5}
 
-.sports-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
-.sport-card{border-radius:8px;overflow:hidden;position:relative;cursor:pointer;height:210px}
+.sports-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.sport-card{border-radius:8px;overflow:hidden;position:relative;height:210px;text-decoration:none;display:block}
 .sport-card img{width:100%;height:100%;object-fit:cover;filter:brightness(.5);transition:filter .3s}
 .sport-card:hover img{filter:brightness(.68)}
-.sport-overlay{position:absolute;bottom:0;left:0;right:0;padding:14px;background:linear-gradient(transparent,rgba(0,0,0,.88))}
-.s-badge{display:inline-block;font-size:9px;font-weight:700;letter-spacing:1.5px;padding:2px 7px;border-radius:3px;margin-bottom:5px;text-transform:uppercase}
-.s-badge.live{background:var(--red);color:white}
-.s-badge.cat{background:rgba(255,255,255,.15);color:white;border:1px solid rgba(255,255,255,.3)}
-.sport-card h3{font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:700;line-height:1.2;color:white}
+.sport-overlay{position:absolute;bottom:0;left:0;right:0;padding:14px;background:linear-gradient(transparent,rgba(0,0,0,.9))}
+.s-badge{display:inline-block;font-size:9px;font-weight:700;letter-spacing:1.5px;padding:2px 7px;border-radius:3px;margin-bottom:5px;text-transform:uppercase;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.3)}
+.sport-card h3{font-family:var(--serif);font-size:15px;font-weight:700;line-height:1.2;color:#fff}
 
-.score-bar{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:11px 18px;margin-bottom:18px;display:flex;gap:24px;flex-wrap:wrap;align-items:center;transition:background .3s}
+.score-bar{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:11px 18px;margin-bottom:18px;display:flex;gap:24px;flex-wrap:wrap;align-items:center}
 .score-lbl{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;flex-shrink:0}
 .score-item{display:flex;gap:7px;align-items:center}
 .score-divider{width:1px;height:18px;background:var(--border)}
-.live-dot{background:var(--red);color:white;font-size:9px;font-weight:800;padding:2px 5px;border-radius:2px;letter-spacing:1px}
-.score-text{font-size:13px;font-weight:600;color:var(--text);transition:color .3s}
+.score-text{font-size:13px;font-weight:600}
 .score-sub{font-size:11px;color:var(--muted)}
 
-.sexed-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.sexed-card{background:var(--card-bg);border-radius:8px;padding:18px;border:1px solid var(--border);cursor:pointer;transition:border-color .2s,background .3s;position:relative;overflow:hidden}
+.sexed-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.sexed-card{background:var(--card-bg);border-radius:8px;padding:18px;border:1px solid var(--border);text-decoration:none;display:block;position:relative;overflow:hidden}
 .sexed-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#7C3AED,#DB2777)}
 .sexed-card:hover{border-color:rgba(124,58,237,.4)}
 .sexed-cat{font-size:10px;font-weight:700;letter-spacing:1.5px;color:#9D71FF;text-transform:uppercase;margin-bottom:7px}
-.sexed-card h3{font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;line-height:1.25;color:var(--text);margin-bottom:7px;transition:color .3s}
+.sexed-card h3{font-family:var(--serif);font-size:16px;font-weight:700;line-height:1.25;margin-bottom:7px}
 .sexed-card p{font-size:13px;color:var(--muted);line-height:1.5}
 .sexed-author{font-size:11px;color:var(--muted);margin-top:10px}
+.sexed-note{background:rgba(124,58,237,.07);border:1px solid rgba(124,58,237,.22);border-radius:8px;padding:11px 15px;margin-bottom:18px;display:flex;gap:10px;align-items:flex-start;font-size:12px;color:var(--muted);line-height:1.5}
+.sexed-note strong{color:#C4B5FD}
+[data-theme="light"] .sexed-note strong{color:#6D28D9}
 
 .nl-box{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:36px;text-align:center;max-width:600px;margin:0 auto;transition:background .3s}
-.nl-box h2{font-family:'Playfair Display',Georgia,serif;font-size:26px;font-weight:900;color:var(--text);margin-bottom:7px;transition:color .3s}
+.nl-box h2{font-family:var(--serif);font-size:26px;font-weight:900;margin-bottom:7px}
 .nl-box p{color:var(--muted);font-size:13px;margin-bottom:22px}
 .nl-form{display:flex;gap:9px;max-width:400px;margin:0 auto;flex-wrap:wrap}
-.nl-form input{flex:1;min-width:180px;background:var(--input-bg);border:1px solid var(--border);color:var(--text);padding:10px 14px;border-radius:4px;font-size:13px;outline:none;transition:border-color .2s,background .3s;font-family:inherit}
+.nl-form input{flex:1;min-width:180px;background:var(--input-bg);border:1px solid var(--border);color:var(--text);padding:10px 14px;border-radius:4px;font-size:13px;outline:none;font-family:inherit}
 .nl-form input:focus{border-color:var(--red)}
-.nl-form button{background:var(--red);color:white;border:none;padding:10px 18px;border-radius:4px;font-size:13px;font-weight:700;cursor:pointer;transition:background .2s;font-family:inherit}
+.nl-form button{background:var(--red);color:#fff;border:0;padding:10px 18px;border-radius:4px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit}
 .nl-form button:hover{background:var(--red-dark)}
 .nl-note{font-size:11px;color:var(--muted);margin-top:9px}
 
-footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:56px;padding:36px 20px 18px;transition:background .3s,border-color .3s}
+footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:56px;padding:36px 20px 18px;transition:background .3s}
 .footer-inner{max-width:1280px;margin:0 auto}
 .footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;margin-bottom:28px}
-.footer-brand-desc{font-size:13px;color:var(--muted);margin-top:9px;line-height:1.6;max-width:220px}
+.footer-brand-desc{font-size:13px;color:var(--muted);margin-top:9px;line-height:1.6;max-width:230px}
 .footer-col h4{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--red);text-transform:uppercase;margin-bottom:12px}
-.footer-col a{display:block;color:var(--muted);font-size:13px;text-decoration:none;margin-bottom:7px;transition:color .2s}
+.footer-col a{display:block;color:var(--muted);font-size:13px;text-decoration:none;margin-bottom:7px}
 .footer-col a:hover{color:var(--text)}
 .footer-bottom{border-top:1px solid var(--border);padding-top:18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
 .footer-bottom p{font-size:12px;color:var(--muted)}
 .social-links{display:flex;gap:8px}
-.soc-link{width:30px;height:30px;background:var(--bg3);border:1px solid var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--muted);text-decoration:none;font-size:11px;font-weight:700;transition:color .2s,border-color .2s}
+.soc-link{width:30px;height:30px;background:var(--bg3);border:1px solid var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--muted);text-decoration:none;font-size:11px;font-weight:700}
 .soc-link:hover{color:var(--text);border-color:var(--red)}
 .footer-links{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.footer-links a{font-size:12px;color:var(--muted);text-decoration:none}
 
-@media(max-width:1024px){
-.hero{grid-template-columns:1fr 1fr}
-.feat-row{grid-template-columns:1fr}
-.footer-top{grid-template-columns:1fr 1fr;gap:22px}
-}
-@media(max-width:768px){
-.nav-cats,.btn-sub{display:none}
-.hamburger{display:block}
-.hero{grid-template-columns:1fr}
-.hero-side{flex-direction:row;overflow-x:auto;padding-bottom:4px}
-.side-card{min-width:200px}
-.hero-main img{height:280px}
-.feat-row{grid-template-columns:1fr}
-.footer-top{grid-template-columns:1fr 1fr}
-.score-bar{gap:12px}
-.score-divider{display:none}
-}
-@media(max-width:480px){
-.hero-main img{height:220px}
-.hero-main h1{font-size:18px}
-.footer-top{grid-template-columns:1fr}
-.nl-form{flex-direction:column}
-.nl-form input,.nl-form button{width:100%}
-.datebar{flex-direction:column;align-items:flex-start;gap:3px}
-.footer-bottom{flex-direction:column;align-items:flex-start}
-}
+@media(max-width:1024px){.hero{grid-template-columns:1fr 1fr}.feat-row{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr;gap:22px}}
+@media(max-width:860px){.nav-cats{display:none}.btn-sub{display:none}.hamburger{display:block}}
+@media(max-width:768px){.hero{grid-template-columns:1fr}.hero-side{flex-direction:row;overflow-x:auto;padding-bottom:4px}.side-card{min-width:200px}.hero-main img{height:280px}.score-divider{display:none}}
+@media(max-width:480px){.hero-main img{height:220px}.hero-main h1{font-size:18px}.footer-top{grid-template-columns:1fr}.nl-form{flex-direction:column}.nl-form input,.nl-form button{width:100%}.datebar{flex-direction:column;align-items:flex-start}.footer-bottom{flex-direction:column;align-items:flex-start}}
 </style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
 <div class="ticker-wrap">
-  <div style="display:flex;align-items:center;padding:0 20px">
-    <span class="ticker-label">Breaking</span>
-    <div style="overflow:hidden;flex:1">
-      <div class="ticker-track">
-        <span class="ticker-item">Senate passes historic climate bill with bipartisan support</span>
-        <span class="ticker-item">Federal Reserve holds interest rates steady amid inflation concerns</span>
-        <span class="ticker-item">White House announces new AI safety executive order</span>
-        <span class="ticker-item">U.S. Olympic team roster announced for 2026 Games</span>
-        <span class="ticker-item">Major earthquake strikes Pacific coast — USGS monitoring</span>
-        <span class="ticker-item">Apple unveils next-generation chip architecture at WWDC</span>
-        <span class="ticker-item">Senate passes historic climate bill with bipartisan support</span>
-        <span class="ticker-item">Federal Reserve holds interest rates steady amid inflation concerns</span>
-        <span class="ticker-item">White House announces new AI safety executive order</span>
-        <span class="ticker-item">U.S. Olympic team roster announced for 2026 Games</span>
-        <span class="ticker-item">Major earthquake strikes Pacific coast — USGS monitoring</span>
-        <span class="ticker-item">Apple unveils next-generation chip architecture at WWDC</span>
-      </div>
+  <span class="ticker-label">Breaking</span>
+  <div class="ticker-view">
+    <div class="ticker-track" id="ticker">
+      <span class="ticker-item">Water wars: how scarcity is rewriting the world's borders</span>
+      <span class="ticker-item">Fed signals caution as inflation cools</span>
+      <span class="ticker-item">NATO bolsters eastern flank with new rapid-response division</span>
+      <span class="ticker-item">Indus Waters Treaty remains suspended — what it means</span>
+      <span class="ticker-item">AI models now clear the bar exam at 96% accuracy</span>
+      <span class="ticker-item">Water wars: how scarcity is rewriting the world's borders</span>
+      <span class="ticker-item">Fed signals caution as inflation cools</span>
+      <span class="ticker-item">NATO bolsters eastern flank with new rapid-response division</span>
+      <span class="ticker-item">Indus Waters Treaty remains suspended — what it means</span>
+      <span class="ticker-item">AI models now clear the bar exam at 96% accuracy</span>
     </div>
   </div>
+  <button class="ticker-pause" id="tickerPause" aria-label="Pause breaking news ticker">❚❚</button>
 </div>
 
-<nav>
+<header>
+<nav class="site" aria-label="Primary">
   <div class="nav-inner">
-    <a href="#" class="logo">
-      <div class="logo-box">
-        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-      </div>
-      <div class="logo-text">Pulse<b>America</b>News</div>
+    <a href="/" class="logo" aria-label="Pulse America News home">
+      <span class="logo-box" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </span>
+      <span class="logo-text">Pulse<b>America</b>News</span>
     </a>
     <div class="nav-cats">
-      <a href="#world" class="active">World</a>
-      <a href="#usa">USA</a>
-      <a href="#affairs">Affairs</a>
-      <a href="#sexed">Sex Ed</a>
-      <a href="#tech">Tech</a>
-      <a href="#sports">Sports</a>
+      <a href="/world/" class="active">World</a>
+      <a href="/usa/">USA</a>
+      <a href="/current-affairs/">Affairs</a>
+      <a href="/sex-education/">Sex Ed</a>
+      <a href="/technology/">Tech</a>
+      <a href="/sports/">Sports</a>
     </div>
     <div class="nav-right">
-      <div class="theme-toggle" id="themeToggle" title="Switch theme">
-        <button class="theme-btn active" id="btnDark" onclick="setTheme('dark')" aria-label="Dark mode">🌙</button>
-        <button class="theme-btn" id="btnLight" onclick="setTheme('light')" aria-label="Light mode">☀️</button>
+      <div class="theme-toggle" role="group" aria-label="Colour theme">
+        <button class="theme-btn active" id="btnDark" aria-label="Dark theme" aria-pressed="true">🌙</button>
+        <button class="theme-btn" id="btnLight" aria-label="Light theme" aria-pressed="false">☀️</button>
       </div>
-      <button class="btn-sub">Subscribe</button>
-      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <a href="#newsletter" class="btn-sub">Subscribe</a>
+      <button class="hamburger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
     </div>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#world"> World News</a>
-    <a href="#usa"> USA News</a>
-    <a href="#affairs"> Current Affairs</a>
-    <a href="#sexed"> Sex Education</a>
-    <a href="#tech"> Technology</a>
-    <a href="#sports"> Sports</a>
+    <a href="/world/">World News</a>
+    <a href="/usa/">USA News</a>
+    <a href="/current-affairs/">Current Affairs</a>
+    <a href="/sex-education/">Sex Education</a>
+    <a href="/technology/">Technology</a>
+    <a href="/sports/">Sports</a>
+    <a href="#newsletter">Newsletter</a>
   </div>
 </nav>
-
 <div style="background:var(--bg2);border-bottom:1px solid var(--border);transition:background .3s">
   <div class="datebar">
-    <span>Wednesday, May 20, 2026</span>
-    <span>📍 Washington D.C. — 74°F · Partly Cloudy</span>
+    <span><time id="today" datetime="2026-11-13">Thursday, 13 November 2026</time></span>
+    <span id="updated">Updated moments ago · Washington D.C.</span>
   </div>
 </div>
+</header>
 
-<div class="hero">
-  <div class="hero-main">
-    <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=900&q=80" alt="World News Hero">
+<main id="main">
+
+<section class="hero" aria-label="Top stories">
+  <a class="hero-main" href="/world/water-wars-global-crisis/">
+    <img src="https://pulseamericanews.com/images/world/water-wars-global-crisis-hero.avif"
+         srcset="https://pulseamericanews.com/images/world/water-wars-global-crisis-hero-800.avif 800w,
+                 https://pulseamericanews.com/images/world/water-wars-global-crisis-hero-1200.avif 1200w,
+                 https://pulseamericanews.com/images/world/water-wars-global-crisis-hero-1600.avif 1600w"
+         sizes="(max-width:768px) 100vw, 66vw"
+         width="1600" height="900" fetchpriority="high" decoding="async"
+         alt="Aerial view of a vast cracked dry lakebed showing the scale of the global water crisis">
     <div class="hero-overlay">
-      <span class="cat-badge">World News</span>
-      <h1>Global Leaders Convene in Geneva for Emergency Climate Summit as Temperatures Break Records</h1>
-      <div class="hero-meta"><span>By Sarah Mitchell</span><span>·</span><span>2 hours ago</span><span>·</span><span>8 min read</span></div>
+      <span class="cat-badge">World · Analysis</span>
+      <h1>Water Wars: The Coming Global Crisis That Will Reshape Borders and Spark Conflicts</h1>
+      <p class="hero-meta">
+        <span>By Daniel Reyes</span><span>·</span>
+        <time datetime="2026-11-13T06:00:00-05:00">13 November 2026</time><span>·</span><span>11 min read</span>
+      </p>
     </div>
-  </div>
+  </a>
   <div class="hero-side">
-    <div class="side-card">
-      <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=600&q=80" alt="USA">
+    <a class="side-card" href="/usa/senate-infrastructure-deal/">
+      <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=600&q=70&auto=format"
+           width="600" height="340" loading="lazy" decoding="async" alt="The United States Capitol building">
       <div class="side-body">
         <div class="side-cat">USA News</div>
         <h3>Senate Reaches Bipartisan Deal on Infrastructure Overhaul Bill</h3>
-        <div class="side-time">3 hours ago · 5 min read</div>
+        <div class="side-time"><time datetime="2026-11-13T05:00:00-05:00">3 hours ago</time> · 5 min read</div>
       </div>
-    </div>
-    <div class="side-card">
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="Tech">
+    </a>
+    <a class="side-card" href="/technology/ai-bar-exam-stanford/">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=70&auto=format"
+           width="600" height="340" loading="lazy" decoding="async" alt="Close-up of a computer circuit board">
       <div class="side-body">
         <div class="side-cat">Technology</div>
-        <h3>OpenAI Announces GPT-6 With Real-Time Multimodal Capabilities</h3>
-        <div class="side-time">5 hours ago · 4 min read</div>
+        <h3>AI Models Now Pass the Bar Exam With 96% Accuracy, Stanford Study Finds</h3>
+        <div class="side-time"><time datetime="2026-11-13T03:00:00-05:00">5 hours ago</time> · 4 min read</div>
       </div>
-    </div>
+    </a>
   </div>
-</div>
+</section>
 
 <section class="section" id="world">
   <div class="sec-hdr">
-    <div class="sec-title">World News</div>
-    <a href="#" class="see-all">See All →</a>
+    <h2 class="sec-title">World News</h2>
+    <a href="/world/" class="see-all">See all world →</a>
   </div>
-  <div class="world-strip">
+  <div class="world-strip" aria-label="Filter by region">
     <span class="ws-lbl">Regions:</span>
-    <span class="w-tag active">All</span>
-    <span class="w-tag">Europe</span>
-    <span class="w-tag">Asia</span>
-    <span class="w-tag">Middle East</span>
-    <span class="w-tag">Africa</span>
-    <span class="w-tag">Latin America</span>
+    <a href="/world/" class="w-tag active">All</a>
+    <a href="/world/europe/" class="w-tag">Europe</a>
+    <a href="/world/asia-pacific/" class="w-tag">Asia-Pacific</a>
+    <a href="/world/middle-east/" class="w-tag">Middle East</a>
+    <a href="/world/africa/" class="w-tag">Africa</a>
+    <a href="/world/americas/" class="w-tag">Americas</a>
   </div>
   <div class="news-grid">
-    <a href="news/water-wars-article.html" class="news-card">
-      <img src="/images/New%20folder/word%20news/1st/water-wars-global-crisis-hero.avif" alt="Aerial view of a cracked dry lakebed illustrating the global water crisis">
+    <a class="news-card" href="/world/water-wars-global-crisis/">
+      <img src="https://pulseamericanews.com/images/world/water-wars-global-crisis-hero.avif"
+           width="600" height="340" loading="lazy" decoding="async"
+           alt="Cracked dry lakebed under a pale sky">
       <div class="news-body">
-        <div class="news-cat">Climate & Security</div>
-        <h3>Water Wars: The Coming Global Crisis That Will Reshape Borders and Spark Conflicts</h3>
-        <p>Over 2 billion people already lack access to clean water. Experts say armed conflict over freshwater resources is no longer a theory — it's a timeline.</p>
-        <div class="news-ftr"><span>Just published</span><span class="read-more">Read →</span></div>
+        <div class="news-cat">Climate &amp; Security</div>
+        <h3>Water Wars: The Coming Global Crisis That Will Reshape Borders</h3>
+        <p>Over 2 billion people already lack clean water. Experts say conflict over freshwater is no longer a theory — it's a timeline.</p>
+        <div class="news-ftr"><span><time datetime="2026-11-13T06:00:00-05:00">Today</time></span><span class="read-more">Read →</span></div>
       </div>
     </a>
-    <div class="news-card">
-      <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&q=80" alt="NATO">
+    <a class="news-card" href="/world/nato-eastern-flank-division/">
+      <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&q=70&auto=format"
+           width="600" height="340" loading="lazy" decoding="async" alt="Newspapers and press">
       <div class="news-body">
         <div class="news-cat">Europe</div>
         <h3>NATO Expands Eastern Flank With New Rapid-Response Division</h3>
         <p>Alliance commits 40,000 troops to frontline positions across Baltic states in unprecedented peacetime deployment.</p>
-        <div class="news-ftr"><span>4 hrs ago</span><a href="#" class="read-more">Read →</a></div>
+        <div class="news-ftr"><span>4 hrs ago</span><span class="read-more">Read →</span></div>
       </div>
-    </div>
-    <div class="news-card">
-      <img src="https://images.unsplash.com/photo-1464817739973-0128fe77aaa1?w=600&q=80" alt="Asia">
+    </a>
+    <a class="news-card" href="/world/south-korea-japan-defense-pact/">
+      <img src="https://images.unsplash.com/photo-1464817739973-0128fe77aaa1?w=600&q=70&auto=format"
+           width="600" height="340" loading="lazy" decoding="async" alt="Mountainous Asian landscape">
       <div class="news-body">
         <div class="news-cat">Asia-Pacific</div>
         <h3>South Korea and Japan Sign Historic Defense Cooperation Pact</h3>
-        <p>Decades of diplomatic tension give way as both nations formalize a joint military intelligence framework.</p>
-        <div class="news-ftr"><span>6 hrs ago</span><a href="#" class="read-more">Read →</a></div>
+        <p>Decades of diplomatic tension give way as both nations formalise a joint military intelligence framework.</p>
+        <div class="news-ftr"><span>6 hrs ago</span><span class="read-more">Read →</span></div>
       </div>
-    </div>
-    <div class="news-card">
-      <img src="https://images.unsplash.com/photo-1565967511849-76a60a516170?w=600&q=80" alt="UN">
+    </a>
+    <a class="news-card" href="/world/gaza-ceasefire-third-week/">
+      <img src="https://images.unsplash.com/photo-1565967511849-76a60a516170?w=600&q=70&auto=format"
+           width="600" height="340" loading="lazy" decoding="async" alt="City skyline at dusk">
       <div class="news-body">
         <div class="news-cat">Middle East</div>
         <h3>UN-Brokered Ceasefire Holds for Third Week in Gaza Corridor</h3>
-        <p>Humanitarian aid convoys resume operations as international monitors confirm compliance along key routes.</p>
-        <div class="news-ftr"><span>8 hrs ago</span><a href="#" class="read-more">Read →</a></div>
+        <p>Humanitarian aid convoys resume as international monitors confirm compliance along key routes.</p>
+        <div class="news-ftr"><span>8 hrs ago</span><span class="read-more">Read →</span></div>
       </div>
-    </div>
+    </a>
   </div>
 </section>
 
 <section class="section" id="usa">
   <div class="sec-hdr">
-    <div class="sec-title">USA News</div>
-    <a href="#" class="see-all">See All →</a>
+    <h2 class="sec-title">USA News</h2>
+    <a href="/usa/" class="see-all">See all USA →</a>
   </div>
   <div class="feat-row">
-    <div class="feat-main">
-      <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=900&q=80" alt="Capitol">
+    <a class="feat-main" href="/usa/supreme-court-immunity-ruling/">
+      <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=900&q=70&auto=format"
+           width="900" height="520" loading="lazy" decoding="async" alt="The US Capitol dome">
       <div class="feat-main-body">
         <span class="cat-badge">Politics</span>
         <h2>Supreme Court Rules on Presidential Immunity Case in Landmark 6-3 Decision</h2>
         <p>The ruling is expected to reshape the scope of executive power for generations, drawing immediate reactions from both parties on Capitol Hill.</p>
-        <div style="margin-top:12px;font-size:12px;color:var(--muted);display:flex;gap:12px">
-          <span>By James Caldwell</span><span>·</span><span>1 hr ago</span><span>·</span><span>10 min read</span>
-        </div>
+        <div class="feat-meta"><span>By James Caldwell</span><span>·</span><span>1 hr ago</span><span>·</span><span>10 min read</span></div>
       </div>
-    </div>
+    </a>
     <div class="feat-list-wrap">
-      <div class="flist-lbl">More from USA</div>
-      <div class="flist-item">
-        <img src="https://images.unsplash.com/photo-1485795959911-ea5ebf41b6ae?w=200&q=80" alt="Economy">
+      <h3 class="flist-lbl" style="font-family:inherit;font-size:10px">More from USA</h3>
+      <a class="flist-item" href="/usa/unemployment-falls-3-2-percent/">
+        <img src="https://images.unsplash.com/photo-1485795959911-ea5ebf41b6ae?w=200&q=70&auto=format" width="76" height="60" loading="lazy" decoding="async" alt="Job fair">
         <div><div class="flist-cat">Economy</div><h4>Unemployment Hits 3.2% as Job Market Shows Resilience</h4><time>2 hrs ago</time></div>
-      </div>
-      <div class="flist-item">
-        <img src="https://images.unsplash.com/photo-1587036197823-8b63bc70bc85?w=200&q=80" alt="Health">
+      </a>
+      <a class="flist-item" href="/usa/fda-alzheimers-drug-approval/">
+        <img src="https://images.unsplash.com/photo-1587036197823-8b63bc70bc85?w=200&q=70&auto=format" width="76" height="60" loading="lazy" decoding="async" alt="Medical research lab">
         <div><div class="flist-cat">Health</div><h4>FDA Approves Breakthrough Alzheimer's Drug for Wider Use</h4><time>4 hrs ago</time></div>
-      </div>
-      <div class="flist-item">
-        <img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=200&q=80" alt="Climate">
+      </a>
+      <a class="flist-item" href="/usa/california-wildfire-season-early/">
+        <img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=200&q=70&auto=format" width="76" height="60" loading="lazy" decoding="async" alt="Wildfire smoke">
         <div><div class="flist-cat">Environment</div><h4>California Wildfire Season Starts Two Months Early</h4><time>7 hrs ago</time></div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
 
 <section class="section" id="affairs">
   <div class="sec-hdr">
-    <div class="sec-title">Current Affairs</div>
-    <a href="#" class="see-all">See All →</a>
+    <h2 class="sec-title">Current Affairs</h2>
+    <a href="/current-affairs/" class="see-all">See all →</a>
   </div>
   <div class="news-grid">
-    <div class="news-card">
-      <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80" alt="Fed">
+    <a class="news-card" href="/current-affairs/fed-rate-cuts-q3-signal/">
+      <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=70&auto=format"
+           width="600" height="340" loading="lazy" decoding="async" alt="Federal Reserve building">
       <div class="news-body">
-        <div class="news-cat" style="color:var(--red)">Economy</div>
+        <div class="news-cat">Economy</div>
         <h3>Fed Chair Signals Rate Cuts May Begin in Q3 as Inflation Cools</h3>
         <p>Markets rally sharply after remarks point toward a September pivot in monetary policy.</p>
-        <div class="news-ftr"><span>1 hr ago</span><a href="#" class="read-more">Read →</a></div>
+        <div class="news-ftr"><span>1 hr ago</span><span class="read-more">Read →</span></div>
       </div>
-    </div>
-    <div class="news-card">
-      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Social">
+    </a>
+    <a class="news-card" href="/current-affairs/gen-z-mental-health-hearing/">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=70&auto=format"
+           width="600" height="340" loading="lazy" decoding="async" alt="Young people looking at phones">
       <div class="news-body">
-        <div class="news-cat" style="color:var(--red)">Society</div>
+        <div class="news-cat">Society</div>
         <h3>Rising Mental Health Crisis Among Gen Z Prompts Congressional Hearing</h3>
         <p>New CDC data shows record rates of anxiety among 16–24 year olds, prompting Senate action.</p>
-        <div class="news-ftr"><span>3 hrs ago</span><a href="#" class="read-more">Read →</a></div>
+        <div class="news-ftr"><span>3 hrs ago</span><span class="read-more">Read →</span></div>
       </div>
-    </div>
-    <div class="news-card">
-      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Loans">
+    </a>
+    <a class="news-card" href="/current-affairs/student-loan-forgiveness-appeal/">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=70&auto=format"
+           width="600" height="340" loading="lazy" decoding="async" alt="Graduate in cap and gown">
       <div class="news-body">
-        <div class="news-cat" style="color:var(--red)">Education</div>
-        <h3>Student Loan Forgiveness Program Faces New Legal Challenge in Appeals Court</h3>
+        <div class="news-cat">Education</div>
+        <h3>Student Loan Forgiveness Program Faces New Legal Challenge</h3>
         <p>A coalition of eight states files a joint suit challenging the administration's latest rollout.</p>
-        <div class="news-ftr"><span>5 hrs ago</span><a href="#" class="read-more">Read →</a></div>
+        <div class="news-ftr"><span>5 hrs ago</span><span class="read-more">Read →</span></div>
       </div>
-    </div>
+    </a>
   </div>
 </section>
 
-<section class="section" id="sexed">
+<section class="section" id="sex-education">
   <div class="sec-hdr">
-    <div class="sec-title">Sex Education</div>
-    <a href="#" class="see-all" style="color:#9D71FF;border-color:rgba(157,113,255,.4)">See All →</a>
+    <h2 class="sec-title">Sex Education</h2>
+    <a href="/sex-education/" class="see-all" style="color:#9D71FF;border-color:rgba(157,113,255,.4)">See all →</a>
   </div>
-  <div style="background:rgba(124,58,237,.06);border:1px solid rgba(124,58,237,.2);border-radius:8px;padding:11px 15px;margin-bottom:18px;display:flex;gap:10px;align-items:flex-start">
-    <span style="font-size:16px;flex-shrink:0;margin-top:2px">📚</span>
-    <p style="font-size:12px;color:var(--muted);line-height:1.5"><strong style="color:#C4B5FD">Evidence-based health education</strong> — Written by certified educators, therapists, and medical professionals. Informational and age-appropriate.</p>
-  </div>
+  <p class="sexed-note"><span aria-hidden="true">📚</span><span><strong>Evidence-based health education</strong> — written and reviewed by clinicians and certified educators. Informational and age-appropriate.</span></p>
   <div class="sexed-grid">
-    <div class="sexed-card">
-      <div class="sexed-cat">Health & Wellness</div>
+    <a class="sexed-card" href="/sex-education/understanding-consent-guide/">
+      <div class="sexed-cat">Health &amp; Wellness</div>
       <h3>Understanding Consent: A Comprehensive Guide for Teens and Young Adults</h3>
-      <p>Experts break down communication, boundaries, and healthy relationship dynamics.</p>
-      <div class="sexed-author">By Dr. Karen Walsh, M.D. · 6 min read</div>
-    </div>
-    <div class="sexed-card">
+      <p>Experts break down communication, boundaries and healthy relationship dynamics.</p>
+      <div class="sexed-author">By Dr. Karen Walsh, M.D. · Reviewed 12 Nov 2026 · 6 min read</div>
+    </a>
+    <a class="sexed-card" href="/sex-education/reproductive-health-education-gaps/">
       <div class="sexed-cat">Reproductive Health</div>
-      <h3>New Study Reveals Gaps in Reproductive Health Education Across U.S. States</h3>
-      <p>Johns Hopkins research shows significant disparities in what students are taught across regions.</p>
-      <div class="sexed-author">By Prof. Lisa Chen · 8 min read</div>
-    </div>
-    <div class="sexed-card">
+      <h3>New Study Reveals Gaps in Reproductive Health Education Across US States</h3>
+      <p>Johns Hopkins research shows significant disparities in what students are taught by region.</p>
+      <div class="sexed-author">By Prof. Lisa Chen · 11 Nov 2026 · 8 min read</div>
+    </a>
+    <a class="sexed-card" href="/sex-education/lgbtq-youth-healthcare-access/">
       <div class="sexed-cat">LGBTQ+ Health</div>
       <h3>Healthcare Access for LGBTQ+ Youth: What Parents and Providers Need to Know</h3>
-      <p>Pediatric health organizations release joint guidelines for affirming care for LGBTQ+ minors.</p>
-      <div class="sexed-author">By Alex Rivera, LCSW · 7 min read</div>
-    </div>
+      <p>Pediatric health organisations release joint guidelines for affirming care.</p>
+      <div class="sexed-author">By Alex Rivera, LCSW · 10 Nov 2026 · 7 min read</div>
+    </a>
   </div>
 </section>
 
-<section class="section" id="tech">
+<section class="section" id="technology">
   <div class="sec-hdr">
-    <div class="sec-title">Technology</div>
-    <a href="#" class="see-all">See All →</a>
+    <h2 class="sec-title">Technology</h2>
+    <a href="/technology/" class="see-all">See all →</a>
   </div>
   <div class="tech-grid">
-    <div class="tech-card">
+    <a class="tech-card" href="/technology/ai-bar-exam-stanford/">
       <div class="tech-tag">Artificial Intelligence</div>
-      <h3>AI Models Now Pass the Bar Exam with 96% Accuracy, Stanford Study Finds</h3>
-      <p>Legal professionals debate implications as large language models outperform human averages.</p>
-    </div>
-    <div class="tech-card">
+      <h3>AI Models Now Pass the Bar Exam With 96% Accuracy, Stanford Study Finds</h3>
+      <p>Legal professionals debate the implications as models outperform human averages.</p>
+    </a>
+    <a class="tech-card" href="/technology/financial-services-breach-200m/">
       <div class="tech-tag">Cybersecurity</div>
       <h3>Major Data Breach Exposes 200 Million Records at Financial Services Giant</h3>
       <p>Investigators trace the attack to a nation-state actor using a zero-day exploit.</p>
-    </div>
-    <div class="tech-card">
+    </a>
+    <a class="tech-card" href="/technology/starship-crewed-lunar-orbit/">
       <div class="tech-tag">Space Tech</div>
-      <h3>SpaceX Starship Completes First Crewed Lunar Orbital Mission Successfully</h3>
-      <p>Historic mission marks a turning point in the new space race as Artemis prepares for landing.</p>
-    </div>
-    <div class="tech-card">
+      <h3>SpaceX Starship Completes First Crewed Lunar Orbital Mission</h3>
+      <p>The mission marks a turning point as Artemis prepares for a landing attempt.</p>
+    </a>
+    <a class="tech-card" href="/technology/vision-pro-2-sells-out/">
       <div class="tech-tag">Consumer Tech</div>
-      <h3>Apple Vision Pro 2 Sells Out in 6 Minutes, Pre-Orders Hit 3 Million Units</h3>
-      <p>Updated spatial computing headset features lighter form factor and all-day battery life.</p>
-    </div>
+      <h3>Apple Vision Pro 2 Sells Out in Six Minutes</h3>
+      <p>The updated headset features a lighter form factor and all-day battery life.</p>
+    </a>
   </div>
 </section>
 
 <section class="section" id="sports">
   <div class="sec-hdr">
-    <div class="sec-title">Sports</div>
-    <a href="#" class="see-all">See All →</a>
+    <h2 class="sec-title">Sports</h2>
+    <a href="/sports/" class="see-all">See all →</a>
   </div>
   <div class="score-bar">
-    <span class="score-lbl">Live Scores</span>
-    <div class="score-item"><span class="live-dot">LIVE</span><span class="score-text">Lakers 94 – Celtics 88</span><span class="score-sub">Q4 3:22</span></div>
+    <span class="score-lbl">Latest scores</span>
+    <div class="score-item"><span class="score-text">Lakers 94 – Celtics 88</span><span class="score-sub">Q4 3:22</span></div>
     <div class="score-divider"></div>
-    <div class="score-item"><span class="live-dot">LIVE</span><span class="score-text">Yankees 3 – Red Sox 1</span><span class="score-sub">7th Inning</span></div>
+    <div class="score-item"><span class="score-text">Yankees 3 – Red Sox 1</span><span class="score-sub">7th inning</span></div>
     <div class="score-divider"></div>
     <div class="score-item"><span class="score-sub">Final:</span><span class="score-text">Chiefs 27 – Eagles 20</span></div>
   </div>
   <div class="sports-grid">
-    <div class="sport-card">
-      <img src="https://images.unsplash.com/photo-1546519638405-a9f9a04bbf1c?w=700&q=80" alt="NBA">
-      <div class="sport-overlay"><span class="s-badge live">Live</span><h3>Lakers-Celtics Game 6 Goes to Wire in Overtime Thriller</h3></div>
-    </div>
-    <div class="sport-card">
-      <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=700&q=80" alt="Soccer">
-      <div class="sport-overlay"><span class="s-badge cat">Soccer</span><h3>USMNT Clinches World Cup Qualification With Late Winner vs. Mexico</h3></div>
-    </div>
-    <div class="sport-card">
-      <img src="https://images.unsplash.com/photo-1542144582-1ba00456b5e3?w=700&q=80" alt="Tennis">
-      <div class="sport-overlay"><span class="s-badge cat">Tennis</span><h3>Sinner Defeats Djokovic in Five Sets to Win French Open Title</h3></div>
-    </div>
+    <a class="sport-card" href="/sports/lakers-celtics-game-six/">
+      <img src="https://images.unsplash.com/photo-1546519638405-a9f9a04bbf1c?w=700&q=70&auto=format" width="700" height="420" loading="lazy" decoding="async" alt="Basketball on a court">
+      <div class="sport-overlay"><span class="s-badge">NBA</span><h3>Lakers–Celtics Game 6 Goes to the Wire in Overtime Thriller</h3></div>
+    </a>
+    <a class="sport-card" href="/sports/usmnt-world-cup-qualification/">
+      <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=700&q=70&auto=format" width="700" height="420" loading="lazy" decoding="async" alt="Football on grass">
+      <div class="sport-overlay"><span class="s-badge">Soccer</span><h3>USMNT Clinches World Cup Qualification With Late Winner</h3></div>
+    </a>
+    <a class="sport-card" href="/sports/sinner-french-open-title/">
+      <img src="https://images.unsplash.com/photo-1542144582-1ba00456b5e3?w=700&q=70&auto=format" width="700" height="420" loading="lazy" decoding="async" alt="Tennis court">
+      <div class="sport-overlay"><span class="s-badge">Tennis</span><h3>Sinner Defeats Djokovic in Five Sets to Win French Open Title</h3></div>
+    </a>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="newsletter">
   <div class="nl-box">
-    <div style="font-size:26px;margin-bottom:8px">📬</div>
+    <div style="font-size:26px;margin-bottom:8px" aria-hidden="true">📬</div>
     <h2>Stay Ahead of the Story</h2>
-    <p>Get the day's most important headlines delivered to your inbox every morning at 7 AM EST. No spam, ever.</p>
-    <div class="nl-form">
-      <input type="email" placeholder="Your email address">
-      <button>Subscribe Free</button>
-    </div>
-    <p class="nl-note">Join 2.4 million readers · Unsubscribe anytime</p>
+    <p>The day's most important headlines, in your inbox at 7 AM ET. No spam, ever.</p>
+    <form class="nl-form" action="https://pulseamericanews.com/api/subscribe" method="post">
+      <label for="nlEmail" class="sr-only" style="position:absolute;left:-9999px">Email address</label>
+      <input type="email" id="nlEmail" name="email" placeholder="Your email address" required autocomplete="email">
+      <button type="submit">Subscribe free</button>
+    </form>
+    <p class="nl-note">Unsubscribe anytime · No third-party selling</p>
   </div>
 </section>
+
+</main>
 
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
       <div>
-        <div style="display:flex;align-items:center;gap:8px">
-          <div class="logo-box" style="width:28px;height:28px">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          </div>
-          <span style="font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:900;color:var(--text)">Pulse<span style="color:var(--red)">America</span>News</span>
-        </div>
-        <p class="footer-brand-desc">America's most trusted source for breaking news, in-depth reporting, and essential coverage across every beat that matters.</p>
+        <a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none">
+          <span class="logo-box" style="width:28px;height:28px">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </span>
+          <span style="font-family:var(--serif);font-size:15px;font-weight:900">Pulse<span style="color:var(--red)">America</span>News</span>
+        </a>
+        <p class="footer-brand-desc">Independent US and world news, analysis and explainers — reporting that respects your time.</p>
       </div>
       <div class="footer-col">
         <h4>Categories</h4>
-        <a href="#">World News</a>
-        <a href="#">USA News</a>
-        <a href="#">Current Affairs</a>
-        <a href="#">Sex Education</a>
-        <a href="#">Technology</a>
-        <a href="#">Sports</a>
+        <a href="/world/">World News</a>
+        <a href="/usa/">USA News</a>
+        <a href="/current-affairs/">Current Affairs</a>
+        <a href="/sex-education/">Sex Education</a>
+        <a href="/technology/">Technology</a>
+        <a href="/sports/">Sports</a>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
-        <a href="#">About Us</a>
-        <a href="#">Our Journalists</a>
-        <a href="#">Editorial Standards</a>
-        <a href="#">Corrections Policy</a>
-        <a href="#">Advertise</a>
+        <a href="/about/">About Us</a>
+        <a href="/authors/">Our Journalists</a>
+        <a href="/editorial-standards/">Editorial Standards</a>
+        <a href="/corrections/">Corrections Policy</a>
+        <a href="/advertise/">Advertise</a>
       </div>
       <div class="footer-col">
         <h4>Connect</h4>
-        <a href="#">Newsletter</a>
-        <a href="#">Podcast</a>
-        <a href="#">RSS Feed</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Tip Line</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="/feed.xml">RSS Feed</a>
+        <a href="/contact/">Contact Us</a>
+        <a href="/tips/">Tip Line</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 PulseAmericaNews. All rights reserved.</p>
+      <p>© 2026 Pulse America News. All rights reserved.</p>
       <div class="footer-links">
-        <a href="#" style="font-size:12px;color:var(--muted);text-decoration:none">Privacy</a>
-        <a href="#" style="font-size:12px;color:var(--muted);text-decoration:none">Terms</a>
-        <a href="#" style="font-size:12px;color:var(--muted);text-decoration:none">Cookies</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/cookies/">Cookies</a>
         <div class="social-links">
-          <a href="#" class="soc-link" aria-label="Twitter">X</a>
-          <a href="#" class="soc-link" aria-label="Facebook">fb</a>
-          <a href="#" class="soc-link" aria-label="Instagram">ig</a>
-          <a href="#" class="soc-link" aria-label="YouTube">yt</a>
+          <a href="https://twitter.com/pulseamericanews" class="soc-link" aria-label="X">X</a>
+          <a href="https://www.facebook.com/pulseamericanews" class="soc-link" aria-label="Facebook">fb</a>
+          <a href="https://www.instagram.com/pulseamericanews" class="soc-link" aria-label="Instagram">ig</a>
+          <a href="https://www.youtube.com/@pulseamericanews" class="soc-link" aria-label="YouTube">yt</a>
         </div>
       </div>
     </div>
@@ -578,29 +679,46 @@ footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:56px;
 </footer>
 
 <script>
-function setTheme(theme){
-  document.documentElement.setAttribute('data-theme', theme);
-  document.getElementById('btnDark').classList.toggle('active', theme === 'dark');
-  document.getElementById('btnLight').classList.toggle('active', theme === 'light');
-  localStorage.setItem('pan-theme', theme);
-}
-function toggleMenu(){
-  document.getElementById('mobileMenu').classList.toggle('open');
-}
-document.querySelectorAll('.w-tag').forEach(t=>{
-  t.addEventListener('click',function(){
-    document.querySelectorAll('.w-tag').forEach(x=>x.classList.remove('active'));
-    this.classList.add('active');
-  });
-});
-document.querySelectorAll('.nav-cats a').forEach(a=>{
-  a.addEventListener('click',function(){
-    document.querySelectorAll('.nav-cats a').forEach(x=>x.classList.remove('active'));
-    this.classList.add('active');
-  });
-});
+/* date + updated stamp */
 (function(){
-  const saved = localStorage.getItem('pan-theme') || 'dark';
-  setTheme(saved);
+  var d=new Date();
+  var t=document.getElementById('today');
+  if(t){t.textContent=d.toLocaleDateString('en-US',{weekday:'long',day:'numeric',month:'long',year:'numeric'});t.setAttribute('datetime',d.toISOString().slice(0,10));}
+  var u=document.getElementById('updated');
+  if(u){u.textContent='Updated '+d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'})+' ET · Washington D.C.';}
 })();
+/* theme */
+function setTheme(theme){
+  document.documentElement.setAttribute('data-theme',theme);
+  var dk=document.getElementById('btnDark'),lt=document.getElementById('btnLight');
+  dk.classList.toggle('active',theme==='dark');lt.classList.toggle('active',theme==='light');
+  dk.setAttribute('aria-pressed',theme==='dark');lt.setAttribute('aria-pressed',theme==='light');
+  try{localStorage.setItem('pan-theme',theme);}catch(e){}
+}
+document.getElementById('btnDark').addEventListener('click',function(){setTheme('dark')});
+document.getElementById('btnLight').addEventListener('click',function(){setTheme('light')});
+(function(){try{var s=localStorage.getItem('pan-theme');if(s)setTheme(s);}catch(e){}})();
+/* menu */
+var burger=document.getElementById('burger'),mm=document.getElementById('mobileMenu');
+burger.addEventListener('click',function(){
+  var open=mm.classList.toggle('open');
+  burger.setAttribute('aria-expanded',open);
+  burger.setAttribute('aria-label',open?'Close menu':'Open menu');
+});
+/* ticker pause */
+document.getElementById('tickerPause').addEventListener('click',function(){
+  var tr=document.getElementById('ticker');
+  var p=tr.classList.toggle('paused');
+  this.textContent=p?'▶':'❚❚';
+  this.setAttribute('aria-label',p?'Resume breaking news ticker':'Pause breaking news ticker');
+});
 </script>
+
+<!-- Google Analytics 4 — replace G-XXXXXXXXXX -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-XXXXXXXXXX');
+</script>
+</body>
+</html>
