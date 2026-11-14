@@ -27,8 +27,10 @@
 <meta name="twitter:image" content="https://pulseamericanews.com/images/og/home-1200x630.jpg">
 
 <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/favicon.svg" color="#C8102E">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#C8102E">
 
@@ -88,7 +90,30 @@
       "name": "Pulse America News",
       "isPartOf": { "@id": "https://pulseamericanews.com/#website" },
       "about": { "@type": "Thing", "name": "US and world news" },
-      "inLanguage": "en-US"
+      "inLanguage": "en-US",
+      "hasPart": [
+        {
+          "@type": "NewsArticle",
+          "url": "https://pulseamericanews.com/usa/colorado-river-2027-cuts-evaporation.html",
+          "headline": "Colorado River: the 2027 cuts are smaller than what the reservoirs lose to the sky",
+          "datePublished": "2026-11-14T09:00:00-07:00",
+          "image": "https://pulseamericanews.com/images/usa/colorado-river-cuts-og-1200x630.png"
+        },
+        {
+          "@type": "NewsArticle",
+          "url": "https://pulseamericanews.com/news/water-wars-article.html",
+          "headline": "Water Wars: The Coming Global Crisis That Will Reshape Borders",
+          "datePublished": "2026-11-13T06:00:00-05:00",
+          "image": "https://pulseamericanews.com/images/world/water-wars-global-crisis-hero-1600.avif"
+        },
+        {
+          "@type": "NewsArticle",
+          "url": "https://pulseamericanews.com/usa/water-refugees-drought-home-prices.html",
+          "headline": "Water Refugees: Where Drought Is Moving American Home Prices",
+          "datePublished": "2026-11-12T07:00:00-05:00",
+          "image": "https://pulseamericanews.com/images/usa/water-refugees-hero-1600.png"
+        }
+      ]
     }
   ]
 }
@@ -287,15 +312,17 @@ footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:56px;
   <span class="ticker-label">Breaking</span>
   <div class="ticker-view">
     <div class="ticker-track" id="ticker">
+      <span class="ticker-item">Colorado River 2027 cuts ordered smaller than what the reservoirs lose to evaporation</span>
       <span class="ticker-item">Water wars: how scarcity is rewriting the world's borders</span>
+      <span class="ticker-item">Arizona, Nevada and CAP now suing Interior over the river</span>
       <span class="ticker-item">Fed signals caution as inflation cools</span>
       <span class="ticker-item">NATO bolsters eastern flank with new rapid-response division</span>
-      <span class="ticker-item">Indus Waters Treaty remains suspended — what it means</span>
       <span class="ticker-item">AI models now clear the bar exam at 96% accuracy</span>
+      <span class="ticker-item">Colorado River 2027 cuts ordered smaller than what the reservoirs lose to evaporation</span>
       <span class="ticker-item">Water wars: how scarcity is rewriting the world's borders</span>
+      <span class="ticker-item">Arizona, Nevada and CAP now suing Interior over the river</span>
       <span class="ticker-item">Fed signals caution as inflation cools</span>
       <span class="ticker-item">NATO bolsters eastern flank with new rapid-response division</span>
-      <span class="ticker-item">Indus Waters Treaty remains suspended — what it means</span>
       <span class="ticker-item">AI models now clear the bar exam at 96% accuracy</span>
     </div>
   </div>
@@ -342,7 +369,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:56px;
 </nav>
 <div style="background:var(--bg2);border-bottom:1px solid var(--border);transition:background .3s">
   <div class="datebar">
-    <span><time id="today" datetime="2026-11-13">Thursday, 13 November 2026</time></span>
+    <span><time id="today" datetime="2026-11-14">Saturday, 14 November 2026</time></span>
     <span id="updated">Updated moments ago · Washington D.C.</span>
   </div>
 </div>
@@ -351,7 +378,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:56px;
 <main id="main">
 
 <section class="hero" aria-label="Top stories">
-  <a class="hero-main" href="/world/water-wars-global-crisis/">
+  <a class="hero-main" href="/news/water-wars-article.html">
     <img src="https://pulseamericanews.com/images/world/water-wars-global-crisis-hero.avif"
          srcset="https://pulseamericanews.com/images/world/water-wars-global-crisis-hero-800.avif 800w,
                  https://pulseamericanews.com/images/world/water-wars-global-crisis-hero-1200.avif 1200w,
@@ -369,6 +396,16 @@ footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:56px;
     </div>
   </a>
   <div class="hero-side">
+    <a class="side-card" href="/usa/colorado-river-2027-cuts-evaporation.html">
+      <img src="https://pulseamericanews.com/images/usa/colorado-river-bathtub-ring-powell-1600.png"
+           width="600" height="340" loading="lazy" decoding="async"
+           alt="Pale mineral bathtub ring staining a red sandstone wall at Lake Powell">
+      <div class="side-body">
+        <div class="side-cat">Climate · New</div>
+        <h3>The Colorado River's 2027 cuts are smaller than what it loses to the sky</h3>
+        <div class="side-time"><time datetime="2026-11-14T09:00:00-07:00">2 hours ago</time> · 8 min read</div>
+      </div>
+    </a>
     <a class="side-card" href="/usa/senate-infrastructure-deal/">
       <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=600&q=70&auto=format"
            width="600" height="340" loading="lazy" decoding="async" alt="The United States Capitol building">
@@ -376,15 +413,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:56px;
         <div class="side-cat">USA News</div>
         <h3>Senate Reaches Bipartisan Deal on Infrastructure Overhaul Bill</h3>
         <div class="side-time"><time datetime="2026-11-13T05:00:00-05:00">3 hours ago</time> · 5 min read</div>
-      </div>
-    </a>
-    <a class="side-card" href="/technology/ai-bar-exam-stanford/">
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=70&auto=format"
-           width="600" height="340" loading="lazy" decoding="async" alt="Close-up of a computer circuit board">
-      <div class="side-body">
-        <div class="side-cat">Technology</div>
-        <h3>AI Models Now Pass the Bar Exam With 96% Accuracy, Stanford Study Finds</h3>
-        <div class="side-time"><time datetime="2026-11-13T03:00:00-05:00">5 hours ago</time> · 4 min read</div>
       </div>
     </a>
   </div>
@@ -405,7 +433,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:56px;
     <a href="/world/americas/" class="w-tag">Americas</a>
   </div>
   <div class="news-grid">
-    <a class="news-card" href="/world/water-wars-global-crisis/">
+    <a class="news-card" href="/news/water-wars-article.html">
       <img src="https://pulseamericanews.com/images/world/water-wars-global-crisis-hero.avif"
            width="600" height="340" loading="lazy" decoding="async"
            alt="Cracked dry lakebed under a pale sky">
@@ -413,7 +441,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:56px;
         <div class="news-cat">Climate &amp; Security</div>
         <h3>Water Wars: The Coming Global Crisis That Will Reshape Borders</h3>
         <p>Over 2 billion people already lack clean water. Experts say conflict over freshwater is no longer a theory — it's a timeline.</p>
-        <div class="news-ftr"><span><time datetime="2026-11-13T06:00:00-05:00">Today</time></span><span class="read-more">Read →</span></div>
+        <div class="news-ftr"><span><time datetime="2026-11-13T06:00:00-05:00">Yesterday</time></span><span class="read-more">Read →</span></div>
       </div>
     </a>
     <a class="news-card" href="/world/nato-eastern-flank-division/">
@@ -455,29 +483,30 @@ footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:56px;
     <a href="/usa/" class="see-all">See all USA →</a>
   </div>
   <div class="feat-row">
-    <a class="feat-main" href="/usa/supreme-court-immunity-ruling/">
-      <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=900&q=70&auto=format"
-           width="900" height="520" loading="lazy" decoding="async" alt="The US Capitol dome">
+    <a class="feat-main" href="/usa/colorado-river-2027-cuts-evaporation.html">
+      <img src="https://pulseamericanews.com/images/usa/colorado-river-bathtub-ring-powell-1600.png"
+           width="900" height="520" loading="lazy" decoding="async"
+           alt="Pale mineral bathtub ring staining a red sandstone wall at Lake Powell">
       <div class="feat-main-body">
-        <span class="cat-badge">Politics</span>
-        <h2>Supreme Court Rules on Presidential Immunity Case in Landmark 6-3 Decision</h2>
-        <p>The ruling is expected to reshape the scope of executive power for generations, drawing immediate reactions from both parties on Capitol Hill.</p>
-        <div class="feat-meta"><span>By James Caldwell</span><span>·</span><span>1 hr ago</span><span>·</span><span>10 min read</span></div>
+        <span class="cat-badge">Climate &amp; Water</span>
+        <h2>The Colorado River's 2027 cuts are smaller than what it loses to the sky</h2>
+        <p>Interior ordered 1.25 million acre-feet of cuts. Evaporation takes 1.3 to 1.5 million a year. The arithmetic is the story nobody is running.</p>
+        <div class="feat-meta"><span>By Daniel Reyes</span><span>·</span><span>2 hrs ago</span><span>·</span><span>8 min read</span></div>
       </div>
     </a>
     <div class="feat-list-wrap">
       <h3 class="flist-lbl" style="font-family:inherit;font-size:10px">More from USA</h3>
+      <a class="flist-item" href="/usa/water-refugees-drought-home-prices.html">
+        <img src="https://pulseamericanews.com/images/usa/water-refugees-hero-1600.png" width="76" height="60" loading="lazy" decoding="async" alt="Drought-stressed housing and dry land">
+        <div><div class="flist-cat">Housing</div><h4>Water Refugees: Where Drought Is Moving American Home Prices</h4><time>Yesterday</time></div>
+      </a>
+      <a class="flist-item" href="/usa/supreme-court-immunity-ruling/">
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=200&q=70&auto=format" width="76" height="60" loading="lazy" decoding="async" alt="The US Capitol dome">
+        <div><div class="flist-cat">Politics</div><h4>Supreme Court Rules on Presidential Immunity in Landmark 6-3 Decision</h4><time>1 hr ago</time></div>
+      </a>
       <a class="flist-item" href="/usa/unemployment-falls-3-2-percent/">
         <img src="https://images.unsplash.com/photo-1485795959911-ea5ebf41b6ae?w=200&q=70&auto=format" width="76" height="60" loading="lazy" decoding="async" alt="Job fair">
         <div><div class="flist-cat">Economy</div><h4>Unemployment Hits 3.2% as Job Market Shows Resilience</h4><time>2 hrs ago</time></div>
-      </a>
-      <a class="flist-item" href="/usa/fda-alzheimers-drug-approval/">
-        <img src="https://images.unsplash.com/photo-1587036197823-8b63bc70bc85?w=200&q=70&auto=format" width="76" height="60" loading="lazy" decoding="async" alt="Medical research lab">
-        <div><div class="flist-cat">Health</div><h4>FDA Approves Breakthrough Alzheimer's Drug for Wider Use</h4><time>4 hrs ago</time></div>
-      </a>
-      <a class="flist-item" href="/usa/california-wildfire-season-early/">
-        <img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=200&q=70&auto=format" width="76" height="60" loading="lazy" decoding="async" alt="Wildfire smoke">
-        <div><div class="flist-cat">Environment</div><h4>California Wildfire Season Starts Two Months Early</h4><time>7 hrs ago</time></div>
       </a>
     </div>
   </div>
@@ -714,11 +743,12 @@ document.getElementById('tickerPause').addEventListener('click',function(){
 });
 </script>
 
-<!-- Google Analytics 4 — replace G-XXXXXXXXXX -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-XXXXXXXXXX');
-</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5Z4RH797');</script>
+<!-- End Google Tag Manager -->
 </body>
 </html>
