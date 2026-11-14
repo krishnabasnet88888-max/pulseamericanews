@@ -1,0 +1,35 @@
+{
+  "specVersion": "1.0",
+  "publisher": {
+    "name": "Pulse America News",
+    "url": "https://pulseamericanews.com/",
+    "logo": "https://pulseamericanews.com/images/logo-512.png",
+    "contact": "newsroom@pulseamericanews.com",
+    "sameAs": [
+      "https://twitter.com/pulseamericanews",
+      "https://www.facebook.com/pulseamericanews"
+    ]
+  },
+  "content": {
+    "languages": ["en-US"],
+    "areasServed": ["US", "GB", "CA", "AU", "IE", "IN", "PH", "NG"],
+    "sections": [
+      { "name": "World", "url": "https://pulseamericanews.com/world/" },
+      { "name": "USA", "url": "https://pulseamericanews.com/usa/" },
+      { "name": "Sex Education", "url": "https://pulseamericanews.com/sex-education/" },
+      { "name": "Technology", "url": "https://pulseamericanews.com/technology/" },
+      { "name": "Sports", "url": "https://pulseamericanews.com/sports/" }
+    ]
+  },
+  "access": {
+    "free": true,
+    "paywall": false,
+    "citationAllowed": true,
+    "trainingAllowed": true
+  },
+  "sitemaps": [
+    "https://pulseamericanews.com/sitemap.xml",
+    "https://pulseamericanews.com/news-sitemap.xml"
+  ],
+  "llms": "https://pulseamericanews.com/llms.txt"
+}
