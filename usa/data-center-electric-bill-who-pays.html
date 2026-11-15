@@ -12,17 +12,18 @@
 <meta property="og:title" content="Who Pays for Data Center Electricity? Congress Killed It">
 <meta property="og:description" content="Federal floor: 100 megawatts. Virginia's: 25. Oregon's: 20. The bill died 57-43 in the Senate after passing the House 417-3.">
 <meta property="og:url" content="https://pulseamericanews.com/usa/data-center-electric-bill-who-pays.html">
-<meta property="og:image" content="https://pulseamericanews.com/images/usa/data-center-bill-og-1200x630.jpg">
+<meta property="og:image" content="https://pulseamericanews.com/images/usa/data-center-bill-og-1200x630.png">
+<meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Substation transformers at dusk in front of a data centre">
+<meta property="og:image:alt" content="Electricity bill on a kitchen table with one line circled in red">
 <meta property="article:published_time" content="2026-11-14T14:00:00-05:00">
 <meta property="article:modified_time" content="2026-11-15T09:00:00-05:00">
 <meta property="article:section" content="USA">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Who Pays for Data Center Electricity? Congress Killed It">
 <meta name="twitter:description" content="Federal floor: 100 megawatts. Virginia's: 25. Oregon's: 20.">
-<meta name="twitter:image" content="https://pulseamericanews.com/images/usa/data-center-bill-og-1200x630.jpg">
+<meta name="twitter:image" content="https://pulseamericanews.com/images/usa/data-center-bill-og-1200x630.png">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -91,7 +92,7 @@ border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:11p
 .byline .dot{opacity:.45}
 
 figure{margin:0 0 1.5em}
-figure img{border-radius:5px}
+figure img{border-radius:5px;background:var(--wash)}
 figcaption{font-size:13.5px;line-height:1.45;color:var(--mid);padding-top:8px}
 
 .takeaways{background:var(--wash);border-left:4px solid var(--accent);padding:16px 18px;border-radius:0 5px 5px 0;margin:0 0 1.7em}
@@ -115,9 +116,8 @@ td.k{font-weight:700;width:32%}
 td.v{font-variant-numeric:tabular-nums}
 tr.hi td{background:#fdf3ec}
 
-/* chart */
 .chart{margin:0 0 .4em}
-.chart svg{width:100%;height:auto;border-radius:5px;display:block}
+.chart img{width:100%;height:auto;border-radius:5px;display:block;background:var(--ink)}
 .chart figcaption{padding-top:8px}
 
 .how{font-size:14.5px;line-height:1.55;color:var(--mid);background:#fafbfb;border:1px solid var(--line);border-radius:6px;padding:15px 16px;margin:1.8em 0}
@@ -193,9 +193,10 @@ border:1px solid var(--line);background:#fff;border-radius:5px;font:700 13px/1 v
 "author":{"@type":"Person","name":"Daniel Reyes","url":"https://pulseamericanews.com/authors/daniel-reyes/","sameAs":["https://www.linkedin.com/in/","https://muckrack.com/"]},
 "publisher":{"@type":"NewsMediaOrganization","name":"Pulse America News","url":"https://pulseamericanews.com/","logo":{"@type":"ImageObject","url":"https://pulseamericanews.com/favicon-32x32.png","width":32,"height":32}},
 "mainEntityOfPage":{"@type":"WebPage","@id":"https://pulseamericanews.com/usa/data-center-electric-bill-who-pays.html"},
-"image":[{"@type":"ImageObject","url":"https://pulseamericanews.com/images/usa/data-center-bill-og-1200x630.jpg","width":1200,"height":630},
-{"@type":"ImageObject","url":"https://pulseamericanews.com/images/usa/data-center-substation-hero-1600.png","width":1600,"height":900},
-{"@type":"ImageObject","url":"https://pulseamericanews.com/images/usa/data-center-threshold-bars.svg","width":1200,"height":675}],
+"image":[{"@type":"ImageObject","url":"https://pulseamericanews.com/images/usa/data-center-bill-og-1200x630.png","width":1200,"height":630,"caption":"An electricity bill on a kitchen table with one line circled in red"},
+{"@type":"ImageObject","url":"https://pulseamericanews.com/images/usa/data-center-substation-hero-1600.png","width":1600,"height":900,"caption":"Substation transformers on gravel below a windowless data centre shell"},
+{"@type":"ImageObject","url":"https://pulseamericanews.com/images/usa/data-center-transformer-hardlight-1200.png","width":1200,"height":675,"caption":"A pad-mounted transformer lit hard from one side"},
+{"@type":"ImageObject","url":"https://pulseamericanews.com/images/usa/data-center-threshold-bar.png","width":1200,"height":675,"caption":"Federal 100 megawatt floor against state floors of 25 and 20"}],
 "about":[{"@type":"Legislation","name":"Ratepayer Protection Act","legislationIdentifier":"S. 5028","sameAs":"https://www.congress.gov/bill/119th-congress/senate-bill/5028"},
 {"@type":"Legislation","name":"Ratepayer Protection Act (House companion)","legislationIdentifier":"HR 9340","sameAs":"https://www.congress.gov/bill/119th-congress/house-bill/9340"},
 {"@type":"Organization","name":"PJM Interconnection","sameAs":"https://www.pjm.com/"},
@@ -249,9 +250,11 @@ border:1px solid var(--line);background:#fff;border-radius:5px;font:700 13px/1 v
 </div>
 
 <figure>
-  <img src="../images/usa/data-center-substation-hero-1600.png" width="1600" height="900"
-       alt="A bank of electrical substation transformers on gravel, with a windowless data centre shell behind them." fetchpriority="high" decoding="async">
-  <figcaption>Substation transformers feeding a data centre campus. The equipment is the argument — someone has to pay for it. Pulse America News illustration.</figcaption>
+  <img src="../images/usa/data-center-substation-hero-1600.png"
+       width="1600" height="900"
+       alt="Substation transformers on gravel below a windowless data centre shell"
+       fetchpriority="high" decoding="async">
+  <figcaption>Substation transformers feeding a data centre campus. The equipment is the argument — someone has to pay for it. Pulse America News.</figcaption>
 </figure>
 
 <div class="takeaways">
@@ -307,8 +310,10 @@ border:1px solid var(--line);background:#fff;border-radius:5px;font:700 13px/1 v
 <h3>The 100-megawatt gap</h3>
 
 <figure class="chart">
-  <img src="../images/usa/data-center-threshold-bars.svg" width="1200" height="675" loading="lazy" decoding="async"
-       alt="Bar chart: the federal bill's floor was 100 megawatts, Virginia's is 25 and Oregon's is 20.">
+  <img src="../images/usa/data-center-threshold-bar.png"
+       width="1200" height="675"
+       alt="Bar chart of the federal 100 megawatt floor against state floors of 25 and 20"
+       loading="lazy" decoding="async">
   <figcaption>Federal floor against two state floors. Both state tariffs catch facilities the federal bill would have missed by a factor of four or five. Pulse America News.</figcaption>
 </figure>
 
@@ -346,6 +351,14 @@ border:1px solid var(--line);background:#fff;border-radius:5px;font:700 13px/1 v
 <h2>The money that moves, and the money that doesn't</h2>
 
 <p>Tariffs are about cost that hasn't arrived. There is a second channel charging households right now, and almost nobody is looking at it.</p>
+
+<figure>
+  <img src="../images/usa/data-center-bill-og-1200x630.png"
+       width="1200" height="630"
+       alt="Electricity bill on a kitchen table with one line circled in red"
+       loading="lazy" decoding="async">
+  <figcaption>One circled line, ten or eleven dollars. That is what the PJM capacity auction passes through in Ohio and western Maryland. Pulse America News.</figcaption>
+</figure>
 
 <p>PJM Interconnection runs the largest grid in the country, serving more than 65 million people. Its capacity auction price rose roughly tenfold between mid-2024 and mid-2025. PJM's own independent market monitor, Monitoring Analytics, called data centres "the primary reason."</p>
 
@@ -416,8 +429,10 @@ border:1px solid var(--line);background:#fff;border-radius:5px;font:700 13px/1 v
 <p>Yale energy economist Kenneth Gillingham, reviewing the House bill, put the limit plainly: the ideas are "very reasonable," but "implementation will really determine how much and/or if it will help."</p>
 
 <figure>
-  <img src="../images/usa/data-center-transformer-hardlight-1200.jpg" width="1200" height="675" loading="lazy" decoding="async"
-       alt="A substation transformer at dusk, lit hard from one side.">
+  <img src="../images/usa/data-center-transformer-hardlight-1200.png"
+       width="1200" height="675"
+       alt="A pad-mounted transformer lit hard from one side at dusk"
+       loading="lazy" decoding="async">
   <figcaption>Transmission is the cost line the fight is about. Somebody builds it; the only question is who is billed. Pulse America News.</figcaption>
 </figure>
 
