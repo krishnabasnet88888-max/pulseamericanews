@@ -34,12 +34,20 @@
 <meta name="theme-color" content="#C8102E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="preload" as="image" href="../images/usa/data-center-substation-hero-1600.jpeg" type="image/jpeg" fetchpriority="high">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Source+Sans+3:wght@400;600;700&display=swap">
 
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-13L5DS9TY0"></script>
 <script>
 window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-13L5DS9TY0',{send_page_view:true});
 </script>
+<!-- End Google Analytics 4 -->
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -513,7 +521,11 @@ border:1px solid var(--line);background:#fff;border-radius:5px;font:700 13px/1 v
 <script>
 (function(){
   var pushed={};
-  function push(n,e){window.dataLayer=window.dataLayer||[];window.dataLayer.push(Object.assign({event:n},e||{}));}
+  function push(n,e){
+    window.dataLayer=window.dataLayer||[];
+    window.dataLayer.push(Object.assign({event:n},e||{}));
+    if(typeof gtag==='function'){gtag('event',n,e||{});}
+  }
 
   var sb=document.getElementById('shareBtn');
   if(sb){sb.addEventListener('click',function(){
