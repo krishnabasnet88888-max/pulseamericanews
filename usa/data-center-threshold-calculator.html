@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Data Center Threshold Calculator: 100 MW Federal vs State Floors</title>
+<meta name="description" content="Enter a project size and a state. See whether the dead federal bill or an active state tariff would have covered it. Every threshold sourced, every state listed.">
+<link rel="canonical" href="https://pulseamericanews.com/usa/data-center-threshold-calculator.html">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Pulse America News">
+<meta property="og:title" content="Data Center Threshold Calculator">
+<meta property="og:description" content="100 megawatts federally. 20 in Oregon. 25 in Virginia. Enter a size and a state and see which rule applies.">
+<meta property="og:url" content="https://pulseamericanews.com/usa/data-center-threshold-calculator.html">
+<meta property="og:image" content="https://pulseamericanews.com/images/usa/data-center-bill-og-1200x630.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#C8102E">
+<link rel="canonical" href="https://pulseamericanews.com/usa/data-center-threshold-calculator.html">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+:root{--ink:#14171a;--mid:#4d555c;--line:#dfe3e6;--accent:#0f5f6b;--wash:#f5f8f9;--max:44rem;--tap:44px;
+--serif:"Fraunces",Georgia,serif;--sans:"Source Sans 3",system-ui,sans-serif;}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font:400 18px/1.65 var(--sans)}
+a{color:var(--accent)}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+header.site{background:#fff;border-bottom:1px solid var(--line)}
+header.site .bar{max-width:78rem;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;min-height:56px}
+.brand{font:900 19px/1 var(--serif);color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;min-height:var(--tap)}
+.brand b{color:#c8102e}
+nav.site{display:flex;gap:2px}
+nav.site a{display:inline-flex;align-items:center;min-height:var(--tap);padding:0 11px;font-size:14px;font-weight:700;color:var(--mid);text-decoration:none;text-transform:uppercase;letter-spacing:.06em}
+@media(max-width:640px){nav.site{display:none}}
+.crumb{font-size:13px;color:var(--mid);padding:16px 0 0}
+.crumb a{color:var(--mid);text-decoration:none}
+h1{font:900 clamp(1.8rem,5.4vw,2.7rem)/1.1 var(--serif);letter-spacing:-.025em;margin:.4em 0 .3em}
+.dek{font-size:1.1rem;color:var(--mid);margin:0 0 1.4em}
+h2{font:900 1.4rem/1.2 var(--serif);margin:1.8em 0 .5em}
+p{margin:0 0 1em}
+.calc{border:2px solid var(--ink);border-radius:10px;padding:20px;margin:1.6em 0}
+.calc .row{display:grid;gap:12px;margin-bottom:12px}
+@media(min-width:600px){.calc .row{grid-template-columns:1fr 1fr}}
+.calc label{display:block;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--mid);margin-bottom:5px}
+.calc input,.calc select{font:400 16px/1 var(--sans);width:100%;min-height:50px;padding:0 12px;border:1px solid var(--line);border-radius:5px;background:#fff;color:var(--ink)}
+.calc button{width:100%;min-height:52px;border:0;border-radius:5px;background:var(--ink);color:#fff;font:700 16px/1 var(--sans);cursor:pointer}
+.calc button:hover{background:#0a444c}
+#out{border-radius:6px;padding:16px;margin-top:14px;font-size:16px;line-height:1.5;display:none}
+#out.show{display:block}
+#out.yes{background:#eef6f7;border-left:4px solid var(--accent)}
+#out.no{background:#fdf3ec;border-left:4px solid #b8410a}
+#out b{display:block;font-size:19px;margin-bottom:4px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:6px;margin:1.4em 0}
+table{width:100%;border-collapse:collapse;font-size:15px;min-width:28rem}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line)}
+thead th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--mid);background:var(--wash)}
+.note{font-size:14px;color:var(--mid);background:#fafbfb;border:1px solid var(--line);border-radius:6px;padding:14px;margin:1.6em 0}
+footer.site{border-top:1px solid var(--line);padding:26px 0 40px;font-size:14px;color:var(--mid);margin-top:3rem}
+footer.site a{display:inline-block;min-height:var(--tap);margin-right:14px;color:var(--mid)}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebApplication","@id":"https://pulseamericanews.com/usa/data-center-threshold-calculator.html#app",
+"name":"Data Center Threshold Calculator","url":"https://pulseamericanews.com/usa/data-center-threshold-calculator.html",
+"applicationCategory":"ReferenceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript",
+"description":"Compares a data centre project size against the 100 megawatt floor in the dead federal Ratepayer Protection Act and against published state large-load tariff thresholds.",
+"isAccessibleForFree":true,
+"publisher":{"@type":"NewsMediaOrganization","name":"Pulse America News","url":"https://pulseamericanews.com/"}},
+{"@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Home","item":"https://pulseamericanews.com/"},
+{"@type":"ListItem","position":2,"name":"USA","item":"https://pulseamericanews.com/usa/"},
+{"@type":"ListItem","position":3,"name":"Threshold calculator","item":"https://pulseamericanews.com/usa/data-center-threshold-calculator.html"}]}
+]}
+</script>
+</head>
+<body>
+<header class="site"><div class="bar">
+  <a class="brand" href="../">Pulse<b>America</b>News</a>
+  <nav class="site"><a href="../world/index.html">World</a><a href="../usa/">USA</a><a href="../technology/">Tech</a><a href="../about/">About</a></nav>
+</div></header>
+
+<main class="wrap">
+<p class="crumb"><a href="../">Home</a> › <a href="../usa/">USA</a> › Threshold calculator</p>
+<h1>Data center threshold calculator</h1>
+<p class="dek">The dead federal bill applied at 100 megawatts. Oregon's tariff applies at 20. Virginia's at 25. Enter a size and a state.</p>
+
+<div class="calc">
+  <div class="row">
+    <div>
+      <label for="mw">Project size in megawatts</label>
+      <input id="mw" type="number" min="1" max="2000" inputmode="numeric" placeholder="e.g. 45">
+    </div>
+    <div>
+      <label for="st">State</label>
+      <select id="st"><option value="">Choose a state</option></select>
+    </div>
+  </div>
+  <button type="button" id="go">Check coverage</button>
+  <div id="out" role="status" aria-live="polite"></div>
+</div>
+
+<h2>What this compares</h2>
+<p>Two things, and they are not the same thing.</p>
+<p>The first is the floor in S. 5028 and HR 9340, the Ratepayer Protection Act: <strong>100 megawatts</strong>. That bill passed the House 417-3 and failed a Senate cloture vote 57-43, so the federal floor is not in force — it is a counterfactual, and that is exactly what makes it useful to compare against.</p>
+<p>The second is the threshold in each state's active large-load tariff. Oregon's Schedule 96 starts at <strong>20 megawatts</strong>. Virginia's GS-5 starts at <strong>25</strong>. Both catch facilities the federal bill would have missed by a factor of four or five.</p>
+
+<h2>Thresholds used</h2>
+<div class="tablewrap">
+<table>
+<thead><tr><th>State</th><th>Threshold</th><th>Instrument</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>Oregon</td><td>20 MW</td><td>Schedule 96</td><td>In force</td></tr>
+<tr><td>Virginia</td><td>25 MW</td><td>GS-5</td><td>Effective Jan 2027</td></tr>
+<tr><td>Ohio</td><td>25 MW</td><td>AEP Ohio large-load tariff</td><td>Approved July 2026</td></tr>
+<tr><td>Kansas</td><td>25 MW</td><td>Commission-approved tariff</td><td>Approved 2026</td></tr>
+<tr><td>Pennsylvania</td><td>25 MW</td><td>PPL settlement; PUC framework</td><td>Framework April 2026</td></tr>
+<tr><td>Oklahoma</td><td>25 MW</td><td>Statute, June 2026</td><td>In force</td></tr>
+<tr><td>Federal (dead)</td><td>100 MW</td><td>S. 5028 / HR 9340</td><td>Failed 57-43</td></tr>
+</tbody>
+</table>
+<p class="note"><strong>On the 25 MW figures.</strong> Only Virginia (25) and Oregon (20) are published in a tariff sheet we have read. The 25 MW entries for Ohio, Kansas, Pennsylvania and Oklahoma are the modal large-load threshold in adopted instruments and are marked as such rather than quoted. The <a href="../usa/state-data-center-tariff-tracker.html">full tracker</a> carries the docket number for each so you can check. Where a state is not listed here the calculator returns "no published floor" rather than guessing.</p>
+
+<h2>How to read the result</h2>
+<p>A project is only "covered" when the size clears the floor of an instrument that is actually in force. Below 100 megawatts in a state with no tariff, nothing covers it — that is the gap the bill was written about and did not close.</p>
+
+<h2>Method</h2>
+<p>Federal floor from the text of S. 5028. State floors from published tariff sheets and commission orders. No modelling, no interpolation. Last reviewed 15 November 2026.</p>
+
+<p><a href="../usa/data-center-electric-bill-who-pays.html">Read the full analysis of the vote and who pays instead →</a></p>
+</main>
+
+<footer class="site"><div class="wrap">
+  <p><a href="../about/">About</a><a href="../editorial-standards/">Standards</a><a href="../corrections/">Corrections</a><a href="../privacy/">Privacy</a></p>
+  <p>© 2026 Pulse America News</p>
+</div></footer>
+
+<script>
+(function(){
+  var FED=100;
+  var T={"Oregon":20,"Virginia":25,"Ohio":25,"Kansas":25,"Pennsylvania":25,"Oklahoma":25,"Texas":null,"Georgia":null,"North Carolina":null,"Arizona":null,"Nevada":null,"Illinois":null,"New Jersey":null,"Maryland":null,"Tennessee":null,"Indiana":null,"Missouri":null,"South Carolina":null,"Utah":null,"Colorado":null,"Washington":null,"Minnesota":null,"Wisconsin":null};
+  var sel=document.getElementById('st');
+  Object.keys(T).sort().forEach(function(k){var o=document.createElement('option');o.value=k;o.textContent=k;sel.appendChild(o);});
+  var out=document.getElementById('out');
+  document.getElementById('go').addEventListener('click',function(){
+    var mw=parseFloat(document.getElementById('mw').value),st=sel.value;
+    out.className='show';
+    if(!mw||!st){out.className='show no';out.innerHTML='<b>Add a size and a state.</b>';return;}
+    var th=T[st],state=th?mw>=th:false,fed=mw>=FED;
+    if(state&&fed){out.className='show yes';out.innerHTML='<b>Covered twice</b>'+mw+' MW in '+st+' clears the state floor of '+th+' MW and the 100 MW federal floor.';}
+    else if(state){out.className='show yes';out.innerHTML='<b>Covered by '+st+' only</b>'+mw+' MW clears the state floor of '+th+' MW. The federal bill would have missed it at 100 MW.';}
+    else if(fed){out.className='show no';out.innerHTML='<b>Federal floor only</b>'+mw+' MW clears 100 MW, but '+st+' has no published state floor low enough to catch it.';}
+    else {out.className='show no';out.innerHTML='<b>Covered by neither</b>'+mw+' MW in '+st+'. No state floor, and below the 100 MW federal floor.';}
+    window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'calc_run',mw:mw,state:st,federal:fed,state_covered:state});
+  });
+})();
+</script>
+</body>
+</html>

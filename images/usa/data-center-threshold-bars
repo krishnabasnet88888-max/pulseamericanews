@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Bar chart: the federal bill's floor was 100 megawatts, Virginia's tariff floor is 25 and Oregon's is 20">
+  <rect width="1200" height="675" fill="#14171a"/>
+  <g font-family="'Source Sans 3',Helvetica,Arial,sans-serif">
+    <text x="80" y="120" fill="#8f9aa3" font-size="22" font-weight="700" letter-spacing="3">FEDERAL BILL (S. 5028)</text>
+    <rect x="80" y="145" width="1000" height="96" fill="#ffffff"/>
+    <text x="1100" y="205" fill="#ffffff" font-size="44" font-weight="700" text-anchor="end" font-family="'Source Sans 3',Helvetica,Arial,sans-serif">100 MW</text>
+
+    <text x="80" y="330" fill="#8f9aa3" font-size="22" font-weight="700" letter-spacing="3">VIRGINIA GS-5</text>
+    <rect x="80" y="355" width="250" height="96" fill="#f0932b"/>
+    <text x="1100" y="415" fill="#f0932b" font-size="44" font-weight="700" text-anchor="end">25 MW</text>
+
+    <text x="80" y="540" fill="#8f9aa3" font-size="22" font-weight="700" letter-spacing="3">OREGON SCHEDULE 96</text>
+    <rect x="80" y="565" width="200" height="96" fill="#e0651b"/>
+    <text x="1100" y="625" fill="#e0651b" font-size="44" font-weight="700" text-anchor="end">20 MW</text>
+
+    <line x1="80" y1="668" x2="1080" y2="668" stroke="#3a4147" stroke-width="2"/>
+  </g>
+</svg>

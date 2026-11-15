@@ -2,14 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://pulseamericanews.com/world/water-wars-global-crisis/</loc>
+    <loc>https://pulseamericanews.com/usa/data-center-electric-bill-who-pays.html</loc>
     <news:news>
       <news:publication>
         <news:name>Pulse America News</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-11-13T06:00:00-05:00</news:publication_date>
-      <news:title>Water Wars: The Coming Global Crisis That Will Reshape Borders</news:title>
+      <news:publication_date>2026-11-14T14:00:00-05:00</news:publication_date>
+      <news:title>Who pays for data center electricity? Congress answered 417-3, then the Senate killed it</news:title>
+      <news:keywords>Ratepayer Protection Act, S. 5028, HR 9340, data center electricity, PJM, capacity charge</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://pulseamericanews.com/usa/state-data-center-tariff-tracker.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Pulse America News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-15T08:00:00-05:00</news:publication_date>
+      <news:title>State data center tariff tracker: 23 states, thresholds and dockets</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://pulseamericanews.com/usa/colorado-river-2027-cuts-evaporation.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Pulse America News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T06:00:00-05:00</news:publication_date>
+      <news:title>The Colorado River's 2027 cuts are smaller than what it loses to the sky</news:title>
     </news:news>
   </url>
 </urlset>

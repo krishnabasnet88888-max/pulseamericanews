@@ -3,23 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>The Data Center Bill 417 House Members Voted For, and 43 Senators Killed</title>
-<meta name="description" content="The House passed it 417-3. The Senate killed it 57-43. It only asked states to 'consider' protections for facilities over 100 MW. The state tariffs already start at 20.">
+<title>Who Pays for Data Center Electricity? Congress Killed It</title>
+<meta name="description" content="The House voted 417-3 to make data centers pay their own grid costs. The Senate killed it 57-43. Here is who is billed instead — and what it adds to your bill.">
 <link rel="canonical" href="https://pulseamericanews.com/usa/data-center-electric-bill-who-pays.html">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Pulse America News">
-<meta property="og:title" content="The Data Center Bill 417 House Members Voted For, and 43 Senators Killed">
-<meta property="og:description" content="It asked states to consider protecting people from a cost it never assigns to anyone. Meanwhile 23 states wrote tariffs starting at 20 megawatts.">
+<meta property="og:title" content="Who Pays for Data Center Electricity? Congress Killed It">
+<meta property="og:description" content="Federal floor: 100 megawatts. Virginia's: 25. Oregon's: 20. The bill died 57-43 in the Senate after passing the House 417-3.">
 <meta property="og:url" content="https://pulseamericanews.com/usa/data-center-electric-bill-who-pays.html">
 <meta property="og:image" content="https://pulseamericanews.com/images/usa/data-center-bill-og-1200x630.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Substation transformers at dusk in front of a data centre">
 <meta property="article:published_time" content="2026-11-14T14:00:00-05:00">
-<meta property="article:modified_time" content="2026-11-14T14:00:00-05:00">
+<meta property="article:modified_time" content="2026-11-15T09:00:00-05:00">
+<meta property="article:section" content="USA">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The Data Center Bill 417 House Members Voted For, and 43 Senators Killed">
+<meta name="twitter:title" content="Who Pays for Data Center Electricity? Congress Killed It">
+<meta name="twitter:description" content="Federal floor: 100 megawatts. Virginia's: 25. Oregon's: 20.">
 <meta name="twitter:image" content="https://pulseamericanews.com/images/usa/data-center-bill-og-1200x630.jpg">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -47,7 +49,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <style>
 :root{
 --ink:#14171a;--mid:#4d555c;--line:#dfe3e6;--accent:#0f5f6b;--accent-dark:#0a444c;
---bg:#fff;--wash:#f5f8f9;--max:44rem;--tap:44px;
+--bg:#fff;--wash:#f5f8f9;--max:44rem;--tap:44px;--alert:#b8410a;
 --serif:"Fraunces",Georgia,"Times New Roman",serif;
 --sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
@@ -75,6 +77,7 @@ header.site .bar{max-width:78rem;margin:0 auto;padding:0 20px;display:flex;align
 nav.site{display:flex;gap:2px}
 nav.site a{display:inline-flex;align-items:center;min-height:var(--tap);padding:0 11px;font-size:14px;font-weight:700;color:var(--mid);text-decoration:none;text-transform:uppercase;letter-spacing:.06em}
 nav.site a:hover{color:#c8102e}
+nav.site a[aria-current]{color:#c8102e;box-shadow:inset 0 -3px 0 #c8102e}
 
 .crumb{font-size:13px;color:var(--mid);padding:16px 0 0;letter-spacing:.02em}
 .crumb a{color:var(--mid);text-decoration:none;display:inline-flex;align-items:center;min-height:32px}
@@ -110,17 +113,46 @@ tbody tr:last-child td{border-bottom:0}
 thead th{font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--mid);background:#fbfcfc}
 td.k{font-weight:700;width:32%}
 td.v{font-variant-numeric:tabular-nums}
+tr.hi td{background:#fdf3ec}
+
+/* chart */
+.chart{margin:0 0 .4em}
+.chart svg{width:100%;height:auto;border-radius:5px;display:block}
+.chart figcaption{padding-top:8px}
 
 .how{font-size:14.5px;line-height:1.55;color:var(--mid);background:#fafbfb;border:1px solid var(--line);border-radius:6px;padding:15px 16px;margin:1.8em 0}
 .how strong{color:var(--ink)}
-.qa h3{margin-top:1.6em}
 .pull{background:var(--wash);border-radius:6px;padding:16px 18px;margin:1.5em 0;font-size:16px;line-height:1.6}
 .pull cite{display:block;font-size:14px;font-style:normal;color:var(--mid);margin-top:8px}
+
+.gate{border:2px solid var(--ink);border-radius:8px;padding:18px;margin:2em 0}
+.gate h2{margin:0 0 .3em;font-size:1.15rem}
+.gate p{font-size:15.5px;color:var(--mid);margin:0 0 1em}
+.gate form{display:grid;gap:10px}
+@media(min-width:560px){.gate form{grid-template-columns:1fr 9rem;align-items:start}}
+.gate input,.gate select{font:400 16px/1 var(--sans);padding:0 12px;min-height:48px;border:1px solid var(--line);border-radius:5px;background:#fff;color:var(--ink);width:100%}
+.gate button{min-height:48px;border:0;border-radius:5px;background:var(--ink);color:#fff;font:700 15px/1 var(--sans);cursor:pointer;padding:0 18px;grid-column:1/-1}
+.gate button:hover{background:var(--accent-dark)}
+.gate .fine{font-size:13px;color:var(--mid);margin:.7em 0 0}
+.gate .ok{font-weight:700;color:var(--accent);margin:.7em 0 0;font-size:15px}
+
+.authorbox{display:flex;gap:14px;align-items:flex-start;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;margin:2em 0}
+.authorbox .av{width:52px;height:52px;border-radius:50%;background:var(--wash);border:1px solid var(--line);flex:0 0 auto;display:flex;align-items:center;justify-content:center;font:900 18px/1 var(--serif);color:var(--mid)}
+.authorbox p{margin:0;font-size:14.5px;line-height:1.55;color:var(--mid)}
+.authorbox strong{color:var(--ink);display:block;font-size:15.5px}
+.authorbox .rev{margin-top:8px;font-size:13.5px;padding-top:8px;border-top:1px dotted var(--line)}
+.authorbox a{color:var(--accent)}
+
+.correction{font-size:14px;line-height:1.55;background:#fdf3ec;border-left:3px solid var(--alert);padding:12px 14px;border-radius:0 5px 5px 0;margin:1.6em 0}
+.correction strong{color:var(--alert)}
 
 .next{border-top:2px solid var(--ink);margin-top:2.2em;padding-top:1em}
 .sub{background:var(--ink);color:#fff;border-radius:8px;padding:22px 18px;margin:2.2em 0;text-align:center}
 .sub p{margin:0 0 .85em;font-size:15.5px;color:#e6e8ea}
-.sub a{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;background:#fff;color:var(--ink);font-weight:700;border-radius:5px;text-decoration:none;width:100%;max-width:20rem}
+.sub form{display:grid;gap:10px;max-width:24rem;margin:0 auto}
+.sub input{font:400 16px/1 var(--sans);padding:0 12px;min-height:50px;border:0;border-radius:5px;width:100%;color:var(--ink)}
+.sub button{min-height:50px;border:0;border-radius:5px;background:#fff;color:var(--ink);font:700 15px/1 var(--sans);cursor:pointer}
+.sub .fine{font-size:12.5px;color:#a9b0b6;margin:.8em 0 0}
 .nextread{display:grid;gap:10px;margin:1.2em 0 3rem}
 .nextread a{display:block;padding:14px 16px;border:1px solid var(--line);border-radius:6px;text-decoration:none;color:var(--ink);min-height:var(--tap)}
 .nextread a:hover{border-color:var(--accent)}
@@ -143,45 +175,42 @@ border:1px solid var(--line);background:#fff;border-radius:5px;font:700 13px/1 v
   nav.site{display:none}
   .sharebar{display:flex}
   footer.site{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
+  .nextread{margin-bottom:calc(3rem + 76px)}
 }
-@media (min-width:900px){
-  .wrap{padding:0 24px}
-}
-@media (min-width:1400px){
-  body{font-size:19px}
-  :root{--max:46rem}
-}
-@media (min-width:1800px){
-  :root{--max:50rem}
-  body{font-size:20px}
-}
-@media (orientation:landscape) and (max-height:520px){
-  header.site{position:static}
-  h1{font-size:1.7rem}
-}
+@media (min-width:900px){.wrap{padding:0 24px}}
+@media (min-width:1400px){body{font-size:19px}:root{--max:46rem}}
+@media (min-width:1800px){:root{--max:50rem}body{font-size:20px}}
+@media (orientation:landscape) and (max-height:520px){header.site{position:static}h1{font-size:1.7rem}}
 </style>
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
 {"@type":"NewsArticle","@id":"https://pulseamericanews.com/usa/data-center-electric-bill-who-pays.html#article",
-"headline":"The Data Center Bill 417 House Members Voted For, and 43 Senators Killed",
-"description":"The House passed the Ratepayer Protection Act 417-3. The Senate killed it 57-43. It only asked states to consider protections for facilities over 100 megawatts. Twenty-three states already wrote tariffs starting at 20.",
-"datePublished":"2026-11-14T14:00:00-05:00","dateModified":"2026-11-14T14:00:00-05:00",
-"isAccessibleForFree":true,
-"author":{"@type":"Person","name":"Daniel Reyes","url":"https://pulseamericanews.com/authors/daniel-reyes/"},
-"publisher":{"@type":"NewsMediaOrganization","name":"Pulse America News","url":"https://pulseamericanews.com/"},
+"headline":"Who pays for data center electricity? Congress answered 417-3, then the Senate killed it",
+"description":"The House passed HR 9340 417-3. The Senate killed S. 5028 57-43. The federal floor was 100 megawatts; state tariffs start at 20. Virginia requires $1.5m per megawatt in collateral.",
+"datePublished":"2026-11-14T14:00:00-05:00","dateModified":"2026-11-15T09:00:00-05:00",
+"articleSection":"USA","isAccessibleForFree":true,
+"author":{"@type":"Person","name":"Daniel Reyes","url":"https://pulseamericanews.com/authors/daniel-reyes/","sameAs":["https://www.linkedin.com/in/","https://muckrack.com/"]},
+"publisher":{"@type":"NewsMediaOrganization","name":"Pulse America News","url":"https://pulseamericanews.com/","logo":{"@type":"ImageObject","url":"https://pulseamericanews.com/favicon-32x32.png","width":32,"height":32}},
 "mainEntityOfPage":{"@type":"WebPage","@id":"https://pulseamericanews.com/usa/data-center-electric-bill-who-pays.html"},
-"image":["https://pulseamericanews.com/images/usa/data-center-bill-og-1200x630.jpg"],
-"about":[{"@type":"Thing","name":"Ratepayer Protection Act"},{"@type":"Thing","name":"Data center electricity costs"},{"@type":"Thing","name":"PJM Interconnection"}],
+"image":[{"@type":"ImageObject","url":"https://pulseamericanews.com/images/usa/data-center-bill-og-1200x630.jpg","width":1200,"height":630},
+{"@type":"ImageObject","url":"https://pulseamericanews.com/images/usa/data-center-substation-hero-1600.png","width":1600,"height":900},
+{"@type":"ImageObject","url":"https://pulseamericanews.com/images/usa/data-center-threshold-bars.svg","width":1200,"height":675}],
+"about":[{"@type":"Legislation","name":"Ratepayer Protection Act","legislationIdentifier":"S. 5028","sameAs":"https://www.congress.gov/bill/119th-congress/senate-bill/5028"},
+{"@type":"Legislation","name":"Ratepayer Protection Act (House companion)","legislationIdentifier":"HR 9340","sameAs":"https://www.congress.gov/bill/119th-congress/house-bill/9340"},
+{"@type":"Organization","name":"PJM Interconnection","sameAs":"https://www.pjm.com/"},
+{"@type":"Thing","name":"Data center electricity costs"}],
+"citation":["https://www.husted.senate.gov/media/press-releases/democrats-block-husteds-bill-forcing-data-centers-to-pay-their-own-way/","https://www.npr.org/2026/10/01/nx-s1-5984949/data-centers-ai-ratepayers-congress","https://hls.harvard.edu/today/how-data-centers-may-lead-to-higher-electricity-bills/"],
 "speakable":{"@type":"SpeakableSpecification","cssSelector":[".takeaways",".short"]}},
 {"@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"What is the Ratepayer Protection Act?","acceptedAnswer":{"@type":"Answer","text":"HR 9340, introduced by Sen. Jon Husted of Ohio. It would direct state regulators to consider rules requiring large data centers to cover their own grid costs. It passed the House 417-3 on Sept. 16, 2026 and failed a Senate cloture vote 57-43 on Sept. 30, 2026."}},
-{"@type":"Question","name":"How large does a data center have to be to be covered?","acceptedAnswer":{"@type":"Answer","text":"100 megawatts. State large-load tariffs already in force typically start at 20 to 25 megawatts, so the federal bill covers a quarter of the load the states regulate."}},
-{"@type":"Question","name":"Do data centers actually raise electricity bills?","acceptedAnswer":{"@type":"Answer","text":"The national average effect is small and contested. In the PJM grid region the effect is documented: PJM's own market monitor attributes a tenfold capacity price rise largely to data centers, and ratepayers are set to pay $7.3 billion in extra capacity charges this delivery year."}}]},
+{"@type":"Question","name":"What is the Ratepayer Protection Act?","acceptedAnswer":{"@type":"Answer","text":"S. 5028, introduced by Sen. Jon Husted of Ohio on 16 July 2026 with 16 cosponsors, with a House companion HR 9340. It would direct state regulators to consider requiring large data centers to cover their own grid costs. The House passed HR 9340 417-3 on 16 September 2026; a Senate cloture motion on S. 5028 failed 57-43 on 30 September 2026."}},
+{"@type":"Question","name":"How large does a data center have to be to be covered?","acceptedAnswer":{"@type":"Answer","text":"100 megawatts. State large-load tariffs already in force start at 20 to 25 megawatts, so the federal floor was four to five times higher than the state rules it was meant to nudge."}},
+{"@type":"Question","name":"Do data centers actually raise electricity bills?","acceptedAnswer":{"@type":"Answer","text":"The national average effect is small and contested. In the PJM grid region it is documented and already billed: Monitoring Analytics attributes a tenfold capacity price rise largely to data centers, ratepayers face $7.3 billion in extra capacity charges this delivery year, and the pass-through reached $16 to $18 a month in Ohio and western Maryland."}},
+{"@type":"Question","name":"Is the Ratepayer Protection Pledge legally binding?","acceptedAnswer":{"@type":"Answer","text":"No. It is a voluntary White House document published in March 2026 and signed by seven companies. Ari Peskoe of Harvard's Electricity Law Initiative said compliance is not being monitored or enforced by anyone."}}]},
 {"@type":"BreadcrumbList","itemListElement":[
 {"@type":"ListItem","position":1,"name":"Home","item":"https://pulseamericanews.com/"},
 {"@type":"ListItem","position":2,"name":"USA","item":"https://pulseamericanews.com/usa/"},
-{"@type":"ListItem","position":3,"name":"Data center electricity bills"}]}
+{"@type":"ListItem","position":3,"name":"Who pays for data center electricity","item":"https://pulseamericanews.com/usa/data-center-electric-bill-who-pays.html"}]}
 ]}
 </script>
 </head>
@@ -194,7 +223,7 @@ border:1px solid var(--line);background:#fff;border-radius:5px;font:700 13px/1 v
     <a class="brand" href="../">Pulse<b>America</b>News</a>
     <nav class="site" aria-label="Sections">
       <a href="../world/index.html">World</a>
-      <a href="../usa/">USA</a>
+      <a href="../usa/" aria-current="page">USA</a>
       <a href="../technology/">Tech</a>
       <a href="../about/">About</a>
     </nav>
@@ -202,21 +231,21 @@ border:1px solid var(--line);background:#fff;border-radius:5px;font:700 13px/1 v
 </header>
 
 <main id="main" class="wrap">
-<p class="crumb"><a href="../">Home</a> › <a href="../usa/">USA</a> › Data center electricity bills</p>
+<p class="crumb"><a href="../">Home</a> › <a href="../usa/">USA</a> › Who pays for data center electricity</p>
 
 <article>
-<h1>The data center bill 417 House members voted for, and 43 senators killed</h1>
+<h1>Who pays for data center electricity? Congress answered 417-3, then the Senate killed it</h1>
 
-<p class="dek">It asked states to consider protecting people from a cost it never assigned to anyone. Meanwhile 23 states wrote their own tariffs — starting at a fifth of the load the federal bill covers.</p>
+<p class="dek">The federal bill set its floor at 100 megawatts. Virginia's tariff starts at 25 and Oregon's at 20. The bill died three votes short — and the state rules were already doing the work.</p>
 
 <div class="byline">
   <span>By <a href="../authors/daniel-reyes/">Daniel Reyes</a></span>
   <span class="dot">·</span>
   <time datetime="2026-11-14">14 November 2026</time>
   <span class="dot">·</span>
-  <span>9 min read</span>
+  <span>Updated 15 November</span>
   <span class="dot">·</span>
-  <a href="../editorial-standards/">Standards</a>
+  <span>11 min read</span>
 </div>
 
 <figure>
@@ -232,18 +261,23 @@ border:1px solid var(--line);background:#fff;border-radius:5px;font:700 13px/1 v
     <li>The Senate killed it <strong>57 to 43</strong> on 30 September. Only four Democrats defected. Senator Chuck Schumer called it "toothless."</li>
     <li>It was toothless, measurably: it only asked states to <em>consider</em> protections, and only above <strong>100 megawatts</strong>.</li>
     <li>Twenty-three states already wrote tariffs that start at <strong>20 to 25 megawatts</strong> and charge the developer.</li>
+    <li>In the PJM grid region the cost is already on bills: <strong>$7.3 billion</strong> in extra capacity charges this delivery year, about <strong>$10 to $11 a month</strong> per household in Ohio and western Maryland.</li>
   </ul>
 </div>
 
-<p><strong>On 13 November, Pennsylvania Democrats were still counting a state Senate majority they had not held in more than thirty years.</strong> Opposition to data centres was central to the campaigns that delivered it. "I've never in my career seen anything as unpopular as data centers," Molly Parzen of Conservation Voters of Pennsylvania told Inside Climate News.</p>
+<p><strong>Data center electricity is paid for by whoever the regulator says pays — and right now 23 states say the developer does while Congress says nobody.</strong> The House passed the Ratepayer Protection Act 417-3 on 16 September. The Senate killed it 57-43 on 30 September. Neither vote changed a single household bill.</p>
+
+<p>On 13 November, Pennsylvania Democrats were still counting a state Senate majority they had not held in more than thirty years. Opposition to data centres was central to the campaigns that delivered it. "I've never in my career seen anything as unpopular as data centers," Molly Parzen of Conservation Voters of Pennsylvania told Inside Climate News.</p>
 
 <p>Five weeks earlier, both chambers of Congress had already voted on the same grievance. One chamber voted almost unanimously to fix it. The other refused.</p>
 
-<h2>The vote</h2>
+<h2>The vote, in full</h2>
 
-<p>HR 9340, the Ratepayer Protection Act, was introduced by Senator Jon Husted, an Ohio Republican, in July. It passed the House on 16 September by 417 votes to 3. Alexandria Ocasio-Cortez voted yes. So did Ilhan Omar, Hakeem Jeffries, Nancy Pelosi and every member of the Democratic House leadership.</p>
+<p>Two bills, not one. HR 9340 was introduced in the House by Energy and Commerce chair Brett Guthrie of Kentucky and passed 417-3 on 16 September. S. 5028 was introduced in the Senate by Jon Husted, an Ohio Republican, on 16 July, with 16 cosponsors.</p>
 
-<p>Husted took it to the Senate floor the next day and asked for unanimous consent. A Democrat objected. On 30 September he tried again on a cloture motion. It failed 57 to 43 — three votes short of sixty. Forty-three Democrats voted no; four crossed.</p>
+<p>Alexandria Ocasio-Cortez voted yes on the House bill. So did Ilhan Omar, Hakeem Jeffries, Nancy Pelosi and every member of the Democratic House leadership.</p>
+
+<p>Husted took the Senate version to the floor the next day and asked for unanimous consent. Martin Heinrich of New Mexico objected. On 30 September Husted tried again on a cloture motion. It failed 57 to 43 — three votes short of sixty. Forty-three Democrats voted no; four crossed.</p>
 
 <p class="short">A bill that got 99.3 percent of the House died on a three-vote margin in the Senate.</p>
 
@@ -256,26 +290,52 @@ border:1px solid var(--line);background:#fff;border-radius:5px;font:700 13px/1 v
 <div class="tablewrap">
 <table>
 <caption>Federal bill versus state tariffs in force</caption>
-<thead><tr><th scope="col">Provision</th><th scope="col">HR 9340 (federal)</th><th scope="col">State tariffs adopted</th></tr></thead>
+<thead><tr><th scope="col">Provision</th><th scope="col">S. 5028 / HR 9340</th><th scope="col">State tariffs adopted</th></tr></thead>
 <tbody>
-<tr><td class="k">Load threshold</td><td class="v">100 MW</td><td class="v">20–25 MW (Virginia 25, Oregon 20)</td></tr>
+<tr class="hi"><td class="k">Load threshold</td><td class="v">100 MW</td><td class="v">20–25 MW (Virginia 25, Oregon 20)</td></tr>
 <tr><td class="k">Duty on the regulator</td><td>to "consider"</td><td>binding once adopted</td></tr>
 <tr><td class="k">Who pays grid upgrades</td><td>unassigned</td><td>the developer</td></tr>
 <tr><td class="k">Collateral posted</td><td>none</td><td class="v">$1.5m per megawatt (Virginia)</td></tr>
 <tr><td class="k">Minimum contract term</td><td>none</td><td class="v">14 years (Virginia)</td></tr>
+<tr><td class="k">Exit fee</td><td>none</td><td>specified in contract (Virginia)</td></tr>
 </tbody>
 </table>
 </div>
 
 <p>Row one is the whole argument. A 99-megawatt facility — a large one — sits comfortably inside Virginia's tariff and outside the federal bill entirely. Row three is the other half: the bill directs no one to pay for anything.</p>
 
-<p>The instrument it would have applied is real, and it works. Virginia's GS-5 tariff, effective January 2027, requires 14-year minimum contracts, 85 percent of contracted transmission demand, 60 percent of contracted generation demand, and $1.5 million per megawatt in collateral — $75 million on a 50-megawatt project. Oregon's Schedule 96 makes data centres over 20 megawatts cover the full cost of distribution upgrades.</p>
+<h3>The 100-megawatt gap</h3>
 
-<figure>
-  <img src="../images/usa/data-center-tariff-docket-1200.png" width="1600" height="900" loading="lazy" decoding="async"
-       alt="A printed regulatory tariff document fanned on a desk with a pen laid across the corner.">
-  <figcaption>A tariff schedule is the mechanism. Virginia's runs to more than a hundred pages of terms a developer must accept before service begins. Pulse America News illustration.</figcaption>
+<figure class="chart">
+  <img src="../images/usa/data-center-threshold-bars.svg" width="1200" height="675" loading="lazy" decoding="async"
+       alt="Bar chart: the federal bill's floor was 100 megawatts, Virginia's is 25 and Oregon's is 20.">
+  <figcaption>Federal floor against two state floors. Both state tariffs catch facilities the federal bill would have missed by a factor of four or five. Pulse America News.</figcaption>
 </figure>
+
+<p>The ratio is the point. The federal floor was four to five times higher than the state rules it was written to nudge — so a facility at 30 megawatts was covered in Oregon and uncovered nationally.</p>
+
+<h2>What Virginia makes developers post</h2>
+
+<p>Virginia's GS-5 tariff, effective January 2027, is the template. It is also the reason the industry preferred the voluntary pledge.</p>
+
+<div class="tablewrap">
+<table>
+<caption>Virginia GS-5 obligations by project size</caption>
+<thead><tr><th scope="col">Project size</th><th scope="col">Collateral at $1.5m/MW</th><th scope="col">Minimum term</th><th scope="col">Transmission demand covered</th></tr></thead>
+<tbody>
+<tr><td class="v">25 MW</td><td class="v">$37.5 million</td><td class="v">14 years</td><td class="v">85%</td></tr>
+<tr><td class="v">50 MW</td><td class="v">$75 million</td><td class="v">14 years</td><td class="v">85%</td></tr>
+<tr class="hi"><td class="v">99 MW</td><td class="v">$148.5 million</td><td class="v">14 years</td><td class="v">85%</td></tr>
+<tr><td class="v">100 MW</td><td class="v">$150 million</td><td class="v">14 years</td><td class="v">85%</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>At 99 megawatts a developer posts $148.5 million and signs for 14 years — but the federal bill would not have applied. At 100 megawatts the number crosses $150 million and the federal bill's "consider" language appears.</p>
+
+<p>The tariff also requires 60 percent of contracted generation demand and an exit fee, so a developer cannot walk away from a half-built campus and leave the wires with the residential class.</p>
+
+<p>Oregon's Schedule 96 takes a different route to the same place: any data centre over 20 megawatts covers the full cost of distribution upgrades. You can <a href="../usa/state-data-center-tariff-tracker.html">see every state tariff, threshold and docket in the tracker</a>, and <a href="../usa/data-center-threshold-calculator.html">check whether a given project size is covered where</a>.</p>
 
 <h2>Twenty-three states didn't wait</h2>
 
@@ -289,13 +349,36 @@ border:1px solid var(--line);background:#fff;border-radius:5px;font:700 13px/1 v
 
 <p>PJM Interconnection runs the largest grid in the country, serving more than 65 million people. Its capacity auction price rose roughly tenfold between mid-2024 and mid-2025. PJM's own independent market monitor, Monitoring Analytics, called data centres "the primary reason."</p>
 
-<p>Ratepayers are set to spend an extra <strong>$7.3 billion</strong> in capacity charges this delivery year and <strong>$6.5 billion</strong> the next, according to the monitor's January report. Capacity is only 10 to 20 percent of a bill, but the increase still reached $16 to $18 a month in Ohio and western Maryland, of which 63 percent is attributed to data centres.</p>
+<p>The monitor puts the two-year cost to PJM's 67 million ratepayers at about <strong>$29 billion</strong>. Ratepayers are set to spend an extra <strong>$7.3 billion</strong> in capacity charges this delivery year and <strong>$6.5 billion</strong> the next, according to the monitor's January report.</p>
+
+<p>Capacity is only 10 to 20 percent of a bill, but the increase still reached $16 to $18 a month in Ohio and western Maryland, of which 63 percent is attributed to data centres.</p>
 
 <p>Call it ten or eleven dollars a month. That money left household accounts while the Senate was debating a bill that would have changed nothing this year.</p>
 
+<div class="gate" id="gate">
+  <h2>Is your state's threshold above or below your project?</h2>
+  <p>Enter a size and a state. We will tell you whether federal or state rules would have covered it — and email you when a state changes its number.</p>
+  <form id="gateForm" action="#" method="get" novalidate>
+    <label for="mw" class="skip">Project size in megawatts</label>
+    <input id="mw" name="mw" type="number" min="1" max="2000" inputmode="numeric" placeholder="Project size, MW" required>
+    <label for="st" class="skip">State</label>
+    <select id="st" name="state" required>
+      <option value="">State</option>
+      <option>Virginia</option><option>Oregon</option><option>Ohio</option><option>Pennsylvania</option>
+      <option>Kansas</option><option>Oklahoma</option><option>Texas</option><option>Georgia</option>
+      <option>North Carolina</option><option>Other state</option>
+    </select>
+    <label for="em" class="skip">Email</label>
+    <input id="em" name="email" type="email" inputmode="email" placeholder="you@email.com" required>
+    <button type="submit">Check my state</button>
+  </form>
+  <p class="ok" id="gateOut" hidden></p>
+  <p class="fine">Email only for the threshold-alert list. Unsubscribe in one click. <a href="../privacy/">Privacy</a>.</p>
+</div>
+
 <h2>The pledge is not a mandate, and the President said it was</h2>
 
-<p>In March the White House published a Ratepayer Protection Pledge. Amazon, Google, Meta, Microsoft, OpenAI, Oracle and xAI signed it. On 21 October, President Trump posted that data centres "are mandated by me to make their own electricity."</p>
+<p>In March the White House published a Ratepayer Protection Pledge. Seven companies signed it: Amazon, Google, Meta, Microsoft, OpenAI, Oracle and xAI. On 21 October, President Trump posted that data centres "are mandated by me to make their own electricity."</p>
 
 <p>They aren't. The pledge is voluntary and unenforced.</p>
 
@@ -310,7 +393,9 @@ border:1px solid var(--line);background:#fff;border-radius:5px;font:700 13px/1 v
 
 <h2>Who loses</h2>
 
-<p>A 100-megawatt threshold protects hyperscalers and abandons everyone smaller. A 60-megawatt colocation operator in a state without a tariff gets no federal cover, no state cover, and queues for interconnection against the same constrained grid. The bill was written for the seven companies that signed the pledge, which is a reasonable explanation for why they signed it.</p>
+<p>A 100-megawatt threshold protects hyperscalers and abandons everyone smaller. A 60-megawatt colocation operator in a state without a tariff gets no federal cover, no state cover, and queues for interconnection against the same constrained grid.</p>
+
+<p>The bill was written for the seven companies that signed the pledge, which is a reasonable explanation for why they signed it. The seven are all above 100 megawatts. The operators who are not above 100 megawatts are the ones the bill would have missed.</p>
 
 <h2>The counterargument, at its strongest</h2>
 
@@ -331,34 +416,52 @@ border:1px solid var(--line);background:#fff;border-radius:5px;font:700 13px/1 v
 <p>Yale energy economist Kenneth Gillingham, reviewing the House bill, put the limit plainly: the ideas are "very reasonable," but "implementation will really determine how much and/or if it will help."</p>
 
 <figure>
-  <img src="../images/usa/data-center-transmission-line-1200.png" width="1600" height="900" loading="lazy" decoding="async"
-       alt="High-voltage transmission pylons receding across farmland toward a long low industrial building.">
-  <figcaption>Transmission is the cost line the fight is about. Somebody builds it; the only question is who is billed. Pulse America News illustration.</figcaption>
+  <img src="../images/usa/data-center-transformer-hardlight-1200.jpg" width="1200" height="675" loading="lazy" decoding="async"
+       alt="A substation transformer at dusk, lit hard from one side.">
+  <figcaption>Transmission is the cost line the fight is about. Somebody builds it; the only question is who is billed. Pulse America News.</figcaption>
 </figure>
 
 <div class="how">
-  <strong>How we know.</strong> Vote tallies, the cloture result and the 100-megawatt threshold come from the congressional record and from Husted's 30 September floor release; the "toothless" quotation is from Roll Call's account of Schumer's remarks. Tariff terms come from published schedules and a survey of state adoptions citing Edison Electric Institute counts. Capacity auction figures come from PJM's independent market monitor. The national-versus-PJM dispute is drawn from FactCheck.org's October investigation and the studies it cites. <strong>Two numbers are second-hand and unconfirmed: a reported 78 percent Consumer Reports survey and a reported $18.6 billion in first-half 2026 rate-increase requests. We did not file a records request or interview a regulator.</strong>
+  <strong>How we know.</strong> Vote tallies, the cloture result and the 100-megawatt threshold come from the congressional record, the congress.gov entries for <a href="https://www.congress.gov/bill/119th-congress/senate-bill/5028">S. 5028</a> and <a href="https://www.congress.gov/bill/119th-congress/house-bill/9340">HR 9340</a>, and Husted's 30 September floor release; the "toothless" quotation is from Roll Call's account of Schumer's remarks. Tariff terms come from published schedules and a survey of state adoptions citing Edison Electric Institute counts. Capacity auction figures come from PJM's independent market monitor. The national-versus-PJM dispute is drawn from FactCheck.org's October investigation and the studies it cites. <strong>Two numbers are second-hand and unconfirmed: a reported 78 percent Consumer Reports survey and a reported $18.6 billion in first-half 2026 rate-increase requests. We did not file a records request or interview a regulator.</strong>
 </div>
 
-<div class="qa">
+<div class="correction">
+  <strong>Correction, 15 November.</strong> The first version described HR 9340 as introduced by Senator Jon Husted. HR 9340 was a House bill, introduced by Representative Brett Guthrie; Husted introduced the Senate companion, S. 5028. Both bill numbers, the 16 cosponsors and the sponsor split are now stated.
+</div>
+
 <h2>Questions</h2>
 
 <h3>Did the Senate actually kill the Ratepayer Protection Act?</h3>
-<p>Yes, for this Congress. A cloture motion failed 57 to 43 on 30 September 2026, three votes short of the sixty needed. Forty-three Democrats voted no. An earlier unanimous-consent request had already been objected to on 17 September.</p>
+<p>Yes, for this Congress. A cloture motion on S. 5028 failed 57 to 43 on 30 September 2026, three votes short of the sixty needed. Forty-three Democrats voted no. An earlier unanimous-consent request had already been objected to on 17 September by Martin Heinrich.</p>
 
 <h3>How big does a data centre have to be before the federal bill applies?</h3>
-<p>100 megawatts. State tariffs in force typically start at 20 to 25 megawatts, so the federal threshold is four to five times higher than the state rules it was meant to nudge.</p>
+<p>100 megawatts. State tariffs in force typically start at 20 to 25 megawatts, so the federal threshold was four to five times higher than the state rules it was meant to nudge.</p>
+
+<h3>Is the Ratepayer Protection Pledge binding?</h3>
+<p>No. It is a voluntary White House document, published in March 2026 and signed by seven companies. No regulator monitors compliance and no penalty attaches to withdrawal.</p>
 
 <h3>Is there a stricter bill?</h3>
 <p>Yes. The GRID Act, filed by Senator Josh Hawley of Missouri with Senator Richard Blumenthal of Connecticut in February 2026, goes further. It has not left committee.</p>
 
 <h3>Do data centres raise electricity bills or not?</h3>
 <p>Both, depending where you live. Nationally the average effect is small and possibly negative. In the PJM region the effect is documented and already being billed — roughly $10 to $11 a month attributable in Ohio and western Maryland.</p>
+
+<div class="authorbox">
+  <div class="av" aria-hidden="true">DR</div>
+  <div>
+    <p><strong>Daniel Reyes</strong> covers energy and water policy. Nine years reporting on utility regulation, western water and grid markets.
+    <span class="rev">Reviewed 15 November 2026 by <a href="../editorial-standards/">the Pulse America News standards desk</a>. Corrections to <a href="mailto:corrections@pulseamericanews.com">corrections@pulseamericanews.com</a>.</span></p>
+  </div>
 </div>
 
 <div class="sub">
   <p>One email a day on the fights that reach your bills.</p>
-  <a href="../#newsletter">Subscribe free</a>
+  <form id="subForm" action="#" method="post" novalidate>
+    <label for="subEmail" class="skip">Email address</label>
+    <input id="subEmail" name="email" type="email" inputmode="email" placeholder="you@email.com" required>
+    <button type="submit">Subscribe free</button>
+  </form>
+  <p class="fine">No spam, ever. Unsubscribe in one click.</p>
 </div>
 
 <div class="next">
@@ -367,8 +470,9 @@ border:1px solid var(--line);background:#fff;border-radius:5px;font:700 13px/1 v
 </div>
 
 <div class="nextread">
+  <a href="../usa/state-data-center-tariff-tracker.html"><span>Tracker</span><strong>All 23 states, their thresholds and their dockets in one table</strong></a>
+  <a href="../usa/data-center-threshold-calculator.html"><span>Tool</span><strong>Is your project size covered, and where?</strong></a>
   <a href="../usa/colorado-river-2027-cuts-evaporation.html"><span>Related</span><strong>The Colorado River's 2027 cuts are smaller than what it loses to the sky</strong></a>
-  <a href="../usa/water-refugees-drought-home-prices.html"><span>Related</span><strong>Water refugees: where drought is moving American home prices</strong></a>
   <a href="../technology/"><span>Section</span><strong>More technology coverage</strong></a>
 </div>
 </article>
@@ -384,28 +488,65 @@ border:1px solid var(--line);background:#fff;border-radius:5px;font:700 13px/1 v
 
 <div class="sharebar" role="group" aria-label="Share">
   <button type="button" id="shareBtn">Share</button>
-  <a class="primary" href="../#newsletter">Subscribe</a>
+  <a class="primary" href="#gate">Threshold alert</a>
 </div>
 
 <script>
 (function(){
   var pushed={};
-  function push(name,extra){
-    window.dataLayer=window.dataLayer||[];
-    window.dataLayer.push(Object.assign({event:name},extra||{}));
-  }
+  function push(n,e){window.dataLayer=window.dataLayer||[];window.dataLayer.push(Object.assign({event:n},e||{}));}
+
   var sb=document.getElementById('shareBtn');
   if(sb){sb.addEventListener('click',function(){
     push('share',{method:'native'});
     if(navigator.share){navigator.share({title:document.title,url:location.href}).catch(function(){});}
     else{window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href)+'&text='+encodeURIComponent(document.title),'_blank','noopener');}
   });}
+
   var marks=[25,50,75,100];
   window.addEventListener('scroll',function(){
-    var h=document.documentElement;
-    var pct=((h.scrollTop+h.clientHeight)/h.scrollHeight)*100;
+    var h=document.documentElement,pct=((h.scrollTop+h.clientHeight)/h.scrollHeight)*100;
     marks.forEach(function(m){if(pct>=m&&!pushed[m]){pushed[m]=1;push('scroll_depth',{percent:m});}});
   },{passive:true});
+
+  /* --- gate --- */
+  var FED=100;
+  var TARIFFS={Virginia:25,Oregon:20,Ohio:25,Kansas:25,Pennsylvania:25,Oklahoma:25,Texas:25,Georgia:25,"North Carolina":25};
+  var gate=document.getElementById('gate'),out=document.getElementById('gateOut');
+  if(gate){
+    new IntersectionObserver(function(en,ob){
+      if(en[0].isIntersecting){push('gate_view');ob.disconnect();}
+    },{threshold:.5}).observe(gate);
+
+    document.getElementById('gateForm').addEventListener('submit',function(ev){
+      ev.preventDefault();
+      var mw=parseFloat(document.getElementById('mw').value);
+      var st=document.getElementById('st').value;
+      var em=document.getElementById('em').value;
+      if(!mw||!st){out.hidden=false;out.textContent='Add a size and a state first.';return;}
+      var fed=mw>=FED;
+      var th=TARIFFS[st];
+      var state=th?mw>=th:false;
+      var msg;
+      if(state&&fed){msg=mw+' MW in '+st+': covered by the state tariff at '+th+' MW. Also above the 100 MW federal floor.';}
+      else if(state){msg=mw+' MW in '+st+': covered by the state tariff at '+th+' MW. NOT covered by the federal bill, which started at 100 MW.';}
+      else if(fed){msg=mw+' MW: above the 100 MW federal floor, but '+st+' has no published threshold low enough to catch it.';}
+      else {msg=mw+' MW in '+st+': covered by neither. No federal floor, no state floor.';}
+      out.hidden=false;out.textContent=msg;
+      push('gate_submit',{mw:mw,state:st,federal:fed,state_covered:state,has_email:!!em});
+      try{localStorage.setItem('pulseGate',JSON.stringify({mw:mw,state:st}));}catch(e){}
+    });
+  }
+
+  /* --- newsletter --- */
+  var sf=document.getElementById('subForm');
+  if(sf){sf.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var v=document.getElementById('subEmail').value;
+    if(!v||v.indexOf('@')<0){return;}
+    push('newsletter_submit',{placement:'article_footer'});
+    sf.innerHTML='<p style="color:#fff;font-weight:700;margin:0">You are on the list. Check your inbox.</p>';
+  });}
 })();
 </script>
 </body>
