@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page moved — Pulse America News</title>
+<meta name="robots" content="noindex,follow">
+<style>
+:root{--ink:#14171a;--mid:#4d555c;--line:#dfe3e6;--accent:#0f5f6b}
+body{margin:0;font:400 17px/1.6 "Source Sans 3",system-ui,sans-serif;color:var(--ink);background:#fff;padding:0 20px}
+main{max-width:34rem;margin:0 auto;padding:56px 0 80px}
+h1{font:900 1.7rem/1.2 Georgia,serif;letter-spacing:-.02em;margin:0 0 .5em}
+p{color:var(--mid);margin:0 0 1.1em}
+a{color:var(--accent)}
+ul{list-style:none;padding:0;margin:1.5em 0}
+li{margin-bottom:2px}
+li a{display:flex;align-items:center;min-height:44px;padding:0 14px;border:1px solid var(--line);border-radius:5px;text-decoration:none;color:var(--ink);font-weight:600}
+li a:hover{border-color:var(--accent)}
+.brand{font:900 18px/1 Georgia,serif;text-decoration:none;color:var(--ink);display:inline-block;margin-bottom:2rem}
+.brand b{color:#c8102e}
+#note{font-size:14px;color:var(--mid)}
+</style>
+</head>
+<body>
+<main>
+<a class="brand" href="/">Pulse<b>America</b>News</a>
+<h1>This page has moved</h1>
+<p id="note">If you are not forwarded automatically, pick a destination below.</p>
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="/usa/">USA</a></li>
+  <li><a href="/world/index.html">World</a></li>
+  <li><a href="/technology/">Technology</a></li>
+  <li><a href="/news/water-wars-article.html">Water Wars</a></li>
+  <li><a href="/usa/water-refugees-drought-home-prices.html">Water Refugees</a></li>
+  <li><a href="/usa/data-center-electric-bill-who-pays.html">Who pays for data center electricity</a></li>
+</ul>
+</main>
+<script>
+(function(){
+  var m={
+    "/world/water-wars-global-crisis/":"/news/water-wars-article.html",
+    "/world/water-wars-global-crisis/index.html":"/news/water-wars-article.html",
+    "/usa/water-refugees-drought-home-prices/":"/usa/water-refugees-drought-home-prices.html",
+    "/usa/water-refugees-drought-home-prices/index.html":"/usa/water-refugees-drought-home-prices.html",
+    "/world/gaza-ceasefire-third-week/":"/world/index.html",
+    "/world/gaza-ceasefire-third-week/index.html":"/world/index.html",
+    "/world/nato-eastern-flank-division/":"/world/index.html",
+    "/world/nato-eastern-flank-division/index.html":"/world/index.html",
+    "/world/south-korea-japan-defense-pact/":"/world/index.html",
+    "/world/south-korea-japan-defense-pact/index.html":"/world/index.html",
+    "/usa/senate-infrastructure-deal/":"/usa/",
+    "/usa/supreme-court-immunity-ruling/":"/usa/",
+    "/usa/unemployment-falls-3-2-percent/":"/usa/",
+    "/usa/colorado-river-2027-cuts-evaporation.html":"/usa/",
+    "/technology/ai-bar-exam-stanford/":"/technology/",
+    "/technology/financial-services-breach-200m/":"/technology/",
+    "/technology/starship-crewed-lunar-orbit/":"/technology/",
+    "/technology/vision-pro-2-sells-out/":"/technology/",
+    "/california-wildfire-season-early/index.html":"/usa/",
+    "/unemployment-falls-3-2-percent/index.html":"/usa/",
+    "/authors/daniel-reyes/index.html":"/authors/daniel-reyes/",
+    "/authors/james-caldwell/index.html":"/authors/james-caldwell/",
+    "/authors/daniel-reyes/":"/authors/daniel-reyes/",
+    "/privacy/":"/privacy/"
+  };
+  var p=location.pathname.replace(/\/$/,"/");
+  var t=m[p]||m[location.pathname];
+  if(t&&t!==location.pathname){
+    document.getElementById('note').textContent='Forwarding you to the current page…';
+    location.replace(t+location.search+location.hash);
+  }
+})();
+</script>
+</body>
+</html>
