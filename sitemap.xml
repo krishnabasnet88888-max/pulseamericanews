@@ -1,25 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ============ HOMEPAGE + HUBS ============ -->
   <url>
     <loc>https://pulseamericanews.com/</loc>
-    <lastmod>2026-11-15</lastmod>
-    <changefreq>daily</changefreq>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://pulseamericanews.com/usa/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pulseamericanews.com/world/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pulseamericanews.com/current-affairs/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pulseamericanews.com/technology/</loc>
     <lastmod>2026-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pulseamericanews.com/sex-education/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pulseamericanews.com/sports/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ============ BHATT CASE CLUSTER ============ -->
+  <url>
+    <loc>https://pulseamericanews.com/usa/naresh-bhatt-guilty-verdict.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://pulseamericanews.com/images/usa/bhatt-courthouse-og-1200x630.jpg</image:loc>
+      <image:caption>Prince William County Circuit Court in Manassas, where Naresh Bhatt was convicted</image:caption>
+      <image:title>Prince William County Circuit Court</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pulseamericanews.com/images/usa/mamta-kafle-bhatt-1x1.jpg</image:loc>
+      <image:caption>Mamta Kafle Bhatt, 28, a pediatric nurse from Manassas Park</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pulseamericanews.com/usa/naresh-bhatt-sentencing-arithmetic.html</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://pulseamericanews.com/usa/murder-conviction-without-body.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Publish, then uncomment these four:
+  <url>
+    <loc>https://pulseamericanews.com/usa/bhatt-trial-timeline.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pulseamericanews.com/usa/neema-bhatt-custody-estate.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pulseamericanews.com/usa/bhatt-landfill-search-timeline.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pulseamericanews.com/usa/naresh-bhatt-suicide-claim.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  -->
+
+  <!-- ============ DATA CENTRE CLUSTER ============ -->
+  <url>
     <loc>https://pulseamericanews.com/usa/data-center-electric-bill-who-pays.html</loc>
     <lastmod>2026-11-15</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://pulseamericanews.com/images/usa/data-center-bill-og-1200x630.png</image:loc>
+      <image:caption>Substation transformers feeding a data centre campus</image:caption>
     </image:image>
   </url>
   <url>
@@ -34,68 +125,90 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- ============ WATER IN THE WEST ============ -->
   <url>
-    <loc>https://pulseamericanews.com/news/water-wars-article.html</loc>
-    <lastmod>2026-11-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://pulseamericanews.com/usa/colorado-river-2027-cuts-evaporation.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pulseamericanews.com/images/usa/colorado-river-bathtub-ring-powell-1600.png</image:loc>
+      <image:caption>Pale mineral bathtub ring on red sandstone at Lake Powell</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://pulseamericanews.com/usa/water-refugees-drought-home-prices.html</loc>
     <lastmod>2026-11-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pulseamericanews.com/images/usa/water-refugees-hero-1600.png</image:loc>
+      <image:caption>For sale sign in cracked ground outside an abandoned rural home</image:caption>
+    </image:image>
   </url>
   <url>
-    <loc>https://pulseamericanews.com/world/index.html</loc>
-    <lastmod>2026-11-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <loc>https://pulseamericanews.com/news/water-wars-article.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pulseamericanews.com/images/world/water-wars-global-crisis-hero.avif</image:loc>
+      <image:caption>Aerial view of a cracked dry lakebed</image:caption>
+    </image:image>
   </url>
-  <url>
-    <loc>https://pulseamericanews.com/technology/</loc>
-    <lastmod>2026-11-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
+
+  <!-- ============ TRUST + STATIC ============ -->
   <url>
     <loc>https://pulseamericanews.com/about/</loc>
     <lastmod>2026-11-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://pulseamericanews.com/authors/</loc>
     <lastmod>2026-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://pulseamericanews.com/authors/daniel-reyes/</loc>
     <lastmod>2026-11-15</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pulseamericanews.com/authors/james-caldwell/</loc>
     <lastmod>2026-11-15</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pulseamericanews.com/editorial-standards/</loc>
     <lastmod>2026-11-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pulseamericanews.com/corrections/</loc>
     <lastmod>2026-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pulseamericanews.com/contact/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://pulseamericanews.com/advertise/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://pulseamericanews.com/tips/</loc>
     <lastmod>2026-11-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
@@ -107,15 +220,15 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://pulseamericanews.com/usa/naresh-bhatt-guilty-verdict.html</loc>
-    <lastmod>2026-11-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://pulseamericanews.com/terms/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://pulseamericanews.com/usa/naresh-bhatt-sentencing-arithmetic.html</loc>
+    <loc>https://pulseamericanews.com/cookies/</loc>
     <lastmod>2026-11-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

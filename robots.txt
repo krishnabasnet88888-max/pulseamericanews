@@ -1,16 +1,23 @@
 # Pulse America News
 # Policy: all crawlers welcome. AI answer engines explicitly allowed for citation.
+# Discovery: https://pulseamericanews.com/llms.txt
 
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /*?utm_
+Disallow: /*?s=
+Disallow: /*&s=
 Content-Signal: search=yes, ai-input=yes, ai-train=yes, use=reference
 
+# --- Search engines ---
 User-agent: Googlebot
 Allow: /
 
 User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
 Allow: /
 
 User-agent: Bingbot
@@ -28,6 +35,10 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
+User-agent: Slurp
+Allow: /
+
+# --- AI answer engines (citation) ---
 User-agent: GPTBot
 Allow: /
 
@@ -46,6 +57,12 @@ Allow: /
 User-agent: Claude-User
 Allow: /
 
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
@@ -56,6 +73,9 @@ User-agent: Google-Extended
 Allow: /
 
 User-agent: GoogleOther
+Allow: /
+
+User-agent: Google-CloudVertexBot
 Allow: /
 
 User-agent: Applebot-Extended
@@ -71,6 +91,33 @@ User-agent: Amazonbot
 Allow: /
 
 User-agent: MistralAI-User
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: omgili
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: KimiBot
+Allow: /
+
+# --- Blocked ---
+User-agent: AhrefsBot
+Crawl-delay: 1
+Allow: /
+
+User-agent: SemrushBot
+Crawl-delay: 1
 Allow: /
 
 Sitemap: https://pulseamericanews.com/sitemap.xml
