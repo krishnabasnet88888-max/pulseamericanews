@@ -107,4 +107,15 @@
       <news:genres>Blog, Opinion</news:genres>
     </news:news>
   </url>
+  <url>
+  <loc>https://pulseamericanews.com/usa/colorado-river-cuts-january-2027-households.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>Pulse America News</news:name>
+      <news:language>en</news:language>
+    </news:publication>
+    <news:publication_date>2026-11-18T07:00:00-05:00</news:publication_date>
+    <news:title>Colorado River cuts start Jan. 1. The deal isn't signed</news:title>
+  </news:news>
+</url>
 </urlset>
