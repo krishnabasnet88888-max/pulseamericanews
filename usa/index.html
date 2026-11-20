@@ -63,6 +63,39 @@ h2{font:900 1.35rem/1.2 var(--serif);margin:2.2em 0 .7em;border-top:2px solid va
 .tools span{display:block;font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--mid);margin-bottom:4px}
 footer.site{border-top:1px solid var(--line);padding:26px 0 40px;font-size:14px;color:var(--mid);margin-top:3rem}
 footer.site a{display:inline-block;min-height:var(--tap);margin-right:14px;color:var(--mid)}
+
+/* ---------- case file module ---------- */
+.casefile{border:1px solid var(--line);border-left:4px solid #c8102e;border-radius:7px;background:var(--wash);padding:20px 20px 6px;margin:1.8em 0 0}
+.casefile .cf-kick{font-size:11.5px;text-transform:uppercase;letter-spacing:.09em;color:#c8102e;font-weight:700}
+.casefile h2{font:900 clamp(1.35rem,3.2vw,1.8rem)/1.15 var(--serif);margin:.28em 0 .3em;border-top:0;padding-top:0}
+.casefile .cf-stand{font-size:.95rem;color:var(--mid);margin:0 0 .9em;max-width:38rem}
+.cf-status{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0 0 1.2em;padding:0}
+.cf-status li{font-size:12px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:5px 9px;border-radius:4px;background:#fff;border:1px solid var(--line);color:var(--mid)}
+.cf-status li.on{background:#c8102e;border-color:#c8102e;color:#fff}
+.cf-lead{display:grid;gap:16px;padding-bottom:1.2em;border-bottom:1px solid var(--line)}
+@media(min-width:640px){.cf-lead{grid-template-columns:112px 1fr;align-items:start}}
+.cf-lead .portrait{margin:0}
+.cf-lead .portrait img{width:112px;height:112px;object-fit:cover;border-radius:6px}
+.cf-lead .portrait figcaption{font-size:11.5px;line-height:1.35;color:var(--mid);margin-top:6px}
+.cf-lead .cf-shot{order:-1}
+@media(min-width:640px){.cf-lead .cf-shot{order:0}}
+.cf-lead .cf-shot img{aspect-ratio:16/9;object-fit:cover;width:100%;border-radius:6px}
+.cf-lead .cf-shot figcaption{font-size:11.5px;line-height:1.35;color:var(--mid);margin-top:6px}
+.cf-lead h3{font:900 clamp(1.2rem,2.9vw,1.55rem)/1.16 var(--serif);margin:.25em 0 .35em}
+.cf-lead h3 a{text-decoration:none}
+.cf-lead h3 a:hover{color:var(--accent)}
+.cf-lead p{font-size:.95rem;color:var(--mid);margin:0 0 .5em}
+.cf-meta{font-size:13px;color:var(--mid)}
+.cf-rows{display:grid;gap:0;margin:0}
+.cf-row{display:grid;grid-template-columns:92px 1fr;gap:14px;align-items:start;padding:16px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.cf-row:last-child{border-bottom:0}
+.cf-row:hover strong{color:var(--accent)}
+.cf-row img{width:92px;height:66px;object-fit:cover;border-radius:5px}
+.cf-row .kick{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#c8102e;font-weight:700}
+.cf-row strong{display:block;font:700 1rem/1.35 var(--sans);margin:.18em 0 .25em}
+.cf-row span.meta{font-size:12.5px;color:var(--mid)}
+.cf-note{font-size:12.5px;color:var(--mid);padding:12px 0 16px;margin:0}
+.cf-note a{color:var(--accent)}
 </style>
 </head>
 <body>
@@ -86,6 +119,60 @@ footer.site a{display:inline-block;min-height:var(--tap);margin-right:14px;color
     <p style="margin-top:.8em"><a href="data-center-electric-bill-who-pays.html" style="font-weight:700;color:#0f5f6b">Read the analysis →</a></p>
   </div>
 </div>
+
+<section class="casefile" aria-labelledby="cf-h">
+  <span class="cf-kick">Case file · Prince William County Circuit Court</span>
+  <h2 id="cf-h">The murder of Mamta Kafle Bhatt</h2>
+  <p class="cf-stand">A Manassas Park nurse vanished in July 2024. Her husband admitted cutting up her body but said he did not kill her. A jury of eight women and four men disagreed in four hours. Her remains have never been found.</p>
+
+  <ul class="cf-status">
+    <li class="on">Convicted on all three counts · 10 Nov 2026</li>
+    <li>Sentencing · 12 Mar 2027, 1 p.m.</li>
+    <li>Remains not recovered</li>
+  </ul>
+
+  <div class="cf-lead">
+    <figure class="portrait">
+      <img src="../images/usa/mamta-kafle-bhatt-1x1.jpg" width="224" height="224" alt="Mamta Kafle Bhatt, a 28-year-old pediatric nurse from Manassas Park." loading="lazy" decoding="async">
+      <figcaption>Mamta Kafle Bhatt, 28. Pulse America News</figcaption>
+    </figure>
+    <div>
+      <span class="cf-kick">Verdict</span>
+      <h3><a href="naresh-bhatt-guilty-verdict.html">Jury convicts Naresh Bhatt on all three counts after four hours</a></h3>
+      <p>First-degree murder, concealing a dead body and defiling a dead body. Seventeen days of testimony, a defence of suicide, and a unanimous verdict by 5 p.m.</p>
+      <p class="cf-meta">By Daniel Reyes · 16 November · 8 min read</p>
+    </div>
+  </div>
+
+  <div class="cf-rows">
+    <a class="cf-row" href="naresh-bhatt-sentencing-arithmetic.html">
+      <img src="../images/usa/bhatt-sentencing-gavel-1600.jpg" width="184" height="132" alt="A gavel and sentencing papers on a courtroom bench." loading="lazy" decoding="async">
+      <div>
+        <span class="kick">Sentencing</span>
+        <strong>What the conviction carries: a 20-year floor, and the arithmetic that outruns it</strong>
+        <span class="meta">Class 6 counts stack. Parole was abolished in 1995. Geriatric release under § 53.1-40.01 arrives at 60 — before the floor does. 7 min read</span>
+      </div>
+    </a>
+    <a class="cf-row" href="murder-conviction-without-body.html">
+      <img src="../images/usa/bhatt-empty-jury-box-1600.jpg" width="184" height="132" alt="An empty jury box in a county courtroom." loading="lazy" decoding="async">
+      <div>
+        <span class="kick">The doctrine</span>
+        <strong>Murder convictions without a body: how the corpus delicti rule gets cleared</strong>
+        <span class="meta">Epperly v. Commonwealth upheld a wholly circumstantial no-body conviction in 1982. The rule is about the crime, not the corpse. 9 min read</span>
+      </div>
+    </a>
+    <a class="cf-row" href="bhatt-landfill-search-timeline.html">
+      <img src="../images/usa/bhatt-battle-creek-landfill-1600.jpg" width="184" height="132" alt="An excavator working a landfill at dawn under an overcast sky." loading="lazy" decoding="async">
+      <div>
+        <span class="kick">Recovery log</span>
+        <strong>The Battle Creek landfill: every search, cell and outcome, dated</strong>
+        <span class="meta">Page County. The waste-haul route, the cells worked, what the dogs hit and what came back empty. 6 min read</span>
+      </div>
+    </a>
+  </div>
+
+  <p class="cf-note">Bhatt, 39, is held without bond. Every figure in this file traces to the court record — start with the <a href="naresh-bhatt-guilty-verdict.html">verdict</a>, then the <a href="naresh-bhatt-sentencing-arithmetic.html">sentencing arithmetic</a>.</p>
+</section>
 
 <h2>Tools on this beat</h2>
 <div class="tools">
