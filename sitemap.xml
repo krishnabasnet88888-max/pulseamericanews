@@ -75,7 +75,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  <!-- Publish, then uncomment these four:
+  
   <url>
     <loc>https://pulseamericanews.com/usa/bhatt-trial-timeline.html</loc>
     <lastmod>2026-11-16</lastmod>
@@ -100,7 +100,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  -->
+ 
 
   <!-- ============ DATA CENTRE CLUSTER ============ -->
   <url>
@@ -231,4 +231,15 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+<url>
+ <loc>https://pulseamericanews.com/usa/electricity-price-by-state/</loc>
+ <lastmod>2026-11-20</lastmod>
+ <changefreq>monthly</changefreq>
+ <priority>0.95</priority>
+ <image:image>
+  <image:loc>https://pulseamericanews.com/images/usa/electricity-price-by-state-og-1200x630.png</image:loc>
+  <image:title>Residential electricity price by US state</image:title>
+ </image:image>
+</url>
+  
 </urlset>
