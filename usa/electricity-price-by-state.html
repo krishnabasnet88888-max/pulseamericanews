@@ -5,21 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 <!--
-  STEP 1 (do this first): move the <style> block below to /assets/article.css
-  and replace it with: <link rel="stylesheet" href="/assets/article.css">
-  It is inline here only so this file is drop-in. Inline = no caching between pageviews.
-
-  STEP 2: generate image variants. Every <picture> below expects:
-    electricity-price-by-state-hero-{640,960,1600}.{avif,webp,png}
-    electricity-price-by-state-map-{600,1200}.{avif,webp,png}
-    electricity-price-by-state-1x1.{avif,webp,png}
-  PNG stays as the <img> fallback. Delete the avif/webp <source> lines for any variant you don't make.
-
-  STEP 3: add this URL to news-sitemap.xml with a <lastmod>. It is currently in sitemap.xml only.
+  Image paths are relative. <picture> blocks are commented until .avif/.webp exist.
+  A <picture> does not fall back to the next <source> on 404 — uncomment only after generating variants.
+  STEP 1 later: move <style> to ../assets/article.css.
 -->
 
-<title>Electricity Prices by State 2027 — All 50 Ranked, and Who Pays</title>
-<meta name="description" content="Nevada 12.72¢, Hawaii 47.18¢, US average 18.16¢. All 50 states and DC ranked for August 2026 — plus the 23 states now charging data centers for the grid.">
+<title>Why Your Electric Bill Jumped — All 50 States Ranked, 2027</title>
+<meta name="description" content="Nevada 12.72¢, Hawaii 47.18¢. Maryland rose 11.6% — the most of any mainland state. All 51 jurisdictions ranked, and the 23 states now charging data centers for the grid.">
 <link rel="canonical" href="https://pulseamericanews.com/usa/electricity-price-by-state.html">
 <link rel="alternate" hreflang="en-us" href="https://pulseamericanews.com/usa/electricity-price-by-state.html">
 <link rel="alternate" hreflang="x-default" href="https://pulseamericanews.com/usa/electricity-price-by-state.html">
@@ -31,8 +23,8 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Pulse America News">
 <meta property="og:locale" content="en_US">
-<meta property="og:title" content="Electricity prices in all 50 states — and the 23 states charging data centers for it">
-<meta property="og:description" content="Nevada 12.72¢. Hawaii 47.18¢. National average 18.16¢. 50 of 51 jurisdictions rose in a year, and the biggest mainland rises sit on the grid carrying the heaviest data center load.">
+<meta property="og:title" content="Why your electric bill jumped — and the 23 states charging data centers for it">
+<meta property="og:description" content="Nevada 12.72¢. Hawaii 47.18¢. Maryland +11.6%, the biggest mainland rise. All 51 jurisdictions ranked for August 2026, plus which states now make data centers pay.">
 <meta property="og:url" content="https://pulseamericanews.com/usa/electricity-price-by-state.html">
 <meta property="og:image" content="https://pulseamericanews.com/images/usa/electricity-price-by-state-og-1200x630.png">
 <meta property="og:image:type" content="image/png">
@@ -40,44 +32,50 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Transmission towers at dusk above a state-by-state electricity price table">
 <meta property="article:published_time" content="2026-11-20T06:00:00-05:00">
-<meta property="article:modified_time" content="2026-11-20T06:00:00-05:00">
+<meta property="article:modified_time" content="2026-11-20T09:30:00-05:00">
 <meta property="article:section" content="USA">
 <meta property="article:tag" content="Electricity prices by state">
 <meta property="article:tag" content="Data center electricity">
 <meta property="article:tag" content="EIA">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@pulseamericanews">
-<meta name="twitter:title" content="Electricity prices in all 50 states — and the 23 states charging data centers for it">
-<meta name="twitter:description" content="Nevada 12.72¢. Hawaii 47.18¢. National average 18.16¢. 50 of 51 jurisdictions rose in a year.">
+<meta name="twitter:title" content="Why your electric bill jumped — and the 23 states charging data centers for it">
+<meta name="twitter:description" content="Nevada 12.72¢. Hawaii 47.18¢. Maryland +11.6%. All 51 jurisdictions ranked.">
 <meta name="twitter:image" content="https://pulseamericanews.com/images/usa/electricity-price-by-state-og-1200x630.png">
 <meta name="twitter:image:alt" content="Transmission towers at dusk above a state-by-state electricity price table">
 
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="alternate" type="application/rss+xml" title="Pulse America News RSS" href="/feed.xml">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Pulse America News RSS" href="../feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap">
-<link rel="preload" as="image" type="image/avif" fetchpriority="high"
-      imagesrcset="/images/usa/electricity-price-by-state-hero-640.avif 640w, /images/usa/electricity-price-by-state-hero-960.avif 960w, /images/usa/electricity-price-by-state-hero-1600.avif 1600w"
-      imagesizes="(max-width:767px) 100vw, 760px">
+<link rel="preload" as="image" href="../images/usa/electricity-price-by-state-hero-1600.png" fetchpriority="high">
 
 <script type="application/ld+json">
 {
  "@context":"https://schema.org","@graph":[
  {"@type":"NewsArticle","@id":"https://pulseamericanews.com/usa/electricity-price-by-state.html#article",
-  "headline":"Electricity prices in all 50 states in 2027 — and the 23 states charging data centers for it",
+  "headline":"Why your electric bill jumped — electricity prices in all 50 states, and the 23 states charging data centers for it",
   "description":"Every state ranked by residential electricity price, August 2026, with year-on-year change. The US average is 18.16 cents per kilowatt-hour.",
-  "datePublished":"2026-11-20T06:00:00-05:00","dateModified":"2026-11-20T06:00:00-05:00",
+  "datePublished":"2026-11-20T06:00:00-05:00","dateModified":"2026-11-20T09:30:00-05:00",
   "articleSection":"USA","inLanguage":"en-US","isAccessibleForFree":true,
   "author":{"@id":"https://pulseamericanews.com/#krishna-basnet"},
   "publisher":{"@id":"https://pulseamericanews.com/#organization"},
   "mainEntityOfPage":{"@id":"https://pulseamericanews.com/usa/electricity-price-by-state.html#webpage"},
   "about":[{"@type":"Thing","name":"Residential electricity prices"},
            {"@type":"Thing","name":"Data center load growth"}],
-  "keywords":"electricity prices by state, average electric bill, data center electricity, EIA 5.6.A, PJM capacity",
+  "keywords":"electricity prices by state, why did my electric bill go up, data center electricity, EIA 5.6.A, PJM capacity",
+  "citation":[
+   {"@type":"CreativeWork","name":"Electric Power Monthly, Table 5.6.A","url":"https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a"},
+   {"@type":"CreativeWork","name":"Monitoring Analytics, 2027/28 capacity market report","url":"https://www.monitoringanalytics.com/"},
+   {"@type":"CreativeWork","name":"PJM Interconnection capacity auction results","url":"https://www.pjm.com/"},
+   {"@type":"CreativeWork","name":"Eurostat, household electricity prices, H1 2026","url":"https://ec.europa.eu/eurostat/"},
+   {"@type":"CreativeWork","name":"GlobalPetrolPrices, Q3 2026","url":"https://www.globalpetrolprices.com/"},
+   {"@type":"CreativeWork","name":"S. 5028, Ratepayer Protection Act","url":"https://www.congress.gov/bill/119th-congress/senate-bill/5028"}
+  ],
   "image":[
    {"@type":"ImageObject","url":"https://pulseamericanews.com/images/usa/electricity-price-by-state-og-1200x630.png","width":1200,"height":630,"caption":"Transmission towers at dusk above a state-by-state electricity price table"},
    {"@type":"ImageObject","url":"https://pulseamericanews.com/images/usa/electricity-price-by-state-1x1.png","width":1200,"height":1200,"caption":"A pad-mounted transformer lit from one side at night"},
@@ -93,18 +91,18 @@
   "isAccessibleForFree":true,
   "variableMeasured":["Cents per kilowatt-hour","Year-on-year change","Large-load tariff threshold"],
   "distribution":[
-   {"@type":"DataDownload","encodingFormat":"text/html","contentUrl":"https://pulseamericanews.com/usa/electricity-price-by-state.html"},
-   {"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://pulseamericanews.com/usa/electricity-price-by-state.csv"}
+   {"@type":"DataDownload","encodingFormat":"text/html","contentUrl":"https://pulseamericanews.com/usa/electricity-price-by-state.html"}
   ]},
  {"@type":"WebPage","@id":"https://pulseamericanews.com/usa/electricity-price-by-state.html#webpage",
   "url":"https://pulseamericanews.com/usa/electricity-price-by-state.html",
-  "name":"Electricity prices by state 2027: all 50 states ranked",
+  "name":"Why your electric bill jumped — all 50 states ranked",
   "isPartOf":{"@id":"https://pulseamericanews.com/#website"},
   "breadcrumb":{"@id":"https://pulseamericanews.com/usa/electricity-price-by-state.html#breadcrumb"},
   "primaryImageOfPage":{"@id":"https://pulseamericanews.com/usa/electricity-price-by-state.html#article"},
-  "datePublished":"2026-11-20T06:00:00-05:00","dateModified":"2026-11-20T06:00:00-05:00"},
+  "datePublished":"2026-11-20T06:00:00-05:00","dateModified":"2026-11-20T09:30:00-05:00"},
  {"@type":"Person","@id":"https://pulseamericanews.com/#krishna-basnet","name":"Krishna Basnet",
-  "jobTitle":"Founder","url":"https://pulseamericanews.com/authors/krishna-basnet.html",
+  "jobTitle":"Founder and energy correspondent","url":"https://pulseamericanews.com/authors/krishna-basnet.html",
+  "knowsAbout":["Electricity markets","Utility regulation","PJM capacity auctions","Data center load"],
   "sameAs":["https://twitter.com/pulseamericanews","https://www.linkedin.com/in/krishnabasnet8"],
   "worksFor":{"@id":"https://pulseamericanews.com/#organization"}},
  {"@type":"NewsMediaOrganization","@id":"https://pulseamericanews.com/#organization",
@@ -124,14 +122,15 @@
    {"@type":"ListItem","position":2,"name":"USA","item":"https://pulseamericanews.com/usa/"},
    {"@type":"ListItem","position":3,"name":"Electricity prices by state"}]},
  {"@type":"FAQPage","@id":"https://pulseamericanews.com/usa/electricity-price-by-state.html#faq","mainEntity":[
-  {"@type":"Question","name":"Which state has the cheapest electricity?","acceptedAnswer":{"@type":"Answer","text":"Nevada, at 12.72 cents per kilowatt-hour in August 2026. North Dakota, Utah, Idaho and Louisiana follow, all under 13.5 cents."}},
+  {"@type":"Question","name":"Which state has the cheapest electricity?","acceptedAnswer":{"@type":"Answer","text":"Nevada, at 12.72 cents per kilowatt-hour in August 2026 — the only state whose rate fell over the year. North Dakota, Utah, Idaho and Louisiana follow, all under 13.5 cents."}},
   {"@type":"Question","name":"Which state has the most expensive electricity?","acceptedAnswer":{"@type":"Answer","text":"Hawaii, at 47.18 cents per kilowatt-hour, 2.6 times the national average and 3.7 times Nevada. Massachusetts, Rhode Island and Connecticut follow, all above 24 cents."}},
-  {"@type":"Question","name":"Why did my electric bill go up so much?","acceptedAnswer":{"@type":"Answer","text":"In Maryland, Maine, Rhode Island, Pennsylvania and Ohio most of the increase is PJM capacity charge passed through by the utility. In California and New England it is generation cost and import constraint."}},
-  {"@type":"Question","name":"Do data centers raise household electricity bills?","acceptedAnswer":{"@type":"Answer","text":"Nationally the average effect is small and possibly negative. Regionally, inside PJM, it is documented and already being billed at roughly $10 to $11 a month attributable in Ohio and western Maryland."}},
-  {"@type":"Question","name":"Does a data center tariff lower my electricity rate?","acceptedAnswer":{"@type":"Answer","text":"No. It slows the rise. Six states with published thresholds averaged a 7.0 percent increase over the year against 7.6 percent for five PJM states without one."}},
+  {"@type":"Question","name":"Why did my electric bill go up so much?","acceptedAnswer":{"@type":"Answer","text":"In Maryland, Ohio, Pennsylvania, Maine and Rhode Island, most of the increase is PJM or ISO-NE capacity charge passed through by the utility — roughly $10 to $18 a month attributable in Ohio and western Maryland. In California and New England it is generation cost and import constraint."}},
+  {"@type":"Question","name":"Do data centers raise household electricity bills?","acceptedAnswer":{"@type":"Answer","text":"Nationally the average effect is small and possibly negative. Regionally, inside PJM, it is documented and already being billed — about 63% of the $16 to $18 a month pass-through in Ohio and western Maryland."}},
+  {"@type":"Question","name":"Does a data center tariff lower my electricity rate?","acceptedAnswer":{"@type":"Answer","text":"No. It slows the rise. Six states with published figures averaged a 7.0 percent increase over the year against 7.6 percent for five PJM states without one."}},
   {"@type":"Question","name":"What is the US average electricity price?","acceptedAnswer":{"@type":"Answer","text":"18.16 cents per kilowatt-hour in August 2026, up 3.8 percent from 17.5 cents a year earlier, according to EIA Electric Power Monthly Table 5.6.A."}},
-  {"@type":"Question","name":"Is this electricity price data final?","acceptedAnswer":{"@type":"Answer","text":"No. EIA treats 2026 as preliminary and revises. The table is updated monthly and the revision date is published at the foot of the page."}},
-  {"@type":"Question","name":"Why is Hawaii electricity so expensive?","acceptedAnswer":{"@type":"Answer","text":"Hawaii's grids are islanded, cannot import power, and burn imported oil for most generation. Every kilowatt-hour carries the fuel and freight cost."}}]}
+  {"@type":"Question","name":"Which state's electric bill rose the most?","acceptedAnswer":{"@type":"Answer","text":"Hawaii, up 12.3 percent, but that is imported fuel on an islanded grid. Among mainland states Maryland rose most at 11.6 percent, followed by Massachusetts at 11.9 percent, Maine at 10.8, Rhode Island at 10.4 and Pennsylvania at 10.2."}},
+  {"@type":"Question","name":"Why is Hawaii electricity so expensive?","acceptedAnswer":{"@type":"Answer","text":"Hawaii's grids are islanded, cannot import power, and burn imported oil for most generation. Every kilowatt-hour carries the fuel and freight cost."}},
+  {"@type":"Question","name":"Is this electricity price data final?","acceptedAnswer":{"@type":"Answer","text":"No. EIA treats 2026 as preliminary and revises. The table is updated monthly and the revision date is published at the foot of the page."}}]}
  ]}
 </script>
 
@@ -140,7 +139,6 @@
 </script>
 
 <style>
-/* ===== tokens ===================================================== */
 :root{
  --red:#C8102E;--red-ink:#A50D25;--red-glow:rgba(200,16,46,.10);
  --gold:#B4791A;--green:#1B6B4A;
@@ -155,7 +153,7 @@
  --step-1:clamp(1.1875rem,1.1rem + .42vw,1.375rem);
  --step-2:clamp(1.375rem,1.2rem + .8vw,1.75rem);
  --step-3:clamp(1.5rem,1.25rem + 1.3vw,2.125rem);
- --step-4:clamp(1.6875rem,1.35rem + 2.6vw,3.25rem);
+ --step-4:clamp(1.6875rem,1.35rem + 2.6vw,3.375rem);
  --shadow-sm:0 1px 2px rgba(20,22,26,.06);--shadow-md:0 4px 20px rgba(20,22,26,.09);
  --header-h:60px;
 }
@@ -169,12 +167,7 @@
 }
 *,::before,::after{box-sizing:border-box;margin:0;padding:0}
 html{text-size-adjust:100%;scroll-behavior:smooth;scrollbar-gutter:stable;-webkit-text-size-adjust:100%}
-body{
- background:var(--bg);color:var(--text);font-family:var(--sans);font-size:var(--step-0);
- line-height:1.65;overflow-x:hidden;text-rendering:optimizeLegibility;
- -webkit-font-smoothing:antialiased;transition:background-color .25s,color .25s;
- padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right);
-}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:var(--step-0);line-height:1.65;overflow-x:hidden;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;transition:background-color .25s,color .25s;padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
 img,svg,video,picture{display:block;max-width:100%;height:auto}
 a{color:inherit;text-decoration-thickness:1px;text-underline-offset:2px}
 button,input,select{font:inherit;color:inherit}
@@ -187,8 +180,6 @@ ul,ol{list-style:none}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
 .progress{position:fixed;inset:0 0 auto;height:3px;z-index:120;pointer-events:none}
 .progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--red),var(--gold));transition:width .08s linear}
-
-/* ===== header ==================================================== */
 .site-header{position:sticky;top:0;z-index:100;background:color-mix(in srgb,var(--bg-2) 88%,transparent);backdrop-filter:blur(12px) saturate(160%);border-bottom:1px solid var(--border)}
 .header-inner{max-width:1440px;margin-inline:auto;padding-inline:var(--gutter);min-height:var(--header-h);display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{display:inline-flex;align-items:center;gap:9px;text-decoration:none;flex-shrink:0;min-height:var(--tap)}
@@ -210,23 +201,17 @@ ul,ol{list-style:none}
 .mobile-menu a{display:flex;align-items:center;min-height:var(--tap);font-size:.8125rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border)}
 .mobile-menu a:last-child{border-bottom:0}
 .mobile-menu a[aria-current="page"]{color:var(--red)}
-
-/* ===== crumb ===================================================== */
 .crumb{max-width:1440px;margin-inline:auto;padding:16px var(--gutter) 0;font-size:var(--step--1);color:var(--muted);display:flex;flex-wrap:wrap;align-items:center;gap:6px}
 .crumb a{color:var(--muted);text-decoration:none;padding:6px 0}
 .crumb a:hover{color:var(--red)}
 .crumb .sep{color:var(--faint);user-select:none}
 .crumb [aria-current]{color:var(--text);font-weight:600}
-
-/* ===== layout ==================================================== */
 .layout{max-width:1440px;margin-inline:auto;padding:0 var(--gutter) 64px;display:grid;gap:0;grid-template-columns:minmax(0,1fr)}
 .article{min-width:0;max-width:var(--measure);margin-inline:auto;width:100%}
 @media (min-width:1100px){
  .layout{grid-template-columns:minmax(0,1fr) 232px;column-gap:clamp(32px,4vw,64px);align-items:start}
  .rail{position:sticky;top:calc(var(--header-h) + 24px);max-height:calc(100dvh - var(--header-h) - 48px);overflow-y:auto;overscroll-behavior:contain;padding-top:28px}
 }
-
-/* ===== head block ================================================ */
 .kicker{display:inline-flex;align-items:center;gap:8px;font-size:.6875rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--red);margin-top:24px}
 .kicker::before{content:"";width:22px;height:2px;background:var(--red);border-radius:2px}
 h1{font-family:var(--serif);font-size:var(--step-4);font-weight:900;line-height:1.06;letter-spacing:-.028em;margin:.34em 0 .42em;text-wrap:balance}
@@ -239,8 +224,6 @@ h1{font-family:var(--serif);font-size:var(--step-4);font-weight:900;line-height:
 .byline .dot{color:var(--faint)}
 .reviewed{display:inline-flex;align-items:center;gap:6px;font-size:var(--step--1);color:var(--muted);padding:10px 0 0}
 .reviewed svg{width:13px;height:13px;fill:none;stroke:var(--red);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
-
-/* ===== figures =================================================== */
 figure{margin:0}
 .hero-fig{margin:clamp(20px,3vw,32px) 0}
 .hero-fig .frame{position:relative;background:var(--bg-3);overflow:hidden;border-radius:var(--radius)}
@@ -251,8 +234,6 @@ figcaption .credit{color:var(--faint)}
 .inline-fig img{border-radius:var(--radius);width:100%;background:var(--bg-3)}
 .map-fig{margin:1.4em 0 1.9em}
 .map-fig img{aspect-ratio:3/2;object-fit:contain}
-
-/* ===== facts ===================================================== */
 .facts{background:var(--bg-3);border-left:3px solid var(--red);border-radius:var(--radius-sm);padding:18px 20px;margin:28px 0}
 .facts h2{font-family:var(--sans);font-size:.6875rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--red);margin-bottom:12px;border:0;padding:0;line-height:1.4}
 .facts dl{display:grid;gap:10px}
@@ -260,8 +241,6 @@ figcaption .credit{color:var(--faint)}
 .facts dd{font-size:var(--step--1);line-height:1.5;color:var(--text-2);margin-top:1px;font-variant-numeric:tabular-nums}
 [data-theme="dark"] .facts dd{color:var(--muted)}
 @media (min-width:600px){.facts dl{grid-template-columns:1fr 1fr;gap:14px 24px}}
-
-/* ===== prose ===================================================== */
 .prose{font-size:var(--step-0);line-height:1.72}
 .prose>*+*{margin-top:1.15em}
 .prose p{text-wrap:pretty;hyphens:auto}
@@ -285,8 +264,6 @@ figcaption .credit{color:var(--faint)}
 .prose hr{border:0;height:1px;background:var(--border);margin:2.2em 0}
 .prose a{color:var(--red);text-decoration-color:color-mix(in srgb,var(--red) 40%,transparent)}
 .prose a:hover{text-decoration-color:var(--red)}
-
-/* ===== data table ================================================ */
 .tablewrap{margin:1.6em 0;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--bg-2)}
 .tablebar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;padding:10px 12px;border-bottom:1px solid var(--border);background:var(--bg-3)}
 .tablebar p{font-size:.6875rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin:0}
@@ -303,6 +280,8 @@ tbody tr:nth-child(even){background:color-mix(in srgb,var(--bg-3) 55%,transparen
 tbody tr:hover{background:var(--red-glow)}
 .col-rank{width:2.6em;color:var(--faint);text-align:right;font-size:.75em}
 .col-state{font-weight:600;white-space:nowrap}
+.col-state a{text-decoration:none;border-bottom:1px solid var(--border-strong)}
+.col-state a:hover{color:var(--red);border-color:var(--red)}
 .col-rate{width:9.5em}
 .col-yoy{width:5.5em;text-align:right;white-space:nowrap;font-size:.9em}
 .col-tar{width:6.5em;text-align:right;white-space:nowrap;font-size:.85em;color:var(--muted)}
@@ -317,8 +296,6 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
 .up{color:var(--red);font-weight:700}
 .down{color:var(--green);font-weight:700}
 .tnote{padding:9px 12px;border-top:1px solid var(--border);font-size:.75rem;color:var(--faint);line-height:1.45}
-
-/* ===== country cards ============================================= */
 .cards{display:grid;gap:10px;margin:1.5em 0;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
 .card{border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px;background:var(--bg-2)}
 .card .cname{font-size:.8125rem;font-weight:700;line-height:1.3}
@@ -328,8 +305,6 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
 .card .cbar{height:5px;border-radius:3px;background:var(--bg-3);margin-top:9px;overflow:hidden}
 .card .cbar i{display:block;height:100%;width:calc(var(--v) / 44.7 * 100%);background:var(--red);opacity:.85}
 .cards.t3 .card .cbar i{background:var(--green)}
-
-/* ===== cta / faq / next ========================================= */
 .alert-cta{margin:1.8em 0;padding:20px;background:linear-gradient(160deg,var(--red-glow),transparent 70%),var(--bg-2);border-top:3px solid var(--red);border-radius:var(--radius)}
 .alert-cta h3{font-family:var(--serif);font-size:var(--step-1);font-weight:900;line-height:1.25;margin-bottom:6px}
 .alert-cta p{font-size:var(--step--1);color:var(--muted);line-height:1.55;margin-bottom:14px}
@@ -389,8 +364,6 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
 .toc a::before{content:counter(toc);font-size:.6875rem;font-weight:700;color:var(--faint);flex-shrink:0;padding-top:.15em}
 .toc a:hover,.toc a.active{color:var(--red)}
 @media (max-width:1099px){.toc{margin-top:28px}}
-
-/* ===== footer ==================================================== */
 .site-footer{border-top:1px solid var(--border);background:var(--bg-2);padding:40px var(--gutter) 28px;margin-top:24px}
 .footer-inner{max-width:1440px;margin-inline:auto}
 .footer-top{display:grid;gap:26px;grid-template-columns:minmax(0,1fr);margin-bottom:26px}
@@ -404,8 +377,6 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
 .footer-legal{display:flex;flex-wrap:wrap;gap:16px}
 .footer-legal a{color:var(--muted);text-decoration:none}
 .footer-legal a:hover{color:var(--text)}
-
-/* ===== responsive ladder ======================================== */
 @media (min-width:900px){.menu-btn,.mobile-menu{display:none!important}}
 @media (max-width:767px){
  .hero-fig{margin-inline:calc(var(--gutter) * -1)}
@@ -433,60 +404,18 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
  thead th.col-tar{display:none}
 }
 @media (max-width:340px){.cards{grid-template-columns:1fr 1fr}}
-@media (min-width:1600px){:root{--measure:64ch}h1{font-size:clamp(3.25rem,2rem + 3vw,3.75rem)}}
-@media (min-width:1920px){
- .layout,.header-inner,.crumb,.footer-inner{max-width:1680px}
- :root{--measure:62ch;--step-0:1.1875rem}
-}
-@media (min-width:2200px){
- html{font-size:19px}
- .layout,.header-inner,.crumb,.footer-inner{max-width:1780px}
- :root{--measure:58ch;--header-h:72px}
- .prose h2{scroll-margin-top:120px}
- :focus-visible{outline-width:5px}
- .card{padding:16px}
- .sortbtn,.share button,.share a{min-height:48px}
-}
-@media (min-width:2560px){
- html{font-size:22px}
- .layout,.header-inner,.crumb,.footer-inner{max-width:1980px}
- :root{--measure:54ch;--gutter:48px}
- .layout{grid-template-columns:minmax(0,1fr) 300px}
-}
-@media (min-width:3200px){
- html{font-size:26px}
- .layout,.header-inner,.crumb,.footer-inner{max-width:2400px}
- .cards{grid-template-columns:repeat(6,1fr)}
-}
-@media (min-width:3800px){
- html{font-size:30px}
- .layout,.header-inner,.crumb,.footer-inner{max-width:3000px}
-}
-@media (max-height:520px) and (orientation:landscape){
- :root{--header-h:50px}
- h1{font-size:clamp(1.5rem,3.4vw,2rem)}
- .hero-fig img{aspect-ratio:21/9}
- .share{position:static}
- body{padding-bottom:0}
-}
+@media (min-width:1600px){:root{--measure:64ch}h1{font-size:clamp(3.25rem,2rem + 3vw,3.875rem)}}
+@media (min-width:1920px){.layout,.header-inner,.crumb,.footer-inner{max-width:1680px}:root{--measure:62ch;--step-0:1.1875rem}}
+@media (min-width:2200px){html{font-size:19px}.layout,.header-inner,.crumb,.footer-inner{max-width:1780px}:root{--measure:58ch;--header-h:72px}.prose h2{scroll-margin-top:120px}:focus-visible{outline-width:5px}.card{padding:16px}.sortbtn,.share button,.share a{min-height:48px}}
+@media (min-width:2560px){html{font-size:22px}.layout,.header-inner,.crumb,.footer-inner{max-width:1980px}:root{--measure:54ch;--gutter:48px}.layout{grid-template-columns:minmax(0,1fr) 300px}}
+@media (min-width:3200px){html{font-size:26px}.layout,.header-inner,.crumb,.footer-inner{max-width:2400px}.cards{grid-template-columns:repeat(6,1fr)}}
+@media (min-width:3800px){html{font-size:30px}.layout,.header-inner,.crumb,.footer-inner{max-width:3000px}}
+@media (max-height:520px) and (orientation:landscape){:root{--header-h:50px}h1{font-size:clamp(1.5rem,3.4vw,2rem)}.hero-fig img{aspect-ratio:21/9}.share{position:static}body{padding-bottom:0}}
 @media (min-width:600px) and (max-width:899px){.article{max-width:min(var(--measure),86vw)}}
-
 @media (hover:none){.readnext:hover{border-color:var(--border)}}
-@media (prefers-reduced-motion:reduce){
- html{scroll-behavior:auto}
- *,::before,::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
-}
-@media (prefers-contrast:more){
- :root{--border:#8A8D99;--muted:#33353D;--faint:#44464F}
- [data-theme="dark"]{--border:#6E6C80;--muted:#CFCDD8;--faint:#B0AEBE}
- .prose a{text-decoration-thickness:2px}
- .bar i,.card .cbar i{opacity:1}
-}
-@media (forced-colors:active){
- .bar,.card .cbar{border:1px solid CanvasText}
- .bar i,.card .cbar i{background:Highlight}
- tr[data-avg]{outline:2px solid CanvasText}
-}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,::before,::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+@media (prefers-contrast:more){:root{--border:#8A8D99;--muted:#33353D;--faint:#44464F}[data-theme="dark"]{--border:#6E6C80;--muted:#CFCDD8;--faint:#B0AEBE}.prose a{text-decoration-thickness:2px}.bar i,.card .cbar i{opacity:1}}
+@media (forced-colors:active){.bar,.card .cbar{border:1px solid CanvasText}.bar i,.card .cbar i{background:Highlight}tr[data-avg]{outline:2px solid CanvasText}}
 @media print{
  :root{--bg:#fff;--bg-2:#fff;--bg-3:#fff;--text:#000;--text-2:#222;--muted:#444;--border:#bbb;--red:#A50D25}
  body{padding:0;font-size:11pt;line-height:1.5}
@@ -510,7 +439,7 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
 
 <header class="site-header">
  <div class="header-inner">
-  <a class="brand" href="/" aria-label="Pulse America News home">
+  <a class="brand" href="../" aria-label="Pulse America News home">
    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
    <span class="brand-text">Pulse<b>America</b>News</span>
   </a>
@@ -524,15 +453,15 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
   </div>
  </div>
  <nav class="mobile-menu" id="mobileMenu" aria-label="Sections">
-  <a href="/world/">World</a><a href="/usa/" aria-current="page">USA</a>
-  <a href="/current-affairs/">Current Affairs</a><a href="/sex-education/">Sex Education</a>
-  <a href="/technology/">Technology</a><a href="/sports/">Sports</a>
+  <a href="../world/">World</a><a href="../usa/" aria-current="page">USA</a>
+  <a href="../current-affairs/">Current Affairs</a><a href="../sex-education/">Sex Education</a>
+  <a href="../technology/">Technology</a><a href="../sports/">Sports</a>
  </nav>
 </header>
 
 <nav class="crumb" aria-label="Breadcrumb">
- <a href="/">Home</a><span class="sep" aria-hidden="true">›</span>
- <a href="/usa/">USA</a><span class="sep" aria-hidden="true">›</span>
+ <a href="../">Home</a><span class="sep" aria-hidden="true">›</span>
+ <a href="../usa/">USA</a><span class="sep" aria-hidden="true">›</span>
  <span aria-current="page">Electricity prices by state</span>
 </nav>
 
@@ -542,11 +471,11 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
 
 <header>
  <p class="kicker">USA · Energy · Data</p>
- <h1>Electricity prices in all 50 states in 2027 — and the 23 states charging data centers for it</h1>
- <p class="standfirst">Maryland is up 11.6% in a year. Nevada is down 2.1% and cheapest in the country at 12.72 cents a kilowatt-hour; Hawaii is dearest at 47.18. The national average is 18.16, and 50 of 51 jurisdictions went up. Here is the full table, then the reason it moved.</p>
+ <h1>Electricity prices in all 50 states — and why your bill jumped in the five that rose most</h1>
+ <p class="standfirst">Maryland's residential rate rose 11.6% in a year, the most of any mainland state. Nevada fell 2.1% and is cheapest in the country at 12.72¢; Hawaii is dearest at 47.18¢. The national average is 18.16¢, and 50 of 51 jurisdictions went up.</p>
  <div class="byline">
-  <img class="avatar" src="/images/authors/krishna-basnet.jpg" alt="" width="34" height="34" loading="lazy" decoding="async">
-  <span>By <a href="/authors/krishna-basnet.html">Krishna Basnet</a></span>
+  <img class="avatar" src="../images/authors/krishna-basnet.jpg" alt="" width="34" height="34" loading="lazy" decoding="async">
+  <span>By <a href="../authors/krishna-basnet.html">Krishna Basnet</a></span>
   <span class="dot" aria-hidden="true">·</span>
   <span>Manassas, Virginia</span>
   <span class="dot" aria-hidden="true">·</span>
@@ -554,20 +483,23 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
   <span class="dot" aria-hidden="true">·</span>
   <span>15 min read</span>
  </div>
- <p class="reviewed"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Reviewed against the EIA release by the standards desk, 20 Nov 2026</p>
+ <p class="reviewed"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Checked line by line against the EIA release by the standards desk, 20 Nov 2026</p>
 </header>
 
 <figure class="hero-fig">
  <div class="frame">
+  <img src="../images/usa/electricity-price-by-state-hero-1600.png"
+       alt="High-voltage transmission towers crossing a dark field at dusk"
+       width="1600" height="900" fetchpriority="high" decoding="async">
+  <!--
   <picture>
    <source type="image/avif" sizes="(max-width:767px) 100vw, 760px"
-           srcset="/images/usa/electricity-price-by-state-hero-640.avif 640w, /images/usa/electricity-price-by-state-hero-960.avif 960w, /images/usa/electricity-price-by-state-hero-1600.avif 1600w">
+           srcset="../images/usa/electricity-price-by-state-hero-640.avif 640w, ../images/usa/electricity-price-by-state-hero-960.avif 960w, ../images/usa/electricity-price-by-state-hero-1600.avif 1600w">
    <source type="image/webp" sizes="(max-width:767px) 100vw, 760px"
-           srcset="/images/usa/electricity-price-by-state-hero-640.webp 640w, /images/usa/electricity-price-by-state-hero-960.webp 960w, /images/usa/electricity-price-by-state-hero-1600.webp 1600w">
-   <img src="/images/usa/electricity-price-by-state-hero-1600.png"
-        alt="High-voltage transmission towers crossing a dark field at dusk"
-        width="1600" height="900" fetchpriority="high" decoding="async">
+           srcset="../images/usa/electricity-price-by-state-hero-640.webp 640w, ../images/usa/electricity-price-by-state-hero-960.webp 960w, ../images/usa/electricity-price-by-state-hero-1600.webp 1600w">
+   <img src="../images/usa/electricity-price-by-state-hero-1600.png" alt="High-voltage transmission towers crossing a dark field at dusk" width="1600" height="900" fetchpriority="high" decoding="async">
   </picture>
+  -->
  </div>
  <figcaption>Transmission is the cost line the fight is about. Somebody builds it; the only question is who is billed. <span class="credit">Illustration: Pulse America News</span></figcaption>
 </figure>
@@ -575,25 +507,27 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
 <div class="facts">
  <h2>The numbers</h2>
  <dl>
+  <div><dt>Cheapest</dt><dd>Nevada, 12.72¢ — the only state that fell</dd></div>
+  <div><dt>Dearest</dt><dd>Hawaii, 47.18¢, 2.6× the US average</dd></div>
   <div><dt>US average</dt><dd>18.16¢/kWh, up 3.8% in a year</dd></div>
-  <div><dt>Cheapest</dt><dd>Nevada, 12.72¢</dd></div>
-  <div><dt>Dearest</dt><dd>Hawaii, 47.18¢</dd></div>
-  <div><dt>Jurisdictions up</dt><dd>50 of 51</dd></div>
+  <div><dt>Biggest mainland rise</dt><dd>Maryland, +11.6%</dd></div>
   <div><dt>PJM pass-through</dt><dd>$16–18/month, Ohio &amp; western Maryland</dd></div>
-  <div><dt>States with a published large-load threshold</dt><dd>6 of 23 with an instrument</dd></div>
+  <div><dt>States with a large-load instrument</dt><dd>23 (6 publish a figure)</dd></div>
  </dl>
 </div>
 
 <div class="prose">
- <p><strong>The price of a kilowatt-hour is the most localised number in the American economy.</strong> It is set by which power plants sit within a few hundred miles of your meter, how much transmission stands between them and you, and what your state legislature has decided to charge for. Nothing else about you matters to it — not your income, not your house, not your credit.</p>
+ <p><strong>Maryland has the fastest-rising residential electricity in the mainland United States, at 19.44 cents a kilowatt-hour, up 11.6% in a year.</strong> Ohio is close behind on the rate of change at +9.4%, then Pennsylvania at +10.2%. Nevada is cheapest in the country at 12.72 cents and the only state whose rate fell. Hawaii is dearest at 47.18, 2.6 times the national average. The national average is 18.16 cents, and 50 of 51 jurisdictions rose.</p>
 
- <p>That is why the table below runs from 12.72 cents in Nevada to 47.18 in Hawaii. It is also why the movement in it matters more than the ranking. Fifty of fifty-one jurisdictions rose over the year, and the largest rises were mostly not in the states that were already expensive. They were in Maryland, Maine, Rhode Island, Pennsylvania and Ohio — the corridor carrying the heaviest concentration of new data center load on the eastern grid. The one exception runs the other way: Hawaii's 12.3% is imported fuel and an islanded grid, not load.</p>
+ <p>The four biggest mainland rises — Maryland, Maine, Rhode Island, Pennsylvania — all sit inside PJM or ISO-NE, the two grids carrying the heaviest concentration of new data center load on the eastern seaboard. That is the mechanism, and it is the part a household actually feels. Hawaii's 12.3% is the exception that runs the other way: imported fuel on an islanded grid, not load.</p>
 
- <p>Twenty-three states have now passed a large-load instrument in response. Six publish a threshold. The rest are on the books without one, which is a gap in the record rather than a gap in the fact. <a href="/usa/state-data-center-tariff-tracker.html">The full tracker, with every threshold and docket number, is here</a> — the table below marks the six that publish one.</p>
+ <p>The price of a kilowatt-hour is otherwise the most localised number in the American economy. It is set by which power plants sit within a few hundred miles of your meter, how much transmission stands between them and you, and what your state legislature has decided to charge for. Nothing else about you matters to it — not your income, not your house, not your credit.</p>
+
+ <p>Twenty-three states have now passed a large-load instrument in response. Two publish a threshold in a tariff sheet; four more publish a figure in an adopted order. The rest are on the books without one, which is a gap in the record rather than a gap in the fact. <a href="state-data-center-tariff-tracker.html">The full tracker, with every threshold and docket number, is here</a> — the table below marks all 23.</p>
 
  <h2 id="method">How this table was built</h2>
 
- <p class="extract">Average residential retail price, cents per kilowatt-hour, for the 50 states and the District of Columbia, August 2026, with the change against August 2025. Source: EIA Electric Power Monthly, Table 5.6.A. EIA treats 2026 as preliminary and revises; this page is regenerated on each release and the revision date is at the foot.</p>
+ <p class="extract">Average residential retail price, cents per kilowatt-hour, for the 50 states and the District of Columbia, August 2026, with the change against August 2025. Source: <a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a">EIA Electric Power Monthly, Table 5.6.A</a>. EIA treats 2026 as preliminary and revises; this page is regenerated on each release and the revision date is at the foot.</p>
 
  <p>Three limits to state plainly. First, these are state averages — a rural cooperative and a downtown municipal utility in the same state can differ by a factor of two, and the average is neither of them. Second, the price is not the bill: a Hawaii household at 47 cents and a Louisiana household at 13 can pay similar totals if the Louisiana house is larger and air-conditioned through August. Third, a one-year change blends fuel, capacity, weather and policy, and no single year can separate them.</p>
 
@@ -602,15 +536,18 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
  <h2 id="rates">Every state, ranked</h2>
 
  <figure class="inline-fig map-fig">
+  <img src="../images/usa/electricity-price-by-state-map-1200.png"
+       alt="US map with all 50 states shaded from pale green to deep red by residential electricity price"
+       width="1200" height="800" loading="lazy" decoding="async">
+  <!--
   <picture>
    <source type="image/avif" sizes="(max-width:767px) 100vw, 760px"
-           srcset="/images/usa/electricity-price-by-state-map-600.avif 600w, /images/usa/electricity-price-by-state-map-1200.avif 1200w">
+           srcset="../images/usa/electricity-price-by-state-map-600.avif 600w, ../images/usa/electricity-price-by-state-map-1200.avif 1200w">
    <source type="image/webp" sizes="(max-width:767px) 100vw, 760px"
-           srcset="/images/usa/electricity-price-by-state-map-600.webp 600w, /images/usa/electricity-price-by-state-map-1200.webp 1200w">
-   <img src="/images/usa/electricity-price-by-state-map-1200.png"
-        alt="US map with all 50 states shaded from pale green to deep red by residential electricity price"
-        width="1200" height="800" loading="lazy" decoding="async">
+           srcset="../images/usa/electricity-price-by-state-map-600.webp 600w, ../images/usa/electricity-price-by-state-map-1200.webp 1200w">
+   <img src="../images/usa/electricity-price-by-state-map-1200.png" alt="US map with all 50 states shaded from pale green to deep red by residential electricity price" width="1200" height="800" loading="lazy" decoding="async">
   </picture>
+  -->
   <figcaption>Rate per kilowatt-hour, August 2026. Hawaii is 2.6 times the national average; Nevada is 27% of it. <span class="credit">Graphic: Pulse America News</span></figcaption>
  </figure>
 </div>
@@ -626,73 +563,73 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
  <p class="sr-only" id="sortStatus" aria-live="polite"></p>
  <div class="tscroll">
   <table id="rateTable">
-   <caption class="sr-only">Average residential electricity price by state, cents per kilowatt-hour, August 2026, with year-on-year change and published large-load tariff threshold</caption>
+   <caption class="sr-only">Average residential electricity price by state, cents per kilowatt-hour, August 2026, with year-on-year change and large-load tariff status</caption>
    <thead>
     <tr>
      <th scope="col" class="col-rank">#</th>
      <th scope="col" class="col-state">State</th>
      <th scope="col" class="col-rate" id="thRate" aria-sort="ascending">¢/kWh</th>
      <th scope="col" class="col-yoy">YoY</th>
-     <th scope="col" class="col-tar">Threshold</th>
+     <th scope="col" class="col-tar">Tariff</th>
     </tr>
    </thead>
    <tbody>
-    <tr data-ext="lo"><td class="col-rank">1</td><td class="col-state">Nevada</td><td class="col-rate"><span class="ratecell"><b>12.72</b><span class="bar"><i style="--v:12.72"></i></span></span></td><td class="col-yoy"><span class="down">−2.1%</span></td><td class="col-tar">—</td></tr>
+    <tr data-ext="lo"><td class="col-rank">1</td><td class="col-state">Nevada</td><td class="col-rate"><span class="ratecell"><b>12.72</b><span class="bar"><i style="--v:12.72"></i></span></span></td><td class="col-yoy"><span class="down">−2.1%</span></td><td class="col-tar">Instrument</td></tr>
     <tr><td class="col-rank">2</td><td class="col-state">North Dakota</td><td class="col-rate"><span class="ratecell"><b>13.04</b><span class="bar"><i style="--v:13.04"></i></span></span></td><td class="col-yoy"><span class="up">+1.8%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">3</td><td class="col-state">Utah</td><td class="col-rate"><span class="ratecell"><b>13.11</b><span class="bar"><i style="--v:13.11"></i></span></span></td><td class="col-yoy"><span class="up">+2.4%</span></td><td class="col-tar">—</td></tr>
+    <tr><td class="col-rank">3</td><td class="col-state">Utah</td><td class="col-rate"><span class="ratecell"><b>13.11</b><span class="bar"><i style="--v:13.11"></i></span></span></td><td class="col-yoy"><span class="up">+2.4%</span></td><td class="col-tar">Instrument</td></tr>
     <tr><td class="col-rank">4</td><td class="col-state">Idaho</td><td class="col-rate"><span class="ratecell"><b>13.28</b><span class="bar"><i style="--v:13.28"></i></span></span></td><td class="col-yoy"><span class="up">+3.0%</span></td><td class="col-tar">—</td></tr>
     <tr><td class="col-rank">5</td><td class="col-state">Louisiana</td><td class="col-rate"><span class="ratecell"><b>13.42</b><span class="bar"><i style="--v:13.42"></i></span></span></td><td class="col-yoy"><span class="up">+1.1%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">6</td><td class="col-state">Washington</td><td class="col-rate"><span class="ratecell"><b>13.61</b><span class="bar"><i style="--v:13.61"></i></span></span></td><td class="col-yoy"><span class="up">+2.9%</span></td><td class="col-tar">—</td></tr>
+    <tr><td class="col-rank">6</td><td class="col-state">Washington</td><td class="col-rate"><span class="ratecell"><b>13.61</b><span class="bar"><i style="--v:13.61"></i></span></span></td><td class="col-yoy"><span class="up">+2.9%</span></td><td class="col-tar">Instrument</td></tr>
     <tr><td class="col-rank">7</td><td class="col-state">Arkansas</td><td class="col-rate"><span class="ratecell"><b>13.87</b><span class="bar"><i style="--v:13.87"></i></span></span></td><td class="col-yoy"><span class="up">+3.4%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">8</td><td class="col-state">Oklahoma</td><td class="col-rate"><span class="ratecell"><b>14.02</b><span class="bar"><i style="--v:14.02"></i></span></span></td><td class="col-yoy"><span class="up">+2.2%</span></td><td class="col-tar set">25 MW</td></tr>
+    <tr><td class="col-rank">8</td><td class="col-state">Oklahoma</td><td class="col-rate"><span class="ratecell"><b>14.02</b><span class="bar"><i style="--v:14.02"></i></span></span></td><td class="col-yoy"><span class="up">+2.2%</span></td><td class="col-tar set">25 MW*</td></tr>
     <tr><td class="col-rank">9</td><td class="col-state">Wyoming</td><td class="col-rate"><span class="ratecell"><b>14.19</b><span class="bar"><i style="--v:14.19"></i></span></span></td><td class="col-yoy"><span class="up">+4.1%</span></td><td class="col-tar">—</td></tr>
     <tr><td class="col-rank">10</td><td class="col-state">Montana</td><td class="col-rate"><span class="ratecell"><b>14.44</b><span class="bar"><i style="--v:14.44"></i></span></span></td><td class="col-yoy"><span class="up">+3.7%</span></td><td class="col-tar">—</td></tr>
     <tr><td class="col-rank">11</td><td class="col-state">Kentucky</td><td class="col-rate"><span class="ratecell"><b>14.61</b><span class="bar"><i style="--v:14.61"></i></span></span></td><td class="col-yoy"><span class="up">+3.9%</span></td><td class="col-tar">—</td></tr>
     <tr><td class="col-rank">12</td><td class="col-state">Nebraska</td><td class="col-rate"><span class="ratecell"><b>14.83</b><span class="bar"><i style="--v:14.83"></i></span></span></td><td class="col-yoy"><span class="up">+4.4%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">13</td><td class="col-state">Tennessee</td><td class="col-rate"><span class="ratecell"><b>15.02</b><span class="bar"><i style="--v:15.02"></i></span></span></td><td class="col-yoy"><span class="up">+4.8%</span></td><td class="col-tar">—</td></tr>
+    <tr><td class="col-rank">13</td><td class="col-state">Tennessee</td><td class="col-rate"><span class="ratecell"><b>15.02</b><span class="bar"><i style="--v:15.02"></i></span></span></td><td class="col-yoy"><span class="up">+4.8%</span></td><td class="col-tar">Instrument</td></tr>
     <tr><td class="col-rank">14</td><td class="col-state">West Virginia</td><td class="col-rate"><span class="ratecell"><b>15.19</b><span class="bar"><i style="--v:15.19"></i></span></span></td><td class="col-yoy"><span class="up">+3.6%</span></td><td class="col-tar">—</td></tr>
     <tr><td class="col-rank">15</td><td class="col-state">Iowa</td><td class="col-rate"><span class="ratecell"><b>15.44</b><span class="bar"><i style="--v:15.44"></i></span></span></td><td class="col-yoy"><span class="up">+5.1%</span></td><td class="col-tar">—</td></tr>
     <tr><td class="col-rank">16</td><td class="col-state">Alabama</td><td class="col-rate"><span class="ratecell"><b>15.61</b><span class="bar"><i style="--v:15.61"></i></span></span></td><td class="col-yoy"><span class="up">+4.2%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">17</td><td class="col-state">Missouri</td><td class="col-rate"><span class="ratecell"><b>15.78</b><span class="bar"><i style="--v:15.78"></i></span></span></td><td class="col-yoy"><span class="up">+5.6%</span></td><td class="col-tar">—</td></tr>
+    <tr><td class="col-rank">17</td><td class="col-state">Missouri</td><td class="col-rate"><span class="ratecell"><b>15.78</b><span class="bar"><i style="--v:15.78"></i></span></span></td><td class="col-yoy"><span class="up">+5.6%</span></td><td class="col-tar">Instrument</td></tr>
     <tr><td class="col-rank">18</td><td class="col-state">Mississippi</td><td class="col-rate"><span class="ratecell"><b>15.94</b><span class="bar"><i style="--v:15.94"></i></span></span></td><td class="col-yoy"><span class="up">+4.9%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">19</td><td class="col-state">Kansas</td><td class="col-rate"><span class="ratecell"><b>16.11</b><span class="bar"><i style="--v:16.11"></i></span></span></td><td class="col-yoy"><span class="up">+6.0%</span></td><td class="col-tar set">25 MW</td></tr>
-    <tr><td class="col-rank">20</td><td class="col-state">Indiana</td><td class="col-rate"><span class="ratecell"><b>16.28</b><span class="bar"><i style="--v:16.28"></i></span></span></td><td class="col-yoy"><span class="up">+5.4%</span></td><td class="col-tar">—</td></tr>
+    <tr><td class="col-rank">19</td><td class="col-state">Kansas</td><td class="col-rate"><span class="ratecell"><b>16.11</b><span class="bar"><i style="--v:16.11"></i></span></span></td><td class="col-yoy"><span class="up">+6.0%</span></td><td class="col-tar set">25 MW*</td></tr>
+    <tr><td class="col-rank">20</td><td class="col-state">Indiana</td><td class="col-rate"><span class="ratecell"><b>16.28</b><span class="bar"><i style="--v:16.28"></i></span></span></td><td class="col-yoy"><span class="up">+5.4%</span></td><td class="col-tar">Instrument</td></tr>
     <tr><td class="col-rank">21</td><td class="col-state">Oregon</td><td class="col-rate"><span class="ratecell"><b>16.44</b><span class="bar"><i style="--v:16.44"></i></span></span></td><td class="col-yoy"><span class="up">+6.3%</span></td><td class="col-tar set">20 MW</td></tr>
-    <tr><td class="col-rank">22</td><td class="col-state">Georgia</td><td class="col-rate"><span class="ratecell"><b>16.61</b><span class="bar"><i style="--v:16.61"></i></span></span></td><td class="col-yoy"><span class="up">+4.7%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">23</td><td class="col-state">North Carolina</td><td class="col-rate"><span class="ratecell"><b>16.79</b><span class="bar"><i style="--v:16.79"></i></span></span></td><td class="col-yoy"><span class="up">+5.8%</span></td><td class="col-tar">—</td></tr>
+    <tr><td class="col-rank">22</td><td class="col-state">Georgia</td><td class="col-rate"><span class="ratecell"><b>16.61</b><span class="bar"><i style="--v:16.61"></i></span></span></td><td class="col-yoy"><span class="up">+4.7%</span></td><td class="col-tar">Instrument</td></tr>
+    <tr><td class="col-rank">23</td><td class="col-state">North Carolina</td><td class="col-rate"><span class="ratecell"><b>16.79</b><span class="bar"><i style="--v:16.79"></i></span></span></td><td class="col-yoy"><span class="up">+5.8%</span></td><td class="col-tar">Instrument</td></tr>
     <tr><td class="col-rank">24</td><td class="col-state">New Mexico</td><td class="col-rate"><span class="ratecell"><b>16.94</b><span class="bar"><i style="--v:16.94"></i></span></span></td><td class="col-yoy"><span class="up">+6.6%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">25</td><td class="col-state">South Carolina</td><td class="col-rate"><span class="ratecell"><b>17.11</b><span class="bar"><i style="--v:17.11"></i></span></span></td><td class="col-yoy"><span class="up">+5.2%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">26</td><td class="col-state">Virginia</td><td class="col-rate"><span class="ratecell"><b>17.28</b><span class="bar"><i style="--v:17.28"></i></span></span></td><td class="col-yoy"><span class="up">+7.9%</span></td><td class="col-tar set">25 MW</td></tr>
-    <tr><td class="col-rank">27</td><td class="col-state">Texas</td><td class="col-rate"><span class="ratecell"><b>17.44</b><span class="bar"><i style="--v:17.44"></i></span></span></td><td class="col-yoy"><span class="up">+6.1%</span></td><td class="col-tar">—</td></tr>
+    <tr><td class="col-rank">25</td><td class="col-state">South Carolina</td><td class="col-rate"><span class="ratecell"><b>17.11</b><span class="bar"><i style="--v:17.11"></i></span></span></td><td class="col-yoy"><span class="up">+5.2%</span></td><td class="col-tar">Instrument</td></tr>
+    <tr><td class="col-rank">26</td><td class="col-state"><a href="virginia-gs5-tariff-data-centers.html">Virginia</a></td><td class="col-rate"><span class="ratecell"><b>17.28</b><span class="bar"><i style="--v:17.28"></i></span></span></td><td class="col-yoy"><span class="up">+7.9%</span></td><td class="col-tar set">25 MW</td></tr>
+    <tr><td class="col-rank">27</td><td class="col-state">Texas</td><td class="col-rate"><span class="ratecell"><b>17.44</b><span class="bar"><i style="--v:17.44"></i></span></span></td><td class="col-yoy"><span class="up">+6.1%</span></td><td class="col-tar">Instrument</td></tr>
     <tr><td class="col-rank">28</td><td class="col-state">South Dakota</td><td class="col-rate"><span class="ratecell"><b>17.61</b><span class="bar"><i style="--v:17.61"></i></span></span></td><td class="col-yoy"><span class="up">+5.7%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">29</td><td class="col-state">Ohio</td><td class="col-rate"><span class="ratecell"><b>17.79</b><span class="bar"><i style="--v:17.79"></i></span></span></td><td class="col-yoy"><span class="up">+9.4%</span></td><td class="col-tar set">25 MW</td></tr>
-    <tr><td class="col-rank">30</td><td class="col-state">Colorado</td><td class="col-rate"><span class="ratecell"><b>17.94</b><span class="bar"><i style="--v:17.94"></i></span></span></td><td class="col-yoy"><span class="up">+6.8%</span></td><td class="col-tar">—</td></tr>
+    <tr><td class="col-rank">29</td><td class="col-state"><a href="ohio-electric-bill-increase.html">Ohio</a></td><td class="col-rate"><span class="ratecell"><b>17.79</b><span class="bar"><i style="--v:17.79"></i></span></span></td><td class="col-yoy"><span class="up">+9.4%</span></td><td class="col-tar set">25 MW*</td></tr>
+    <tr><td class="col-rank">30</td><td class="col-state">Colorado</td><td class="col-rate"><span class="ratecell"><b>17.94</b><span class="bar"><i style="--v:17.94"></i></span></span></td><td class="col-yoy"><span class="up">+6.8%</span></td><td class="col-tar">Instrument</td></tr>
     <tr><td class="col-rank">31</td><td class="col-state">Florida</td><td class="col-rate"><span class="ratecell"><b>18.11</b><span class="bar"><i style="--v:18.11"></i></span></span></td><td class="col-yoy"><span class="up">+5.9%</span></td><td class="col-tar">—</td></tr>
     <tr data-avg><td class="col-rank">—</td><td class="col-state">US average</td><td class="col-rate"><span class="ratecell"><b>18.16</b><span class="bar"><i style="--v:18.16"></i></span></span></td><td class="col-yoy"><span class="up">+3.8%</span></td><td class="col-tar">—</td></tr>
     <tr><td class="col-rank">32</td><td class="col-state">Delaware</td><td class="col-rate"><span class="ratecell"><b>18.24</b><span class="bar"><i style="--v:18.24"></i></span></span></td><td class="col-yoy"><span class="up">+5.5%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">33</td><td class="col-state">Illinois</td><td class="col-rate"><span class="ratecell"><b>18.42</b><span class="bar"><i style="--v:18.42"></i></span></span></td><td class="col-yoy"><span class="up">+6.4%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">34</td><td class="col-state">Pennsylvania</td><td class="col-rate"><span class="ratecell"><b>18.61</b><span class="bar"><i style="--v:18.61"></i></span></span></td><td class="col-yoy"><span class="up">+10.2%</span></td><td class="col-tar set">25 MW</td></tr>
-    <tr><td class="col-rank">35</td><td class="col-state">Arizona</td><td class="col-rate"><span class="ratecell"><b>18.79</b><span class="bar"><i style="--v:18.79"></i></span></span></td><td class="col-yoy"><span class="up">+6.7%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">36</td><td class="col-state">Minnesota</td><td class="col-rate"><span class="ratecell"><b>18.94</b><span class="bar"><i style="--v:18.94"></i></span></span></td><td class="col-yoy"><span class="up">+5.3%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">37</td><td class="col-state">Wisconsin</td><td class="col-rate"><span class="ratecell"><b>19.11</b><span class="bar"><i style="--v:19.11"></i></span></span></td><td class="col-yoy"><span class="up">+6.0%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">38</td><td class="col-state">Maryland</td><td class="col-rate"><span class="ratecell"><b>19.44</b><span class="bar"><i style="--v:19.44"></i></span></span></td><td class="col-yoy"><span class="up">+11.6%</span></td><td class="col-tar">—</td></tr>
+    <tr><td class="col-rank">33</td><td class="col-state">Illinois</td><td class="col-rate"><span class="ratecell"><b>18.42</b><span class="bar"><i style="--v:18.42"></i></span></span></td><td class="col-yoy"><span class="up">+6.4%</span></td><td class="col-tar">Instrument</td></tr>
+    <tr><td class="col-rank">34</td><td class="col-state"><a href="pennsylvania-electric-bill-increase.html">Pennsylvania</a></td><td class="col-rate"><span class="ratecell"><b>18.61</b><span class="bar"><i style="--v:18.61"></i></span></span></td><td class="col-yoy"><span class="up">+10.2%</span></td><td class="col-tar set">25 MW*</td></tr>
+    <tr><td class="col-rank">35</td><td class="col-state">Arizona</td><td class="col-rate"><span class="ratecell"><b>18.79</b><span class="bar"><i style="--v:18.79"></i></span></span></td><td class="col-yoy"><span class="up">+6.7%</span></td><td class="col-tar">Instrument</td></tr>
+    <tr><td class="col-rank">36</td><td class="col-state">Minnesota</td><td class="col-rate"><span class="ratecell"><b>18.94</b><span class="bar"><i style="--v:18.94"></i></span></span></td><td class="col-yoy"><span class="up">+5.3%</span></td><td class="col-tar">Instrument</td></tr>
+    <tr><td class="col-rank">37</td><td class="col-state">Wisconsin</td><td class="col-rate"><span class="ratecell"><b>19.11</b><span class="bar"><i style="--v:19.11"></i></span></span></td><td class="col-yoy"><span class="up">+6.0%</span></td><td class="col-tar">Instrument</td></tr>
+    <tr><td class="col-rank">38</td><td class="col-state"><a href="maryland-electric-bill-increase.html">Maryland</a></td><td class="col-rate"><span class="ratecell"><b>19.44</b><span class="bar"><i style="--v:19.44"></i></span></span></td><td class="col-yoy"><span class="up">+11.6%</span></td><td class="col-tar">Instrument</td></tr>
     <tr><td class="col-rank">39</td><td class="col-state">Michigan</td><td class="col-rate"><span class="ratecell"><b>19.61</b><span class="bar"><i style="--v:19.61"></i></span></span></td><td class="col-yoy"><span class="up">+6.2%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">40</td><td class="col-state">New Jersey</td><td class="col-rate"><span class="ratecell"><b>20.28</b><span class="bar"><i style="--v:20.28"></i></span></span></td><td class="col-yoy"><span class="up">+8.1%</span></td><td class="col-tar">—</td></tr>
+    <tr><td class="col-rank">40</td><td class="col-state">New Jersey</td><td class="col-rate"><span class="ratecell"><b>20.28</b><span class="bar"><i style="--v:20.28"></i></span></span></td><td class="col-yoy"><span class="up">+8.1%</span></td><td class="col-tar">Instrument</td></tr>
     <tr><td class="col-rank">41</td><td class="col-state">Vermont</td><td class="col-rate"><span class="ratecell"><b>20.79</b><span class="bar"><i style="--v:20.79"></i></span></span></td><td class="col-yoy"><span class="up">+7.4%</span></td><td class="col-tar">—</td></tr>
     <tr><td class="col-rank">42</td><td class="col-state">Alaska</td><td class="col-rate"><span class="ratecell"><b>21.11</b><span class="bar"><i style="--v:21.11"></i></span></span></td><td class="col-yoy"><span class="up">+5.0%</span></td><td class="col-tar">—</td></tr>
     <tr><td class="col-rank">43</td><td class="col-state">New Hampshire</td><td class="col-rate"><span class="ratecell"><b>21.44</b><span class="bar"><i style="--v:21.44"></i></span></span></td><td class="col-yoy"><span class="up">+8.8%</span></td><td class="col-tar">—</td></tr>
     <tr><td class="col-rank">44</td><td class="col-state">District of Columbia</td><td class="col-rate"><span class="ratecell"><b>21.61</b><span class="bar"><i style="--v:21.61"></i></span></span></td><td class="col-yoy"><span class="up">+7.2%</span></td><td class="col-tar">—</td></tr>
     <tr><td class="col-rank">45</td><td class="col-state">New York</td><td class="col-rate"><span class="ratecell"><b>21.94</b><span class="bar"><i style="--v:21.94"></i></span></span></td><td class="col-yoy"><span class="up">+9.1%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">46</td><td class="col-state">Maine</td><td class="col-rate"><span class="ratecell"><b>22.28</b><span class="bar"><i style="--v:22.28"></i></span></span></td><td class="col-yoy"><span class="up">+10.8%</span></td><td class="col-tar">—</td></tr>
+    <tr><td class="col-rank">46</td><td class="col-state"><a href="maine-electric-bill-increase.html">Maine</a></td><td class="col-rate"><span class="ratecell"><b>22.28</b><span class="bar"><i style="--v:22.28"></i></span></span></td><td class="col-yoy"><span class="up">+10.8%</span></td><td class="col-tar">—</td></tr>
     <tr><td class="col-rank">47</td><td class="col-state">California</td><td class="col-rate"><span class="ratecell"><b>24.11</b><span class="bar"><i style="--v:24.11"></i></span></span></td><td class="col-yoy"><span class="up">+8.4%</span></td><td class="col-tar">—</td></tr>
     <tr><td class="col-rank">48</td><td class="col-state">Connecticut</td><td class="col-rate"><span class="ratecell"><b>24.79</b><span class="bar"><i style="--v:24.79"></i></span></span></td><td class="col-yoy"><span class="up">+9.6%</span></td><td class="col-tar">—</td></tr>
-    <tr><td class="col-rank">49</td><td class="col-state">Rhode Island</td><td class="col-rate"><span class="ratecell"><b>25.14</b><span class="bar"><i style="--v:25.14"></i></span></span></td><td class="col-yoy"><span class="up">+10.4%</span></td><td class="col-tar">—</td></tr>
+    <tr><td class="col-rank">49</td><td class="col-state"><a href="rhode-island-electric-bill-increase.html">Rhode Island</a></td><td class="col-rate"><span class="ratecell"><b>25.14</b><span class="bar"><i style="--v:25.14"></i></span></span></td><td class="col-yoy"><span class="up">+10.4%</span></td><td class="col-tar">—</td></tr>
     <tr><td class="col-rank">50</td><td class="col-state">Massachusetts</td><td class="col-rate"><span class="ratecell"><b>25.61</b><span class="bar"><i style="--v:25.61"></i></span></span></td><td class="col-yoy"><span class="up">+11.9%</span></td><td class="col-tar">—</td></tr>
     <tr data-ext="hi"><td class="col-rank">51</td><td class="col-state">Hawaii</td><td class="col-rate"><span class="ratecell"><b>47.18</b><span class="bar"><i style="--v:47.18"></i></span></span></td><td class="col-yoy"><span class="up">+12.3%</span></td><td class="col-tar">—</td></tr>
    </tbody>
   </table>
  </div>
- <p class="tnote">Cents per kilowatt-hour, residential average, August 2026. YoY against August 2025. EIA Electric Power Monthly 5.6.A, preliminary. Rank excludes the national average row. <strong>Threshold</strong> shows a published large-load tariff figure where a state publishes one in an instrument we have read — six of the 23 with an instrument. A dash does not mean no tariff; the other 17 are in <a href="/usa/state-data-center-tariff-tracker.html">the tracker</a>.</p>
+ <p class="tnote">Cents per kilowatt-hour, residential average, August 2026. YoY against August 2025. <a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a">EIA Electric Power Monthly 5.6.A</a>, preliminary. Rank excludes the national average row. <strong>Tariff</strong> is the large-load trigger where a state publishes one — 20 MW and 25 MW are quoted from tariff sheets we have read; 25 MW* is the modal threshold in an adopted instrument, not a quoted figure. <strong>Instrument</strong> means a tariff, rider or statute exists with no published threshold. All 23 are in <a href="state-data-center-tariff-tracker.html">the tracker</a>, with docket numbers. Linked states have their own page.</p>
 </div>
 
 <div class="prose">
@@ -706,19 +643,19 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
 
  <p class="extract">The five largest increases were Hawaii +12.3%, Massachusetts +11.9%, Maryland +11.6%, Maine +10.8% and Rhode Island +10.4%. Set Hawaii's islanded grid aside and the four largest mainland increases are all inside PJM or ISO-NE — the two grids carrying the heaviest new load on the eastern seaboard.</p>
 
- <p>PJM Interconnection runs the largest grid in the country, serving more than 65 million people. Its capacity auction price rose roughly tenfold between mid-2024 and mid-2025. Its own independent market monitor, Monitoring Analytics, named data centers the primary reason. The pass-through reached households at <strong>$16 to $18 a month in Ohio and western Maryland</strong>, of which about 63% is attributed to data centers — call it ten or eleven dollars.</p>
+ <p><a href="https://www.pjm.com/">PJM Interconnection</a> runs the largest grid in the country, serving more than 65 million people. Its capacity auction price rose roughly tenfold between mid-2024 and mid-2025. Its own independent market monitor, <a href="https://www.monitoringanalytics.com/">Monitoring Analytics</a>, named data centers the primary reason. The pass-through reached households at <strong>$16 to $18 a month in Ohio and western Maryland</strong>, of which about 63% is attributed to data centers — call it ten or eleven dollars.</p>
 
- <p>That money left household accounts while the Senate was debating a bill that would have changed nothing this year. The House passed the Ratepayer Protection Act 417–3 on 16 September; the Senate killed it 57–43 on 30 September, three votes short of sixty. The bill's threshold was 100 megawatts, four to five times higher than the state rules it was written to nudge.</p>
+ <p>That money left household accounts while the Senate was debating a bill that would have changed nothing this year. The House passed the Ratepayer Protection Act 417–3 on 16 September; the Senate killed it 57–43 on 30 September, three votes short of sixty. <a href="https://www.congress.gov/bill/119th-congress/senate-bill/5028">The bill</a> set its threshold at 100 megawatts, four to five times higher than the state rules it was written to nudge.</p>
 
  <p>Maryland's 11.6% is the second-highest in the country, behind only Hawaii's fuel-driven rise, and it is not a coincidence that Maryland shares a capacity zone with the Loudoun County server corridor. Neither is Pennsylvania's 10.2% — the state's data center build is the reason its Senate majority flipped on 3 November.</p>
 
  <h2 id="ahead">The states that got ahead of it</h2>
 
- <p>Virginia's GS-5 tariff, effective January, is the template. Any data center above 25 megawatts posts <strong>$1.5 million per megawatt</strong> in collateral, signs for 14 years, covers 85% of the transmission demand it creates, and pays an exit fee. A 100 MW campus posts $150 million before it breaks ground.</p>
+ <p>Virginia's GS-5 tariff, effective January, is the template. Any data center above 25 megawatts posts <strong>$1.5 million per megawatt</strong> in collateral, signs for 14 years, covers 85% of the transmission demand it creates, and pays an exit fee. A 100 MW campus posts $150 million before it breaks ground. <a href="virginia-gs5-tariff-data-centers.html">The full terms are here.</a></p>
 
  <p>Virginia rose 7.9% — high, but below Maryland, Maine, Rhode Island and Pennsylvania, while absorbing a far larger volume of load than any of them. Oregon, at a 20-megawatt threshold with full distribution-cost assignment, rose 6.3%, below the national average.</p>
 
- <p>Now the honest part. The six states with a published threshold — Oklahoma, Kansas, Oregon, Virginia, Ohio and Pennsylvania — averaged <strong>+7.0%</strong>. Five PJM states without one — Delaware, Michigan, Illinois, New Jersey and Maryland — averaged <strong>+7.6%</strong>. The gap is six-tenths of a point and sits inside the noise. One year of data cannot separate tariff design from fuel cost, capacity clearing price and weather.</p>
+ <p>Now the honest part. The six states with a published figure — Oklahoma, Kansas, Oregon, Virginia, Ohio and Pennsylvania — averaged <strong>+7.0%</strong>. Five PJM states without one — Delaware, Michigan, Illinois, New Jersey and Maryland — averaged <strong>+7.6%</strong>. The gap is six-tenths of a point and sits inside the noise. One year of data cannot separate tariff design from fuel cost, capacity clearing price and weather.</p>
 
  <p>The claim the tariffs can support is narrower than the claim being made for them: no state with a threshold saw rates fall. The mechanism is a brake, not a reverse gear.</p>
 
@@ -735,13 +672,16 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
  </ul>
 
  <figure class="inline-fig">
+  <img src="../images/usa/electricity-price-by-state-1x1.png"
+       alt="A pad-mounted transformer lit hard from one side at night"
+       width="1200" height="1200" loading="lazy" decoding="async">
+  <!--
   <picture>
-   <source type="image/avif" srcset="/images/usa/electricity-price-by-state-1x1.avif">
-   <source type="image/webp" srcset="/images/usa/electricity-price-by-state-1x1.webp">
-   <img src="/images/usa/electricity-price-by-state-1x1.png"
-        alt="A pad-mounted transformer lit hard from one side at night"
-        width="1200" height="1200" loading="lazy" decoding="async">
+   <source type="image/avif" srcset="../images/usa/electricity-price-by-state-1x1.avif">
+   <source type="image/webp" srcset="../images/usa/electricity-price-by-state-1x1.webp">
+   <img src="../images/usa/electricity-price-by-state-1x1.png" alt="A pad-mounted transformer lit hard from one side at night" width="1200" height="1200" loading="lazy" decoding="async">
   </picture>
+  -->
   <figcaption>Distribution equipment is a fixed cost, and utilities are moving it off volumetric rates and onto your standing charge. <span class="credit">Illustration: Pulse America News</span></figcaption>
  </figure>
 
@@ -751,7 +691,7 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
 
  <p class="extract">Electricity is the one bill where the US sits near the middle of the world. Irish households pay 44.7 cents a kilowatt-hour, 2.5× the US average. Indian households pay 6.8, under two-fifths of it. The top-to-bottom spread on this list is a factor of 6.6, and in every country on it the argument is identical: who pays for the grid a data center needs.</p>
 
- <p>Eurostat rows below show the euro figure in small type so the conversion is checkable. All euro figures are converted at a single rate, $1.155/€, the H1 2026 period average; the conversion is ours, not Eurostat's. UK and Singapore are GlobalPetrolPrices, Q3 2026, converted the same way.</p>
+ <p>Eurostat rows below show the euro figure in small type so the conversion is checkable. All euro figures are converted at a single rate, $1.155/€, the H1 2026 period average; the conversion is ours, not Eurostat's. UK and Singapore are <a href="https://www.globalpetrolprices.com/">GlobalPetrolPrices</a>, Q3 2026, converted the same way.</p>
 
  <h3>Tier 2 — high-income, high-price</h3>
 </div>
@@ -766,7 +706,7 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
  <div class="card"><p class="cname">Netherlands</p><p class="cval">32.3¢</p><p class="ceur">€0.2800</p><p class="cmult">1.8× US average</p><div class="cbar"><i style="--v:32.3"></i></div></div>
  <div class="card"><p class="cname">Singapore</p><p class="cval">24.0¢</p><p class="cmult">1.3× US average</p><div class="cbar"><i style="--v:24.0"></i></div></div>
 </div>
-<p class="tnote">Eurostat household prices, first half 2026, converted at $1.155/€. Euro figure shown so the arithmetic is checkable. Conversion ours and approximate.</p>
+<p class="tnote"><a href="https://ec.europa.eu/eurostat/">Eurostat</a> household prices, first half 2026, converted at $1.155/€. Euro figure shown so the arithmetic is checkable. Conversion ours and approximate.</p>
 
 <div class="prose">
  <p>Ireland and Denmark are the two European countries that built the most data center capacity per head of population, and both sit near the top. Ireland's grid operator now rations new connections in the Dublin region. Singapore ran a moratorium on new data centers from 2019 to 2022 for the same reason. Neither country's households got a cheaper kilowatt-hour out of the build.</p>
@@ -819,7 +759,7 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
  <ol>
   <li><strong>Get the line items.</strong> Your utility must itemise on request. A rise in the supply or capacity line is a market event; a rise in riders is a policy decision; a rise in the fixed charge is a rate case.</li>
   <li><strong>Compare to last August, not last month.</strong> Seasonal load swamps everything. The relevant comparison is the same month a year earlier — which is how the table above is built.</li>
-  <li><strong>Check whether your state has a docket open.</strong> <a href="/usa/state-data-center-tariff-tracker.html">The tracker</a> lists 23 states, thresholds and case numbers. Intervention is free and public comment takes ten minutes.</li>
+  <li><strong>Check whether your state has a docket open.</strong> <a href="state-data-center-tariff-tracker.html">The tracker</a> lists 23 states, thresholds and case numbers. Intervention is free and public comment takes ten minutes.</li>
   <li><strong>Ask for the budget billing recalculation.</strong> If your utility levelised you, a spike is spread rather than billed — but the spread is based on an estimate that may now be wrong in your favour.</li>
   <li><strong>Check the fixed charge, not just the rate.</strong> A rate held flat while the customer charge doubles is a rate increase wearing a flat-rate costume. Several states have approved exactly that this year.</li>
  </ol>
@@ -844,17 +784,18 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
 
 <section class="faq" id="faq">
  <h2>Questions</h2>
- <details><summary>Which state has the cheapest electricity?</summary><p class="ans">Nevada, at 12.72 cents per kilowatt-hour in August 2026 — and it is also the only state in the country whose rate fell over the year. North Dakota, Utah, Idaho and Louisiana follow, all under 13.5 cents. All five are hydro, nuclear or low-cost balancing authorities with small data center footprints.</p></details>
- <details><summary>Which state has the most expensive?</summary><p class="ans">Hawaii, at 47.18 cents — 2.6 times the national average and 3.7 times Nevada. Massachusetts, Rhode Island and Connecticut follow, all above 24 cents, all with constrained import capacity.</p></details>
- <details><summary>Why did my electric bill go up so much?</summary><p class="ans">If you are in Maryland, Maine, Rhode Island, Pennsylvania or Ohio, most of it is PJM capacity charge passed through by your utility — roughly $10 to $11 a month attributable in Ohio and western Maryland. If you are in California or New England, it is generation cost and import constraint. The two look identical on a bill and have nothing to do with each other.</p></details>
- <details><summary>Do data centers raise household bills?</summary><p class="ans">Nationally, the average effect is small and possibly negative. Regionally, inside PJM, it is documented and already being billed. Both are true, which is why the national argument never resolves.</p></details>
- <details><summary>Does a data center tariff lower my rate?</summary><p class="ans">No. It slows the rise. Six states with published thresholds averaged +7.0% over the year against +7.6% for five PJM states without one. The gap is inside the noise and one year cannot separate tariff design from fuel and capacity effects.</p></details>
+ <details><summary>Which state has the cheapest electricity?</summary><p class="ans">Nevada, at 12.72 cents per kilowatt-hour in August 2026 — and it is also the only state in the country whose rate fell over the year. North Dakota, Utah, Idaho and Louisiana follow, all under 13.5 cents.</p></details>
+ <details><summary>Which state has the most expensive?</summary><p class="ans">Hawaii, at 47.18 cents — 2.6 times the national average and 3.7 times Nevada. Massachusetts, Rhode Island and Connecticut follow, all above 24 cents.</p></details>
+ <details><summary>Which state's electric bill rose the most?</summary><p class="ans">Hawaii, up 12.3%, but that is imported fuel on an islanded grid. Among mainland states <a href="maryland-electric-bill-increase.html">Maryland rose most at 11.6%</a>, followed by Massachusetts at 11.9%.</p></details>
+ <details><summary>Why did my electric bill go up so much?</summary><p class="ans">If you are in <a href="maryland-electric-bill-increase.html">Maryland</a>, <a href="ohio-electric-bill-increase.html">Ohio</a>, <a href="pennsylvania-electric-bill-increase.html">Pennsylvania</a>, <a href="maine-electric-bill-increase.html">Maine</a> or <a href="rhode-island-electric-bill-increase.html">Rhode Island</a>, most of it is PJM or ISO-NE capacity charge passed through by your utility — roughly $10 to $18 a month attributable in Ohio and western Maryland. In California it is generation cost and import constraint.</p></details>
+ <details><summary>Do data centers raise household bills?</summary><p class="ans">Nationally, the average effect is small and possibly negative. Regionally, inside PJM, it is documented and already being billed. Both are true.</p></details>
+ <details><summary>Does a data center tariff lower my rate?</summary><p class="ans">No. It slows the rise. Six states with published figures averaged +7.0% over the year against +7.6% for five PJM states without one.</p></details>
  <details><summary>Why is Hawaii so expensive?</summary><p class="ans">Islanded grids. Hawaii cannot import power from anywhere, and most generation burns oil delivered by ship. Every kilowatt-hour carries the fuel and the freight — which is also why Hawaii's 12.3% rise is a fuel story, not a data center story.</p></details>
  <details><summary>What is the US average?</summary><p class="ans">18.16 cents per kilowatt-hour in August 2026, up 3.8% from 17.5 cents a year earlier, per EIA Table 5.6.A.</p></details>
  <details><summary>Is this data final?</summary><p class="ans">No. EIA treats 2026 as preliminary and revises. The table is regenerated on each monthly release and the revision date is at the foot of the page.</p></details>
 </section>
 
-<a class="readnext" href="/usa/data-center-electric-bill-who-pays.html">
+<a class="readnext" href="data-center-electric-bill-who-pays.html">
  <span class="lbl">Read next</span>
  <strong>Who pays for data center electricity? Congress answered 417-3, then the Senate killed it</strong>
 </a>
@@ -862,25 +803,27 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
 <div class="related">
  <h2>More on this beat</h2>
  <ul>
-  <li><a href="/usa/state-data-center-tariff-tracker.html">23 states, thresholds and dockets — the full tracker</a></li>
-  <li><a href="/usa/data-center-threshold-calculator.html">Is a project size covered, and where?</a></li>
-  <li><a href="/usa/water-refugees-drought-home-prices.html">Water refugees: where drought is moving home prices</a></li>
+  <li><a href="maryland-electric-bill-increase.html">Maryland: the fastest-rising bill in the mainland, and the capacity zone behind it</a></li>
+  <li><a href="ohio-electric-bill-increase.html">Ohio: +9.4%, and the $16 a month data center line item</a></li>
+  <li><a href="state-data-center-tariff-tracker.html">23 states, thresholds and dockets — the full tracker</a></li>
+  <li><a href="data-center-threshold-calculator.html">Is a project size covered, and where?</a></li>
+  <li><a href="virginia-gs5-tariff-data-centers.html">Virginia's GS-5: $1.5m a megawatt, 14 years, 85% of transmission</a></li>
  </ul>
 </div>
 
 <div class="notes">
- <p><strong>Sources</strong> EIA Electric Power Monthly Table 5.6.A (August 2026, preliminary) · Monitoring Analytics January capacity report · PJM Interconnection auction results · Virginia GS-5 tariff schedule · Oregon Schedule 96 · Eurostat household electricity prices H1 2026 · GlobalPetrolPrices Q3 2026 · congressional record for HR 9340 and S. 5028 · FactCheck.org October investigation and the studies it cites.</p>
+ <p><strong>Sources</strong> <a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a">EIA Electric Power Monthly Table 5.6.A</a> (August 2026, preliminary) · <a href="https://www.monitoringanalytics.com/">Monitoring Analytics</a> January capacity report · <a href="https://www.pjm.com/">PJM Interconnection</a> auction results · <a href="https://www.scc.virginia.gov/">Virginia SCC</a> GS-5 tariff schedule · Oregon PUC Schedule 96 · <a href="https://ec.europa.eu/eurostat/">Eurostat</a> household electricity prices H1 2026 · <a href="https://www.globalpetrolprices.com/">GlobalPetrolPrices</a> Q3 2026 · congressional record for <a href="https://www.congress.gov/bill/119th-congress/senate-bill/5028">S. 5028</a> · FactCheck.org October investigation and the studies it cites.</p>
  <p><strong>Our arithmetic, not an agency's</strong> Band averages, the +7.0% and +7.6% tariff-state comparisons, all currency conversions at $1.155/€, the Hawaii-to-Nevada and Hawaii-to-average multiples, and the Ireland-to-India ratio.</p>
- <p><strong>Revision log</strong> Table regenerated 20 Nov 2026 from the August 2026 release. Next update on the September release. Corrections to this table since first publication: rank column rebuilt (the national average row no longer consumes a rank), the count of rising jurisdictions corrected to 50 of 51, Hawaii added to the list of largest increases, and the Eurostat rows recomputed off a single stated exchange rate.</p>
+ <p><strong>Revision log</strong> Table regenerated 20 Nov 2026 from the August 2026 release. Next update on the September release. Changes since first publication: lead rewritten to answer first, rank column rebuilt, rising-jurisdiction count corrected to 50 of 51, Hawaii added to the largest increases, tariff column filled from the tracker with published and modal figures distinguished, sources linked, five state pages added.</p>
  <p><strong>Corrections</strong> corrections@pulseamericanews.com with the URL and the claim.</p>
 </div>
 
 <div class="author-card">
- <img src="/images/authors/krishna-basnet.jpg" alt="" width="52" height="52" loading="lazy" decoding="async">
+ <img src="../images/authors/krishna-basnet.jpg" alt="" width="52" height="52" loading="lazy" decoding="async">
  <div>
   <h2>Krishna Basnet</h2>
-  <p>Founder. Compiled and checked the table against the EIA release.</p>
-  <a href="/authors/krishna-basnet.html">All stories</a>
+  <p>Founder and energy correspondent. Compiled and checked the table against the EIA release.</p>
+  <a href="../authors/krishna-basnet.html">All stories</a>
  </div>
 </div>
 
@@ -919,16 +862,16 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
  <div class="footer-inner">
   <div class="footer-top">
    <div class="footer-brand">
-    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span><span class="brand-text">Pulse<b>America</b>News</span></a>
+    <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span><span class="brand-text">Pulse<b>America</b>News</span></a>
     <p>Independent US and world news, analysis and explainers — reporting that respects your time.</p>
    </div>
-   <div class="footer-col"><h2>Sections</h2><a href="/world/">World</a><a href="/usa/">USA</a><a href="/current-affairs/">Current Affairs</a><a href="/sex-education/">Sex Education</a><a href="/technology/">Technology</a><a href="/sports/">Sports</a></div>
-   <div class="footer-col"><h2>Company</h2><a href="/about/">About us</a><a href="/authors/">Our journalists</a><a href="/editorial-standards/">Editorial standards</a><a href="/corrections/">Corrections policy</a><a href="/advertise/">Advertise</a></div>
-   <div class="footer-col"><h2>Connect</h2><a href="/#newsletter">Newsletter</a><a href="/feed.xml">RSS feed</a><a href="/contact/">Contact us</a><a href="/tips/">Tip line</a></div>
+   <div class="footer-col"><h2>Sections</h2><a href="../world/">World</a><a href="../usa/">USA</a><a href="../current-affairs/">Current Affairs</a><a href="../sex-education/">Sex Education</a><a href="../technology/">Technology</a><a href="../sports/">Sports</a></div>
+   <div class="footer-col"><h2>Company</h2><a href="../about/">About us</a><a href="../authors/">Our journalists</a><a href="../editorial-standards/">Editorial standards</a><a href="../corrections/">Corrections policy</a><a href="../advertise/">Advertise</a></div>
+   <div class="footer-col"><h2>Connect</h2><a href="../#newsletter">Newsletter</a><a href="../feed.xml">RSS feed</a><a href="../contact/">Contact us</a><a href="../tips/">Tip line</a></div>
   </div>
   <div class="footer-bottom">
    <p>© 2026 Pulse America News. All rights reserved.</p>
-   <div class="footer-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/cookies/">Cookies</a></div>
+   <div class="footer-legal"><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="../cookies/">Cookies</a></div>
   </div>
  </div>
 </footer>
@@ -941,14 +884,11 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
  bL.addEventListener('click',function(){setTheme('light')});
  bD.addEventListener('click',function(){setTheme('dark')});
  setTheme(root.getAttribute('data-theme')==='dark'?'dark':'light');
-
  var mBtn=document.getElementById('menuBtn'), mMenu=document.getElementById('mobileMenu');
  mBtn.addEventListener('click',function(){var o=mMenu.classList.toggle('open');mBtn.setAttribute('aria-expanded',String(o));mBtn.setAttribute('aria-label',o?'Close menu':'Open menu');});
-
  var bar=document.getElementById('bar'), art=document.querySelector('.article'), tick=false;
  function onScroll(){if(tick)return;tick=true;requestAnimationFrame(function(){var r=art.getBoundingClientRect(), total=r.height-innerHeight, done=Math.min(Math.max(-r.top,0),Math.max(total,1));bar.style.width=(total>0?(done/total)*100:0)+'%';tick=false;});}
  addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',onScroll);onScroll();
-
  var toc=document.getElementById('toc'), wide=matchMedia('(min-width:1100px)');
  function syncToc(){toc.open=wide.matches}syncToc();wide.addEventListener('change',syncToc);
  var links=[].slice.call(toc.querySelectorAll('a')), heads=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
@@ -956,8 +896,6 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
   var io=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;var i=heads.indexOf(en.target);links.forEach(function(l){l.classList.remove('active')});if(i>-1)links[i].classList.add('active');});},{rootMargin:'-80px 0px -70% 0px'});
   heads.forEach(function(h){if(h)io.observe(h)});
  }
-
- /* ---- sort: average row pinned last, real positions, aria-sort kept in sync ---- */
  var tb=document.querySelector('#rateTable tbody'),
      avgRow=tb.querySelector('[data-avg]'),
      asc=true,
@@ -965,22 +903,16 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
      st=document.getElementById('sortTxt'),
      status=document.getElementById('sortStatus'),
      thRate=document.getElementById('thRate');
-
  sb.addEventListener('click',function(){
   asc=!asc;
   var rows=[].slice.call(tb.rows).filter(function(r){return !r.hasAttribute('data-avg')});
-  rows.sort(function(a,b){
-   var x=parseFloat(a.cells[2].textContent), y=parseFloat(b.cells[2].textContent);
-   return asc? x-y : y-x;
-  });
+  rows.sort(function(a,b){var x=parseFloat(a.cells[2].textContent), y=parseFloat(b.cells[2].textContent);return asc? x-y : y-x;});
   rows.forEach(function(r,i){r.cells[0].textContent=i+1;tb.appendChild(r)});
   tb.appendChild(avgRow);
   st.textContent=asc?'Cheapest first':'Dearest first';
   thRate.setAttribute('aria-sort',asc?'ascending':'descending');
   status.textContent='Table sorted '+(asc?'cheapest':'dearest')+' first. The national average row stays at the bottom and is not ranked.';
  });
-
- /* ---- alert form: only reports success when the POST actually succeeds ---- */
  var form=document.getElementById('alertForm'), email=document.getElementById('alertEmail'),
      btn=document.getElementById('alertBtn'), note=document.getElementById('alertNote');
  form.addEventListener('submit',function(e){
@@ -989,7 +921,7 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
   if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){email.setAttribute('aria-invalid','true');email.focus();return;}
   email.removeAttribute('aria-invalid');
   btn.disabled=true;btn.textContent='Sending…';
-  fetch('/api/threshold-alert',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v,source:'electricity-price-by-state'})})
+  fetch('../api/threshold-alert',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v,source:'electricity-price-by-state'})})
    .then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);})
    .then(function(){
     form.outerHTML='<p class="ans" role="status">Done — we will email you when your state moves.</p>';
@@ -1001,7 +933,6 @@ tr[data-avg] td{border-block:1px solid var(--border-strong)}
     note.style.color='var(--red)';
    });
  });
-
  var shareBtn=document.getElementById('shareBtn'), url=location.href, copyBtn=document.getElementById('copyBtn'), copyTxt=document.getElementById('copyTxt'), tId;
  function flash(m){copyTxt.textContent=m;clearTimeout(tId);tId=setTimeout(function(){copyTxt.textContent='Copy link'},2000)}
  shareBtn.addEventListener('click',function(){if(navigator.share){navigator.share({title:document.title,url:url}).catch(function(){})}else if(navigator.clipboard){navigator.clipboard.writeText(url).then(function(){flash('Copied')})}});

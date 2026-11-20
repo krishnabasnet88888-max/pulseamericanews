@@ -3,14 +3,44 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
-    <loc>https://pulseamericanews.com/usa/naresh-bhatt-guilty-verdict.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <loc>https://pulseamericanews.com/usa/electricity-price-by-state.html</loc>
+    <lastmod>2026-11-20T06:00:00-05:00</lastmod>
     <news:news>
       <news:publication>
         <news:name>Pulse America News</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-11-10T17:00:00-05:00</news:publication_date>
+      <news:publication_date>2026-11-20T06:00:00-05:00</news:publication_date>
+      <news:title>Electricity prices in all 50 states in 2027 — and the 23 states charging data centers for it</news:title>
+      <news:keywords>electricity prices by state, data center electricity, EIA 5.6.A, PJM capacity, utility tariffs</news:keywords>
+      <news:genres>Blog, Opinion</news:genres>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://pulseamericanews.com/usa/colorado-river-cuts-january-2027-households.html</loc>
+    <lastmod>2026-11-18T07:00:00-05:00</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>Pulse America News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T07:00:00-05:00</news:publication_date>
+      <news:title>Colorado River cuts start Jan. 1. The deal isn't signed</news:title>
+      <news:keywords>Colorado River, Bureau of Reclamation, water cuts, Lake Mead, Lake Powell</news:keywords>
+      <news:genres>Blog</news:genres>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://pulseamericanews.com/usa/naresh-bhatt-guilty-verdict.html</loc>
+    <lastmod>2026-11-16T17:00:00-05:00</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>Pulse America News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T17:00:00-05:00</news:publication_date>
       <news:title>Naresh Bhatt convicted of murdering his wife, Mamta Kafle Bhatt, after jury rejects suicide claim</news:title>
       <news:keywords>Naresh Bhatt, Mamta Kafle Bhatt, Prince William County, first-degree murder, Manassas Park</news:keywords>
       <news:genres>PressRelease, Blog, Opinion</news:genres>
@@ -19,7 +49,7 @@
 
   <url>
     <loc>https://pulseamericanews.com/usa/naresh-bhatt-sentencing-arithmetic.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-16T07:00:00-05:00</lastmod>
     <news:news>
       <news:publication>
         <news:name>Pulse America News</news:name>
@@ -34,7 +64,7 @@
 
   <url>
     <loc>https://pulseamericanews.com/usa/murder-conviction-without-body.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-16T10:00:00-05:00</lastmod>
     <news:news>
       <news:publication>
         <news:name>Pulse America News</news:name>
@@ -47,75 +77,4 @@
     </news:news>
   </url>
 
-  <url>
-    <loc>https://pulseamericanews.com/usa/data-center-electric-bill-who-pays.html</loc>
-    <lastmod>2026-11-15</lastmod>
-    <news:news>
-      <news:publication>
-        <news:name>Pulse America News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T14:00:00-05:00</news:publication_date>
-      <news:title>Who pays for data center electricity? Congress answered 417-3, then the Senate killed it</news:title>
-      <news:keywords>data center electricity, HR 9340, S 5028, utility tariffs, PJM</news:keywords>
-      <news:genres>Blog, Opinion</news:genres>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://pulseamericanews.com/usa/colorado-river-2027-cuts-evaporation.html</loc>
-    <lastmod>2026-11-14</lastmod>
-    <news:news>
-      <news:publication>
-        <news:name>Pulse America News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T09:00:00-07:00</news:publication_date>
-      <news:title>Colorado River: the 2027 cuts are smaller than what the reservoirs lose to the sky</news:title>
-      <news:keywords>Colorado River, Lake Powell, Lake Mead, Bureau of Reclamation, water cuts</news:keywords>
-      <news:genres>Blog, Opinion</news:genres>
-    </news:news>
-  </url>
-
-  <!-- Drop these two after 17 Nov — Google News sitemaps should hold only the last 48h. -->
-  <url>
-    <loc>https://pulseamericanews.com/news/water-wars-article.html</loc>
-    <lastmod>2026-11-13</lastmod>
-    <news:news>
-      <news:publication>
-        <news:name>Pulse America News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T06:00:00-05:00</news:publication_date>
-      <news:title>Water Wars: The Coming Global Crisis That Will Reshape Borders and Spark Conflicts</news:title>
-      <news:keywords>water scarcity, water conflict, freshwater crisis, climate security</news:keywords>
-      <news:genres>Blog, Opinion</news:genres>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://pulseamericanews.com/usa/water-refugees-drought-home-prices.html</loc>
-    <lastmod>2026-11-13</lastmod>
-    <news:news>
-      <news:publication>
-        <news:name>Pulse America News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T07:00:00-05:00</news:publication_date>
-      <news:title>The Water Refugees: Americans Are Leaving Drought Country — And It's Moving Home Prices</news:title>
-      <news:keywords>water refugees, groundwater depletion, Arizona, Ogallala, home prices, SGMA</news:keywords>
-      <news:genres>Blog, Opinion</news:genres>
-    </news:news>
-  </url>
-  <url>
-  <loc>https://pulseamericanews.com/usa/colorado-river-cuts-january-2027-households.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>Pulse America News</news:name>
-      <news:language>en</news:language>
-    </news:publication>
-    <news:publication_date>2026-11-18T07:00:00-05:00</news:publication_date>
-    <news:title>Colorado River cuts start Jan. 1. The deal isn't signed</news:title>
-  </news:news>
-</url>
 </urlset>
