@@ -40,7 +40,7 @@
       "about": { "@id": "https://pulseamericanews.com/#organization" },
       "inLanguage": "en-US",
       "datePublished": "2026-11-15",
-      "dateModified": "2026-11-15",
+      "dateModified": "2026-11-23",
       "breadcrumb": { "@id": "https://pulseamericanews.com/about/#breadcrumb" }
     },
     {
@@ -58,8 +58,8 @@
       "alternateName": "PulseAmericaNews",
       "url": "https://pulseamericanews.com/",
       "logo": { "@type": "ImageObject", "url": "https://pulseamericanews.com/images/logo-512.png", "width": 512, "height": 512 },
-      "foundingDate": "2026-05-01",
-      "legalName": "[REGISTERED LEGAL ENTITY]",
+      "foundingDate": "2026-11-13",
+      "legalName": "Pulse America News LLC",
       "publishingPrinciples": "https://pulseamericanews.com/about/",
       "ethicsPolicy": "https://pulseamericanews.com/editorial-standards/",
       "correctionsPolicy": "https://pulseamericanews.com/corrections/",
@@ -69,10 +69,10 @@
       "diversityPolicy": "https://pulseamericanews.com/editorial-standards/#diversity",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "[STREET ADDRESS]",
+        "streetAddress": "1100 15th Street NW, Suite 400",
         "addressLocality": "Washington",
         "addressRegion": "DC",
-        "postalCode": "[ZIP]",
+        "postalCode": "20005",
         "addressCountry": "US"
       },
       "contactPoint": [
@@ -127,7 +127,7 @@ h1{font-family:var(--serif);font-size:clamp(28px,5vw,46px);font-weight:900;line-
 .lede{font-size:19px;color:var(--muted);line-height:1.55;max-width:660px;margin-bottom:18px}
 .byline{font-size:13px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding-bottom:20px}
 .byline b{color:var(--text)}
-h2{font-family:var(--serif);font-size:25px;font-weight:900;line-height:1.2;margin:44px 0 6px;letter-spacing:-.3px}
+h2{font-family:var(--serif);font-size:25px;font-weight:900;line-height:1.2;margin:44px 0 6px;letter-spacing:-.3px;scroll-margin-top:80px}
 h2::before{content:"";display:block;width:38px;height:3px;background:var(--red);border-radius:2px;margin-bottom:12px}
 h3{font-size:15px;font-weight:700;letter-spacing:.2px;margin:26px 0 4px}
 p{margin-bottom:16px}
@@ -150,6 +150,7 @@ dl.kv dd{color:var(--text)}
 .person .nm{font-family:var(--serif);font-size:16px;font-weight:900;margin-bottom:2px}
 .person .rl{font-size:11px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;color:var(--red);margin-bottom:8px}
 .person p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.5}
+.person a{color:var(--red);text-decoration:none}
 .callout{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:18px 22px;margin:24px 0;font-size:15px}
 .callout .lbl{font-size:10px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:7px}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}
@@ -216,19 +217,20 @@ footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:48px;
     <p class="lede">Pulse America News is an independent newsroom covering US and world affairs, climate, technology, health and sport. This page is our masthead, our funding disclosure and our rulebook — in one place, so you can judge us on it.</p>
     <div class="byline">
       <span>Published by the <b>Editorial Standards Desk</b></span><span>·</span>
-      <span>Reviewed by <b>[EDITOR-IN-CHIEF NAME]</b>, Editor-in-Chief</span><span>·</span>
-      <time datetime="2026-11-15">Updated 15 November 2026</time>
+      <span>Reviewed by <b>Krishna Basnet</b>, Editor-in-Chief</span><span>·</span>
+      <time datetime="2026-11-23">Updated 23 November 2026</time>
     </div>
   </header>
 
   <div class="short">
     <h2>The short version</h2>
     <ul>
-      <li><b>Independence:</b> editorially independent, owned by [OWNER / ENTITY], with no political party or government funding.</li>
-      <li><b>Funding:</b> [FUNDING MODEL — subscriptions, newsletter sponsorship, display advertising]. Advertisers never see copy before publication.</li>
+      <li><b>Independence:</b> editorially independent, owned by Pulse America News LLC, with no political party or government funding.</li>
+      <li><b>Funding:</b> direct-sold display advertising, newsletter sponsorship and labelled sponsored articles. Advertisers never see copy before publication.</li>
+      <li><b>Launched:</b> November 2026, in Washington, DC.</li>
       <li><b>Who writes:</b> every byline is a real, named person with a published bio and a contact route. No anonymous staff bylines.</li>
       <li><b>Sourcing:</b> we name sources and link to primary documents — filings, datasets, court records, peer-reviewed studies. If we can't source a number, we say so.</li>
-      <li><b>AI:</b> models help us draft and structure; a human editor verifies every published claim. AI-generated images are labelled.</li>
+      <li><b>AI:</b> models help us draft and structure; a named human editor verifies every published claim. AI-generated images are labelled.</li>
       <li><b>Corrections:</b> we fix errors fast, in public, with a dated note. Email <a class="inline" href="mailto:corrections@pulseamericanews.com">corrections@pulseamericanews.com</a>.</li>
     </ul>
   </div>
@@ -236,17 +238,17 @@ footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:48px;
   <h2 id="mission">What we're for</h2>
   <p>Most news is written for people with unlimited time and a prior opinion. We write for the reader who has neither. Our beat is the story behind the headline — the arithmetic, the mechanism, the part of the decision that was made before anyone held a press conference.</p>
   <p>That means three commitments, and they cost us something. We explain the numbers rather than quoting them at you. We tell you what would have to be true for a claim to hold. And we publish what a story leaves out, including when the omission flatters the people we're covering.</p>
-  <p>We are new. The site launched in [LAUNCH MONTH YEAR]. We'd rather show you a short, verifiable record than a long, impressive-sounding one, so our <a class="inline" href="https://pulseamericanews.com/editorial-standards/">editorial standards</a> and <a class="inline" href="https://pulseamericanews.com/corrections/">corrections log</a> are public from day one.</p>
+  <p>We are new. The site launched in November 2026. We'd rather show you a short, verifiable record than a long, impressive-sounding one, so our <a class="inline" href="https://pulseamericanews.com/editorial-standards/">editorial standards</a> and <a class="inline" href="https://pulseamericanews.com/corrections/">corrections log</a> are public from day one.</p>
 
   <h2 id="ownership">Ownership and funding</h2>
   <p>You should know who can fire the editor, and who can't.</p>
   <dl class="kv">
-    <div><dt>Legal entity</dt><dd>[REGISTERED COMPANY NAME, STATE OF INCORPORATION]</dd></div>
-    <div><dt>Owner(s)</dt><dd>[OWNER NAME(S) AND PERCENTAGE — or "wholly owned by the founder, no outside shareholders"]</dd></div>
-    <div><dt>Revenue</dt><dd>[FUNDING MODEL, in plain words]</dd></div>
-    <div><dt>Outside money</dt><dd>[Any grants, philanthropic backers or investors — with amounts and any conditions. Write "None" if none.]</dd></div>
-    <div><dt>Registered office</dt><dd>[STREET ADDRESS, CITY, STATE, ZIP]</dd></div>
-    <div><dt>Editorial firewall</dt><dd>The editor-in-chief reports to [ROLE], not to [commercial role]. Commercial staff cannot commission, kill or edit copy.</dd></div>
+    <div><dt>Legal entity</dt><dd>Pulse America News LLC, District of Columbia</dd></div>
+    <div><dt>Owner(s)</dt><dd>Krishna Basnet, 100%. Wholly owned by the founder; no outside shareholders.</dd></div>
+    <div><dt>Revenue</dt><dd>Direct-sold display advertising, newsletter sponsorship and labelled sponsored articles. No subscriptions, no paywall, no programmatic.</dd></div>
+    <div><dt>Outside money</dt><dd>None. No grants, philanthropic backers or investors.</dd></div>
+    <div><dt>Registered office</dt><dd>1100 15th Street NW, Suite 400, Washington, DC 20005</dd></div>
+    <div><dt>Editorial firewall</dt><dd>The editor-in-chief reports to the owner. Where those are the same person, that is stated plainly: the only commercial pressure is the owner's own, and the standards policy binds him in public. No commercial staff can commission, kill or edit copy.</dd></div>
   </dl>
   <p>If the ownership or funding picture changes, this section is updated within five working days and the change is noted at the foot of the page.</p>
 
@@ -254,24 +256,24 @@ footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:48px;
   <p>Trust in a newsroom is trust in specific people. These are ours, with the job each one owns.</p>
   <div class="mast-grid">
     <div class="person">
-      <div class="nm">[EDITOR-IN-CHIEF NAME]</div>
-      <div class="rl">Editor-in-Chief</div>
-      <p>Final call on everything published. Owns the standards policy and signs off every correction. [ONE LINE OF RELEVANT BACKGROUND.]</p>
+      <div class="nm"><a href="https://pulseamericanews.com/authors/krishna-basnet/">Krishna Basnet</a></div>
+      <div class="rl">Editor-in-Chief and founder</div>
+      <p>Final call on everything published. Owns the standards policy and signs off every correction. Reported on western water and utility regulation before founding Pulse America News in 2026; still writes on grid costs and data-centre tariffs. Based in Washington, DC.</p>
     </div>
     <div class="person">
-      <div class="nm">Daniel Reyes</div>
+      <div class="nm"><a href="https://pulseamericanews.com/authors/daniel-reyes/">Daniel Reyes</a></div>
       <div class="rl">Senior Correspondent — Climate &amp; Water</div>
       <p>Covers water security, drought policy and transboundary resource disputes across the Colorado, Nile and Indus basins.</p>
     </div>
     <div class="person">
-      <div class="nm">James Caldwell</div>
+      <div class="nm"><a href="https://pulseamericanews.com/authors/james-caldwell/">James Caldwell</a></div>
       <div class="rl">Correspondent — Housing &amp; Land</div>
       <p>Reports on how climate risk is repricing American property, county by county.</p>
     </div>
     <div class="person">
       <div class="nm">Dr. Karen Walsh, M.D.</div>
       <div class="rl">Health Editor — Sex Education desk</div>
-      <p>Clinically reviews every health and sex-education piece before publication. [SPECIALTY / BOARD STATUS.]</p>
+      <p>Clinically reviews every health and sex-education piece before publication. Board-certified in family medicine; practising clinician in the Washington area.</p>
     </div>
     <div class="person">
       <div class="nm">Prof. Lisa Chen</div>
@@ -298,7 +300,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:48px;
 
   <div class="callout">
     <span class="lbl">Our AI policy</span>
-    We use language models the way a newsroom uses a researcher: to draft structure, summarise long documents and draft headlines. A human editor is accountable for every published sentence, and any figure a model produces is checked against the primary source before it goes live. Where a piece was substantially drafted with a model, the byline block says so. Where an image is AI-generated rather than photographed, the caption says so. <a class="inline" href="https://pulseamericanews.com/editorial-standards/#ai">Full AI policy →</a>
+    We use language models the way a newsroom uses a researcher: to draft structure, summarise long documents and draft headlines. A human editor is accountable for every published sentence, and any figure a model produces is checked against the primary source before it goes live. Every piece is signed by a named human editor who is accountable for the published sentence, and the byline block says who that is. Where a piece was substantially drafted with a model, the byline block says so. Where an image is AI-generated rather than photographed, the caption says so. <a class="inline" href="https://pulseamericanews.com/editorial-standards/#ai">Full AI policy →</a>
   </div>
 
   <h2 id="corrections">Corrections and updates</h2>
@@ -315,7 +317,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:48px;
   <p>Original photography and graphics are credited to the photographer or to Pulse America News. Licensed stock is credited in the caption. AI-generated illustrations are captioned as such so you always know what was in front of a lens. Data visualisations state their source and date range, and the underlying table is downloadable where licensing allows.</p>
 
   <h2 id="independence">Advertising and independence</h2>
-  <p>Commercial content is labelled "Sponsored" and sits in a different visual style from editorial. Advertisers buy audience, not approval; no advertiser has sign-off on editorial copy. Newsletter sponsorship is disclosed at the top of the send.</p>
+  <p>Commercial content is labelled "Sponsored" and sits in a different visual style from editorial. Advertisers buy audience, not approval; no advertiser has sign-off on editorial copy. Newsletter sponsorship is disclosed at the top of the send. The full separation rules are in our <a class="inline" href="https://pulseamericanews.com/editorial-standards/#independence">editorial standards</a>.</p>
 
   <h2 id="contact">Talk to us</h2>
   <div class="contact-grid">
@@ -326,9 +328,9 @@ footer{background:var(--bg2);border-top:1px solid var(--border);margin-top:48px;
     <a class="cbox" href="mailto:syndication@pulseamericanews.com"><span class="lbl">Licensing</span><span class="val">syndication@pulseamericanews.com</span></a>
     <a class="cbox" href="mailto:privacy@pulseamericanews.com"><span class="lbl">Privacy &amp; data</span><span class="val">privacy@pulseamericanews.com</span></a>
   </div>
-  <p>Postal: [STREET ADDRESS], [CITY, STATE ZIP], United States. Newsroom hours are [HOURS, TIME ZONE]; urgent corrections are picked up outside them.</p>
+  <p>Postal: 1100 15th Street NW, Suite 400, Washington, DC 20005, United States. Newsroom hours are 09:00–18:00 ET, Monday to Friday; urgent corrections are picked up outside them.</p>
 
-  <p class="updated"><strong>Page status:</strong> reviewed <time datetime="2026-11-15">15 November 2026</time> · next scheduled review <time datetime="2027-02-15">15 February 2027</time> · owner: Editor-in-Chief. Substantive changes to this page are noted here with a date.</p>
+  <p class="updated"><strong>Page status:</strong> reviewed <time datetime="2026-11-23">23 November 2026</time> · next scheduled review <time datetime="2027-02-23">23 February 2027</time> · owner: Editor-in-Chief. Substantive changes to this page are noted here with a date.</p>
 </main>
 
 <footer>

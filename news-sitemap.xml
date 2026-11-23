@@ -76,5 +76,18 @@
       <news:genres>Blog</news:genres>
     </news:news>
   </url>
-
+  <url>
+    <loc>https://pulseamericanews.com/usa/average-gas-cost-per-month-by-state.html</loc>
+    <lastmod>2026-11-23T09:10:00-05:00</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>Pulse America News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T06:40:00-05:00</news:publication_date>
+      <news:title>Average gas cost per month is $326 — and a Hormuz closure adds $62</news:title>
+      <news:keywords>average gas cost per month, gas prices by state, Strait of Hormuz, Strategic Petroleum Reserve, household budget</news:keywords>
+      <news:genres>Blog, Analysis</news:genres>
+    </news:news>
+  </url>
 </urlset>
