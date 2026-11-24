@@ -1,32 +1,33 @@
 # URL changes — gas cost article canonicalised to the keyword slug
-/usa/oil-price-household-cost-by-state.html   /usa/average-gas-cost-per-month-by-state.html   301
+/usa/oil-price-household-cost-by-state.html      /usa/average-gas-cost-per-month-by-state.html      301
+/usa/thanksgiving-gas-prices-record-2026.html    /usa/thanksgiving-gas-prices-2026.html             301
 
 # Colorado River — canonical slug is the sitemap one
-/usa/colorado-river-2027-cuts-evaporation/    /usa/colorado-river-cuts-january-2027-households.html  301
-/usa/colorado-river-2027-cuts-evaporation.html /usa/colorado-river-cuts-january-2027-households.html 301
+/usa/colorado-river-2027-cuts-evaporation/       /usa/colorado-river-cuts-january-2027-households.html  301
+/usa/colorado-river-2027-cuts-evaporation.html   /usa/colorado-river-cuts-january-2027-households.html  301
 
 # Dead article URLs → working .html paths
-/technology/vision-pro-2-sells-out/          /technology/vision-pro-2-sells-out.html          301
-/technology/ai-bar-exam-stanford/            /technology/ai-bar-exam-stanford.html            301
-/technology/financial-services-breach-200m/  /technology/financial-services-breach-200m.html  301
-/technology/starship-crewed-lunar-orbit/     /technology/starship-crewed-lunar-orbit.html     301
-/usa/supreme-court-immunity-ruling/          /usa/supreme-court-immunity-ruling.html          301
-/sex-education/understanding-consent-guide/  /sex-education/understanding-consent-guide.html  301
+/technology/vision-pro-2-sells-out/              /technology/vision-pro-2-sells-out.html            301
+/technology/ai-bar-exam-stanford/                /technology/ai-bar-exam-stanford.html              301
+/technology/financial-services-breach-200m/      /technology/financial-services-breach-200m.html    301
+/technology/starship-crewed-lunar-orbit/         /technology/starship-crewed-lunar-orbit.html       301
+/usa/supreme-court-immunity-ruling/              /usa/supreme-court-immunity-ruling.html            301
+/sex-education/understanding-consent-guide/      /sex-education/understanding-consent-guide.html    301
 
 # Author and feed paths
-/authors/krishna-basnet.html   /authors/krishna-basnet/  301
-/authors/daniel-reyes.html     /authors/daniel-reyes/    301
-/authors/james-caldwell.html   /authors/james-caldwell/  301
-/feed.xml                      /rss.xml                  301
+/authors/krishna-basnet.html                     /authors/krishna-basnet/                           301
+/authors/daniel-reyes.html                       /authors/daniel-reyes/                             301
+/authors/james-caldwell.html                     /authors/james-caldwell/                           301
+/feed.xml                                        /rss.xml                                           301
 
 # World articles that live at root
-/world/gaza-ceasefire-third-week/       /gaza-ceasefire-third-week/       301
-/world/nato-eastern-flank-division/     /nato-eastern-flank-division/     301
-/world/south-korea-japan-defense-pact/  /south-korea-japan-defense-pact/  301
-/world/water-wars-global-crisis/        /news/water-wars-article.html     301
+/world/gaza-ceasefire-third-week/                /gaza-ceasefire-third-week/                        301
+/world/nato-eastern-flank-division/              /nato-eastern-flank-division/                      301
+/world/south-korea-japan-defense-pact/           /south-korea-japan-defense-pact/                   301
+/world/water-wars-global-crisis/                 /news/water-wars-article.html                      301
 
 # Directory index normalisation
-/index.html        /        301
-/about/index.html  /about/  301
-/contact/index.html /contact/ 301
-/advertise/index.html /advertise/ 301
+/index.html                                      /                                                  301
+/about/index.html                                /about/                                            301
+/contact/index.html                              /contact/                                          301
+/advertise/index.html                            /advertise/                                        301

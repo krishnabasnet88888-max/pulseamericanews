@@ -90,4 +90,38 @@
       <news:genres>Blog, Analysis</news:genres>
     </news:news>
   </url>
+   <url>
+    <loc>https://pulseamericanews.com/usa/thanksgiving-gas-prices-2026.html</loc>
+    <lastmod>2026-11-24T07:00:00-05:00</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>Pulse America News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-24T07:00:00-05:00</news:publication_date>
+      <news:title>Gas prices just set a Thanksgiving record — Britain pays double</news:title>
+      <news:keywords>Thanksgiving gas prices, gas prices by state, diesel prices, AAA travel forecast, household bills</news:keywords>
+      <news:genres>Blog, Opinion</news:genres>
+    </news:news>
+    <image:image>
+      <image:loc>https://pulseamericanews.com/images/usa/thanksgiving-gas-record-hero-1600.jpg</image:loc>
+      <image:caption>The US national average for regular gasoline, 23 November 2026.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://pulseamericanews.com/usa/average-gas-cost-per-month-by-state.html</loc>
+    <lastmod>2026-11-23T09:10:00-05:00</lastmod>
+    <news:news>
+      <news:publication>
+        <news:name>Pulse America News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-23T06:40:00-05:00</news:publication_date>
+      <news:title>Average gas cost per month is $326 — and a Hormuz closure adds $62</news:title>
+      <news:keywords>average gas cost per month, gas prices by state, Strait of Hormuz, Strategic Petroleum Reserve, household budget</news:keywords>
+      <news:genres>Blog, Opinion</news:genres>
+    </news:news>
+  </url>
+
 </urlset>
